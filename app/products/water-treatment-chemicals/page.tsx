@@ -9,196 +9,166 @@ export default function WaterTreatmentChemicalsPage() {
     <main className="overflow-x-hidden">
       <Header />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-zul-green to-zul-green-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Text Content - Left Side */}
-            <div className="text-left">
-              <h1 className="font-headline text-white mb-8 leading-tight">
-                WATER TREATMENT CHEMICALS<br />
-                SUSTAINABLE SOLUTIONS FOR<br />
-                CLEAN WATER AND ENVIRONMENTAL<br />
-                COMPLIANCE
-              </h1>
-              <button className="bg-zul-yellow text-white px-8 py-4 rounded-lg font-medium hover:bg-yellow-500 transition-colors duration-300">
-                Request a Quote
-              </button>
-            </div>
-            
-            {/* Image Placeholder - Right Side */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-80 h-80 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg flex items-center justify-center">
-                <span className="text-zul-grey-dark text-lg">Water Treatment Chemicals Image</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Industry Users Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-headline text-zul-black mb-4">
-              Industry Users
-            </h2>
-            <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Drilling Contractors */}
-            <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <div className="w-20 h-20 bg-zul-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">DC</span>
-              </div>
-              <h3 className="font-subhead text-zul-green mb-2">Drilling Contractors</h3>
-              <p className="text-zul-grey-dark text-sm">Water treatment solutions for drilling operations</p>
-            </div>
-            
-            {/* Oil Field Service Companies */}
-            <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <div className="w-20 h-20 bg-zul-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">OF</span>
-              </div>
-              <h3 className="font-subhead text-zul-green mb-2">Oil Field Service Companies</h3>
-              <p className="text-zul-grey-dark text-sm">Comprehensive water treatment support and expertise</p>
-            </div>
-            
-            {/* E&P Companies */}
-            <div className="bg-gray-50 rounded-lg p-6 text-center">
-              <div className="w-20 h-20 bg-zul-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">EP</span>
-              </div>
-              <h3 className="font-subhead text-zul-green mb-2">E&P Companies</h3>
-              <p className="text-zul-grey-dark text-sm">Environmental compliance and water management</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Product Overview Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
-            <div>
-              <h2 className="font-headline text-zul-black mb-6">
-                Water Treatment Chemicals
-              </h2>
-              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                Advanced water treatment chemicals designed to ensure clean water quality, 
-                prevent contamination, and maintain environmental compliance. Our formulations 
-                provide sustainable solutions for various water treatment challenges in oil and gas operations.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-zul-yellow rounded-full mt-2 mr-3"></div>
-                  <p className="text-zul-grey-dark">Superior water purification and treatment</p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-zul-yellow rounded-full mt-2 mr-3"></div>
-                  <p className="text-zul-grey-dark">Effective contaminant removal</p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-zul-yellow rounded-full mt-2 mr-3"></div>
-                  <p className="text-zul-grey-dark">Environmental compliance assurance</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Technical Specifications */}
-            <div className="bg-white rounded-lg p-8 shadow-lg">
-              <h3 className="font-subhead text-zul-green mb-6">Technical Specifications</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between border-b border-gray-200 pb-2">
-                  <span className="font-medium text-zul-grey-dark">pH Range</span>
-                  <span className="text-zul-black">6.5 - 8.5</span>
-                </div>
-                <div className="flex justify-between border-b border-gray-200 pb-2">
-                  <span className="font-medium text-zul-grey-dark">Temperature Range</span>
-                  <span className="text-zul-black">50°F - 200°F</span>
-                </div>
-                <div className="flex justify-between border-b border-gray-200 pb-2">
-                  <span className="font-medium text-zul-grey-dark">Concentration</span>
-                  <span className="text-zul-black">5 - 100 ppm</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium text-zul-grey-dark">Compatibility</span>
-                  <span className="text-zul-black">Multi-fluid</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Applications Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-headline text-zul-black mb-4">
-              Applications
-            </h2>
-            <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-zul-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold">U</span>
-              </div>
-              <h3 className="font-subhead text-zul-green mb-2">Upstream</h3>
-              <p className="text-zul-grey-dark text-sm">Water treatment and purification</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-zul-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold">O</span>
-              </div>
-              <h3 className="font-subhead text-zul-green mb-2">Offshore</h3>
-              <p className="text-zul-grey-dark text-sm">Marine water treatment operations</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-zul-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold">H</span>
-              </div>
-              <h3 className="font-subhead text-zul-green mb-2">Horizontal</h3>
-              <p className="text-zul-grey-dark text-sm">Extended reach well water treatment</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-zul-green rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white font-bold">S</span>
-              </div>
-              <h3 className="font-subhead text-zul-green mb-2">Shale</h3>
-              <p className="text-zul-grey-dark text-sm">Unconventional water treatment</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-zul-green">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-headline text-white mb-6">
-            Ready to Ensure Clean Water Quality?
+      <section id="home" className="bg-gradient-to-r from-zul-green to-primary-900 text-white mt-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
+        <div className="text-left">
+          <h1 className="font-headline mb-4">
+            DRILLING MUD CHEMICALS
+          </h1>
+          <h2 className="font-headline mb-4 text-zul-yellow">
+            OPTIMIZED PERFORMANCE
           </h2>
-          <p className="font-body text-white mb-8 max-w-2xl mx-auto">
-            Get expert consultation and customized water treatment chemicals for sustainable water management and environmental compliance.
+          <p className="font-headline mb-4 text-zul-yellow">
+            FOR EFFICIENT
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-zul-yellow text-white px-8 py-4 rounded-lg font-medium hover:bg-yellow-500 transition-colors duration-300">
-              Request Quote
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white hover:text-zul-green transition-colors duration-300">
-              Download Datasheet
-            </button>
+          <p className="font-headline mb-8">
+            SAFE DRILLING OPERATIONS
+          </p>
+          <button className="bg-zul-yellow text-white px-8 py-3 rounded-lg font-body font-medium hover:bg-yellow-400 transition-colors">
+            Request a Quote
+          </button>
+        </div>
+      </div>
+           </section>
+       
+       {/* Industry Users Section */}
+       <section className="py-20 bg-white">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           {/* Section Heading */}
+           <div className="text-center mb-16">
+             <h2 className="font-headline text-zul-grey-dark mb-4">
+               Industry Users
+             </h2>
+             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+           </div>
+           
+           {/* Three Industry Panels */}
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+             {/* Panel 1: Drilling Contractors */}
+             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+               <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                 
+               </div>
+               <div className="bg-zul-green py-4">
+                 <h3 className="text-white font-bold text-center font-body">
+                   Drilling Contractors
+                 </h3>
+               </div>
+             </div>
+             
+             {/* Panel 2: Oil Field Service Companies */}
+             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+               <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+               </div>
+               <div className="bg-zul-green py-4">
+                 <h3 className="text-white font-bold text-center font-body">
+                   Oil Field Service Companies
+                 </h3>
+               </div>
+             </div>
+             
+             {/* Panel 3: E&P Companies */}
+             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+               <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                 
+               </div>
+               <div className="bg-zul-green py-4">
+                 <h3 className="text-white font-bold text-center font-body">
+                   E&P Companies
+                 </h3>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <section id="solutions" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="font-headline text-zul-black mb-4">
+            Product
+          </h2>
+          {/* Yellow underline */}
+          <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+        </div>
+        
+        <div className="space-y-16">
+                          {/* DrillingMudChemicals Section */}
+                <div className="flex flex-col lg:flex-row items-center gap-12">
+                  {/* Image - Left Side */}
+                  <div className="w-full lg:w-1/2">
+                    <div className="relative">
+                      <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Content - Right Side */}
+                  <div className="w-full lg:w-1/2">
+                    <h3 className="font-subhead text-zul-green mb-6">
+                      Drilling Mud Chemicals
+                    </h3>
+              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                is an additive for improving drill mud performance, caused by instability and fluid loss, as Zul Energy custom additive package to stabilize shale and control viscosity, which improves an impact by less fluid loss on average of 30%, prevent corrosion and lubricate drill bits.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+             </div>
+     </section>
+
+                                                                                               {/* New Section with CDN Image */}
+         <section className="py-20 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Heading */}
+          <div className="text-center mb-24">
+            <h2 className="font-headline text-zul-grey-dark mb-4">
+              Method of Work
+            </h2>
+            <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+          </div>
+          
+          <div className="flex justify-center mb-16">
+           <div className="relative">
+             {/* R&D Formulation - Top Right */}
+             <div className="absolute -top-16 -right-12 md:-top-16 md:-right-20 lg:-top-20 lg:-right-28 text-right max-w-24 md:max-w-40">
+               <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">R&D Formulation</h4>
+               <p className="text-[10px] md:text-xs text-zul-grey-dark">Develop solutions based on mud properties, required mud weight, and fluid loss limits</p>
+             </div>
+
+             {/* Mud Testing - Right Side */}
+             <div className="absolute top-2/3 -right-16 md:top-2/3 md:-right-28 lg:-right-36 text-right max-w-24 md:max-w-40">
+               <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Mud Testing</h4>
+               <p className="text-[10px] md:text-xs text-zul-grey-dark">Mud Conditioning & Testing / Prepare and evaluate formulations at the mud plant or rig site</p>
+             </div>
+
+             {/* Tailor-Made Production - Bottom */}
+             <div className="absolute -bottom-24 md:-bottom-28 lg:-bottom-32 left-1/2 transform -translate-x-1/2 text-center max-w-24 md:max-w-40">
+               <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Tailor-Made Production</h4>
+               <p className="text-[10px] md:text-xs text-zul-grey-dark">Manufacture customized chemical blends to meet specific customer requirements</p>
+             </div>
+
+             {/* Q&A Improvement - Left Side */}
+             <div className="absolute top-2/3 -left-16 md:top-2/3 md:-left-28 lg:-left-36 text-left max-w-24 md:max-w-40">
+               <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Q&A Improvement</h4>
+               <p className="text-[10px] md:text-xs text-zul-grey-dark">Quality Control & Continuous Improvement / Monitor performance during operations and refine as needed for optimal results</p>
+             </div>
+
+             {/* Plant Visit - Top Left */}
+             <div className="absolute -top-16 -left-12 md:-top-16 md:-left-20 lg:-top-20 lg:-left-28 text-left max-w-24 md:max-w-40">
+               <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Plant Visit</h4>
+               <p className="text-[10px] md:text-xs text-zul-grey-dark">Site Visit & Sample Collection / Assess operational conditions and collect representative mud samples</p>
+             </div>
+
+             <img 
+               src="https://cdn.legendholding.com/images/cdn_68a310e295aa74.07885346_20250818_113914.webp"
+               alt="Drilling Mud Chemicals Product"
+               className="max-w-full h-auto rounded-lg object-contain max-h-[250px] md:max-h-[400px] lg:max-h-[600px]"
+               loading="eager"
+             />
+           </div>
+         </div>
+       </div>
+     </section>
 
       <ContactUs />
       <Footer />

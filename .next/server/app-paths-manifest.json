@@ -1,3 +1,8 @@
 {
+  "/not-found": "app/not-found.js",
+  "/about/legend-holding-group/page": "app/about/legend-holding-group/page.js",
+  "/products/completion-fluids-additives/page": "app/products/completion-fluids-additives/page.js",
+  "/rd/innovation/page": "app/rd/innovation/page.js",
+  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js"
 }

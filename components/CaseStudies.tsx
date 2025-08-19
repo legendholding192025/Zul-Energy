@@ -151,8 +151,8 @@ const CaseStudies = () => {
                   </div>
                 ))}
               </div>
-            </div>
-
+        </div>
+        
             {/* Desktop: 3 cards */}
             <div className="hidden lg:block">
               <div className="grid grid-cols-3 gap-6 min-h-[500px]">
@@ -175,22 +175,22 @@ const CaseStudies = () => {
                             <span className="text-white text-lg font-bold">{study.id}</span>
                           </div>
                           <p className="text-sm font-medium">Case Study Image</p>
-                        </div>
-                      </div>
+              </div>
+                </div>
                       
                       {/* Content */}
                       <div className="p-6 flex-1 flex flex-col">
                         <h3 className="font-subhead text-zul-green mb-4 text-base flex-shrink-0">
                           {study.title}
-                        </h3>
+                </h3>
                         <p className="font-body text-zul-grey-dark leading-relaxed text-sm flex-1 overflow-hidden">
                           {study.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                </p>
+                </div>
               </div>
+            </div>
+          ))}
+        </div>
             </div>
           </div>
           

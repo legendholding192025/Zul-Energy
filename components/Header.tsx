@@ -221,12 +221,12 @@ const Header = () => {
                    <div className="p-5">
                      <ul className="space-y-2">
                       <li>
-                                               <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                                               <a href="/rd/innovation" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
                          Innovation
                        </a>
                      </li>
                      <li>
-                       <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                       <a href="/rd/custom-solutions" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
                          Custom Solutions
                        </a>
                       </li>
@@ -259,7 +259,7 @@ const Header = () => {
                    <div className="p-5">
                      <ul className="space-y-2">
                       <li>
-                                               <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                                               <a href="/about/legend-holding-group" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
                          Legend Holding Group
                        </a>
                      </li>
@@ -296,7 +296,7 @@ const Header = () => {
                Careers
                <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
              </a>
-             <a href="#contact" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+             <a href="/contact" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
                Contact
                <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
              </a>
@@ -400,8 +400,8 @@ const Header = () => {
                  </button>
                  {mobileRDOpen && (
                    <div className="pl-6 space-y-1">
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Innovation</a>
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Custom Solutions</a>
+                     <a href="/rd/innovation" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Innovation</a>
+                     <a href="/rd/custom-solutions" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Custom Solutions</a>
                    </div>
                  )}
               </div>
@@ -419,7 +419,7 @@ const Header = () => {
                  </button>
                  {mobileAboutOpen && (
                    <div className="pl-6 space-y-1">
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Legend Holding Group</a>
+                     <a href="/about/legend-holding-group" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Legend Holding Group</a>
                      <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Facilities in RAK</a>
                      <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Leadership</a>
                      <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Certifications</a>
@@ -435,7 +435,7 @@ const Header = () => {
                <a href="#careers" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
                  Careers
                </a>
-               <a href="#contact" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+               <a href="/contact" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
                  Contact
                </a>
             </div>
