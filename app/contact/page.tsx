@@ -156,7 +156,7 @@ export default function ContactPage() {
             <div className="space-y-8">
               {/* Call Us */}
               <div>
-                <h3 className="font-subhead text-zul-green mb-4">
+                <h3 className="text-lg font-subhead text-zul-green mb-4">
                   Call Us
                 </h3>
                 <div className="space-y-2">
@@ -168,7 +168,7 @@ export default function ContactPage() {
               
               {/* Mail Us */}
               <div>
-                <h3 className="font-subhead text-zul-green mb-4">
+                <h3 className="text-lg font-subhead text-zul-green mb-4">
                   Mail Us
                 </h3>
                 <div className="space-y-2">
@@ -197,7 +197,7 @@ export default function ContactPage() {
               
               {/* Office Address */}
               <div>
-                <h3 className="font-subhead text-zul-green mb-4">
+                <h3 className="text-lg font-subhead text-zul-green mb-4">
                   Office Address
                 </h3>
                 <p className="text-zul-grey-dark">

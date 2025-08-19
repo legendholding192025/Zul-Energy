@@ -21,7 +21,7 @@ const OurClients = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h2 className="font-headline text-zul-black mb-4">
+          <h2 className="font-headline text-zul-grey-dark mb-4">
             Our Clients
           </h2>
           <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>

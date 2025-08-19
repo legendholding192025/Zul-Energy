@@ -52,7 +52,7 @@ export default function LegendHoldingGroupPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Heading */}
           <div className="text-center mb-16">
-            <h2 className="font-headline text-zul-black mb-4">
+            <h2 className="font-headline text-zul-grey-dark mb-4">
               Our Pillars
             </h2>
             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
@@ -86,7 +86,7 @@ export default function LegendHoldingGroupPage() {
             <div className="absolute inset-0 hidden lg:grid lg:grid-cols-3 lg:items-center">
               {/* Mission (left circle) */}
               <div className="flex items-center justify-center">
-                <div className="max-w-[260px] text-center px-3 translate-y-[0%] translate-x-3">
+                <div className="max-w-[260px] text-center px-3 -translate-y-[6%] translate-x-3">
                   <h3 className="text-sm text-zul-green font-bold mb-2">Mission</h3>
                   <div className="text-zul-grey-dark text-xs leading-snug">
                     <p>
@@ -135,46 +135,52 @@ export default function LegendHoldingGroupPage() {
             </div>
 
             {/* Text Overlays - Mobile Layout */}
-            <div className="absolute inset-0 lg:hidden flex flex-col items-center justify-center space-y-8 px-4">
-              {/* Mission */}
-              <div className="max-w-[280px] text-center">
-                <h3 className="text-[clamp(0.75rem,2.5vw,1rem)] text-zul-green font-bold mb-2">Mission</h3>
-                <div className="text-zul-grey-dark text-[clamp(0.625rem,2vw,0.75rem)] leading-snug">
-                  <p>
-                    To be a high-value partner for our customers providing them with innovative products professional support and services, while meeting our obligations to society and the environment.
-                  </p>
-                  <p>
-                    Our commitment, dedication and expertise ensure the best products and services to our clients. ZUL ENERGY is rapidly becoming the preferred vendor to many oil drilling giants in the region due to our professional staff product line, and expert market knowledge.
-                  </p>
-                  <p>
-                    We are dedicated to building trust with our customers and business partnerships
+            <div className="absolute inset-0 lg:hidden">
+              {/* Mission - top circle */}
+              <div className="absolute left-1/2 -translate-x-1/2 top-[10%] w-full flex justify-center px-4">
+                <div className="max-w-[280px] text-center">
+                  <h3 className="text-[clamp(0.75rem,2.5vw,1rem)] text-zul-green font-bold mb-2">Mission</h3>
+                  <div className="text-zul-grey-dark text-[clamp(0.625rem,2vw,0.75rem)] leading-snug">
+                    <p>
+                      To be a high-value partner for our customers providing them with innovative products professional support and services, while meeting our obligations to society and the environment.
+                    </p>
+                    <p>
+                      Our commitment, dedication and expertise ensure the best products and services to our clients. ZUL ENERGY is rapidly becoming the preferred vendor to many oil drilling giants in the region due to our professional staff product line, and expert market knowledge.
+                    </p>
+                    <p>
+                      We are dedicated to building trust with our customers and business partnerships
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Vision - middle circle */}
+              <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full flex justify-center px-4">
+                <div className="max-w-[280px] text-center">
+                  <h3 className="text-[clamp(0.75rem,2.5vw,1rem)] text-zul-green font-bold mb-2">Vision</h3>
+                  <p className="text-zul-grey-dark text-[clamp(0.625rem,2vw,0.75rem)] leading-snug">
+                    Our vision is to be a quality provider of complete chemical solutions to the oil and gas industry in the region, ensuring the highest value services and products through quality and reliability
                   </p>
                 </div>
               </div>
 
-              {/* Vision */}
-              <div className="max-w-[280px] text-center">
-                <h3 className="text-[clamp(0.75rem,2.5vw,1rem)] text-zul-green font-bold mb-2">Vision</h3>
-                <p className="text-zul-grey-dark text-[clamp(0.625rem,2vw,0.75rem)] leading-snug">
-                  Our vision is to be a quality provider of complete chemical solutions to the oil and gas industry in the region, ensuring the highest value services and products through quality and reliability
-                </p>
-              </div>
-
-              {/* Our Values */}
-              <div className="max-w-[280px] text-center">
-                <h3 className="text-[clamp(0.75rem,2.5vw,1rem)] text-zul-green font-bold mb-2">Our Values</h3>
-                <div className="text-zul-grey-dark text-[clamp(0.625rem,2vw,0.75rem)] leading-snug space-y-3">
-                  <div>
-                    <h4 className="font-bold text-zul-black mb-1">INTEGRITY</h4>
-                    <p>
-                      Our strong integrity allows us to build trust and respect among all of our relationships. Integrity is and will never be compromised in every aspect of our business dealings
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-zul-black mb-1">EXCELLENCE</h4>
-                    <p>
-                      To exude the excellence from our motto in the quality of our products, our services, and the management of our business
-                    </p>
+              {/* Our Values - bottom circle */}
+              <div className="absolute left-1/2 -translate-x-1/2 top-[74%] w-full flex justify-center px-4">
+                <div className="max-w-[280px] text-center">
+                  <h3 className="text-[clamp(0.75rem,2.5vw,1rem)] text-zul-green font-bold mb-2">Our Values</h3>
+                  <div className="text-zul-grey-dark text-[clamp(0.625rem,2vw,0.75rem)] leading-snug space-y-3">
+                    <div>
+                      <h4 className="font-bold text-zul-black mb-1">INTEGRITY</h4>
+                      <p>
+                        Our strong integrity allows us to build trust and respect among all of our relationships. Integrity is and will never be compromised in every aspect of our business dealings
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-zul-black mb-1">EXCELLENCE</h4>
+                      <p>
+                        To exude the excellence from our motto in the quality of our products, our services, and the management of our business
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -188,7 +194,7 @@ export default function LegendHoldingGroupPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Heading */}
           <div className="text-center mb-16">
-            <h2 className="font-headline text-zul-black mb-4">
+            <h2 className="font-headline text-zul-grey-dark mb-4">
               Why Us
             </h2>
             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>

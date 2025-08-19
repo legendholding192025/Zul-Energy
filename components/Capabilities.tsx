@@ -68,7 +68,7 @@ const Capabilities = () => {
     <section id="capabilities" className="py-20 bg-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-zul-black mb-4">
+          <h2 className="font-headline text-zul-grey-dark mb-4">
             Capabilities
           </h2>
           {/* Yellow underline */}
