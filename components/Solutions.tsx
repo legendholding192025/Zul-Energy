@@ -18,7 +18,13 @@ const Solutions = () => {
                   {/* Image - Left Side */}
                   <div className="w-full lg:w-1/2">
                     <div className="relative">
-                      <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                      <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                        <img
+                          src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                          alt="Drilling Mud Chemicals"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
                   </div>
                   
@@ -70,7 +76,13 @@ const Solutions = () => {
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    alt="Cementing Additives"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
             
@@ -122,7 +134,13 @@ const Solutions = () => {
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    alt="Completion Fluids Additives"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
             
@@ -174,7 +192,13 @@ const Solutions = () => {
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    alt="Stimulation Chemicals"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
             
@@ -226,7 +250,13 @@ const Solutions = () => {
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    alt="Production Chemicals"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
             
@@ -278,9 +308,15 @@ const Solutions = () => {
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    alt="Water Treatment Chemicals"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
+            </div>
             
             {/* Content - Left Side */}
             <div className="w-full lg:w-1/2">
