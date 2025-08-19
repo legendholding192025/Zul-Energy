@@ -95,13 +95,12 @@ const CaseStudies = () => {
                   >
                     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[380px] border border-gray-100 flex flex-col">
                       {/* Image */}
-                      <div className="h-40 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl flex items-center justify-center flex-shrink-0">
-                        <div className="text-center text-gray-500">
-                          <div className="w-12 h-12 bg-zul-green rounded-full mx-auto mb-2 flex items-center justify-center">
-                            <span className="text-white text-sm font-bold">{study.id}</span>
-                          </div>
-                          <p className="text-xs font-medium">Case Study Image</p>
-                        </div>
+                      <div className="h-40 rounded-t-xl overflow-hidden flex-shrink-0">
+                        <img
+                          src="https://cdn.legendholding.com/images/cdn_6846a1dd7894d5.04152247_20250609_085701.jpg"
+                          alt="Case Study"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       
                       {/* Content */}
@@ -129,13 +128,12 @@ const CaseStudies = () => {
                   >
                     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[420px] border border-gray-100 flex flex-col">
                       {/* Image */}
-                      <div className="h-44 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl flex items-center justify-center flex-shrink-0">
-                        <div className="text-center text-gray-500">
-                          <div className="w-14 h-14 bg-zul-green rounded-full mx-auto mb-2 flex items-center justify-center">
-                            <span className="text-white text-base font-bold">{study.id}</span>
-                          </div>
-                          <p className="text-sm font-medium">Case Study Image</p>
-                        </div>
+                      <div className="h-44 rounded-t-xl overflow-hidden flex-shrink-0">
+                        <img
+                          src="https://cdn.legendholding.com/images/cdn_6846a1dd7894d5.04152247_20250609_085701.jpg"
+                          alt="Case Study"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       
                       {/* Content */}
@@ -169,14 +167,13 @@ const CaseStudies = () => {
                   >
                     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[480px] border border-gray-100 flex flex-col">
                       {/* Image */}
-                      <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl flex items-center justify-center flex-shrink-0">
-                        <div className="text-center text-gray-500">
-                          <div className="w-16 h-16 bg-zul-green rounded-full mx-auto mb-3 flex items-center justify-center">
-                            <span className="text-white text-lg font-bold">{study.id}</span>
-                          </div>
-                          <p className="text-sm font-medium">Case Study Image</p>
-              </div>
-                </div>
+                      <div className="h-48 rounded-t-xl overflow-hidden flex-shrink-0">
+                        <img
+                          src="https://cdn.legendholding.com/images/cdn_6846a1dd7894d5.04152247_20250609_085701.jpg"
+                          alt="Case Study"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                       
                       {/* Content */}
                       <div className="p-6 flex-1 flex flex-col">
