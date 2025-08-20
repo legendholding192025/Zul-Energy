@@ -37,7 +37,7 @@ const Solutions = () => {
                 Engineered formulations to optimize drilling fluid performance and ensure efficient, safe wellbore operations.
               </p>
               
-                             <div className="mb-6">
+                <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
                  <ul className="space-y-2">
                    <li className="font-body text-zul-grey-dark flex items-start">
@@ -69,7 +69,7 @@ const Solutions = () => {
           </div>
 
           {/* Yellow separator line */}
-          <div className="w-full h-px bg-zul-yellow"></div>
+          <div className="w-full h-px bg-zul-yellow my-8"></div>
 
           {/* Cementing Additives Section */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
@@ -95,7 +95,7 @@ const Solutions = () => {
                 Specialized chemical solutions to enhance cement slurry performance and maintain long-term well integrity.
               </p>
               
-                             <div className="mb-6">
+                <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
                  <ul className="space-y-2">
                    <li className="font-body text-zul-grey-dark flex items-start">
@@ -127,7 +127,7 @@ const Solutions = () => {
           </div>
 
           {/* Yellow separator line */}
-          <div className="w-full h-px bg-zul-yellow"></div>
+          <div className="w-full h-px bg-zul-yellow my-8"></div>
 
           {/* Completion Fluids Additives Section */}
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -153,7 +153,7 @@ const Solutions = () => {
                 Advanced chemical solutions designed to optimize completion fluid performance and ensure successful well completion operations.
               </p>
               
-                             <div className="mb-6">
+                <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
                  <ul className="space-y-2">
                    <li className="font-body text-zul-grey-dark flex items-start">
@@ -185,7 +185,7 @@ const Solutions = () => {
           </div>
 
           {/* Yellow separator line */}
-          <div className="w-full h-px bg-zul-yellow"></div>
+          <div className="w-full h-px bg-zul-yellow my-8"></div>
 
           {/* Stimulation Chemicals Section */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
@@ -211,7 +211,7 @@ const Solutions = () => {
                 High-performance chemical solutions for well stimulation to enhance production and maximize reservoir recovery.
               </p>
               
-                             <div className="mb-6">
+                <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
                  <ul className="space-y-2">
                    <li className="font-body text-zul-grey-dark flex items-start">
@@ -243,7 +243,7 @@ const Solutions = () => {
           </div>
 
           {/* Yellow separator line */}
-          <div className="w-full h-px bg-zul-yellow"></div>
+          <div className="w-full h-px bg-zul-yellow my-8"></div>
 
           {/* Production Chemicals Section */}
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -269,7 +269,7 @@ const Solutions = () => {
                 Comprehensive chemical solutions to maintain optimal production rates and ensure long-term well performance.
               </p>
               
-                             <div className="mb-6">
+                <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
                  <ul className="space-y-2">
                    <li className="font-body text-zul-grey-dark flex items-start">
@@ -301,7 +301,7 @@ const Solutions = () => {
           </div>
 
           {/* Yellow separator line */}
-          <div className="w-full h-px bg-zul-yellow"></div>
+          <div className="w-full h-px bg-zul-yellow my-8"></div>
 
           {/* Water Treatment Chemicals Section */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
@@ -324,27 +324,27 @@ const Solutions = () => {
                 Water Treatment Chemicals
                 </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                Advanced water treatment solutions to ensure water quality and optimize water management in oil and gas operations.
+                Comprehensive range of industrial water treatment chemicals to protect systems and meet regulatory requirements.
               </p>
               
-                             <div className="mb-6">
+                <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
                  <ul className="space-y-2">
                    <li className="font-body text-zul-grey-dark flex items-start">
                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Control bacterial growth and prevent microbiologically influenced corrosion
+                      Control scaling, fouling, and corrosion in water systems
                    </li>
                    <li className="font-body text-zul-grey-dark flex items-start">
                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Remove suspended solids and improve water clarity
-                   </li>
-                   <li className="font-body text-zul-green-dark flex items-start">
-                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Optimize pH levels and control water chemistry parameters
+                      Provide microbial control with biocides and disinfectants
                    </li>
                    <li className="font-body text-zul-grey-dark flex items-start">
                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Enhance water reuse and reduce environmental impact
+                      Optimize performance of boilers, cooling towers, and injection systems
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Ensure compliance with environmental discharge standards
                    </li>
                  </ul>
                </div>
@@ -352,7 +352,7 @@ const Solutions = () => {
                <div>
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
-                   Water treatment specialists, environmental compliance teams, facility managers.
+                  Industrial facility operators, utilities, water treatment contractors, oil & gas processing plants
                  </p>
                </div>
               </div>
