@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative text-white mt-24">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68a48062344477.56604967_20250819_134714.webp")'
         }}

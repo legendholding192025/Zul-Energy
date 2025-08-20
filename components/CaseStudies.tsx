@@ -9,27 +9,32 @@ const CaseStudies = () => {
     {
       id: 1,
       title: "Drilling Fluids Chemicals",
-      description: "A customer had an issue improving drill mud performance, due to instability and fluid loss causing high downtime, as Zul Energy custom additive package to stabilize shale and control viscosity, which had an impact 35% less fluid loss | 2.5 days less NPT"
+      description: "A customer had an issue improving drill mud performance, due to instability and fluid loss causing high downtime, as Zul Energy custom additive package to stabilize shale and control viscosity, which had an impact 35% less fluid loss | 2.5 days less NPT",
+      image: "https://cdn.legendholding.com/images/cdn_68a562b28b17c2.76073602_20250820_055250.webp"
     },
     {
       id: 2,
       title: "Completion Fluids Chemicals",
-      description: "A customer had an area of improvement to eliminate Formation damage from existing completion fluids, as Zul Energy Low-solids, high-lubricity additive with advanced fluid loss control offered to the location, which resulted 18% higher production Zero formation damage No remedial acidizing"
+      description: "A customer had an area of improvement to eliminate Formation damage from existing completion fluids, as Zul Energy Low-solids, high-lubricity additive with advanced fluid loss control offered to the location, which resulted 18% higher production Zero formation damage No remedial acidizing",
+      image: "https://cdn.legendholding.com/images/cdn_68a5617350c1c8.45219062_20250820_054731.webp"
     },
     {
       id: 3,
       title: "Stimulation Chemicals",
-      description: "Customer experienced Poor acid penetration in carbonate reservoirs, as Zul Energy offered stimulation chemicals, by Acidizing blend with corrosion inhibitor, iron control, and diverter, resulting 40% deeper penetration 22% more production 50% less corrosion"
+      description: "Customer experienced Poor acid penetration in carbonate reservoirs, as Zul Energy offered stimulation chemicals, by Acidizing blend with corrosion inhibitor, iron control, and diverter, resulting 40% deeper penetration 22% more production 50% less corrosion",
+      image: "https://cdn.legendholding.com/images/cdn_68a561d2b95ad5.26167432_20250820_054906.webp"
     },
     {
       id: 4,
       title: "Cementing Chemicals",
-      description: "Customer experienced Gas migration compromising well integrity during cementing operations, As Zul Energy developed Gas-blocking and retarder additives for deepwater cement jobs, as it resulted Zero gas migration | Strong bond achieved"
+      description: "Customer experienced Gas migration compromising well integrity during cementing operations, As Zul Energy developed Gas-blocking and retarder additives for deepwater cement jobs, as it resulted Zero gas migration | Strong bond achieved",
+      image: "https://cdn.legendholding.com/images/cdn_68a563173006d7.16515658_20250820_055431.webp"
     },
     {
       id: 5,
       title: "Production & Treatment Chemicals",
-      description: "Customer experienced Frequent wax build-up in subsea pipelines, as Zul Energy site visit, they offered Pour point depressant and dispersant, continuous injection, which resulted Pigging reduction 4x lower"
+      description: "Customer experienced Frequent wax build-up in subsea pipelines, as Zul Energy site visit, they offered Pour point depressant and dispersant, continuous injection, which resulted Pigging reduction 4x lower",
+      image: "https://cdn.legendholding.com/images/cdn_68a56344f16dc0.38864538_20250820_055516.webp"
     }
   ]
 
@@ -95,17 +100,17 @@ const CaseStudies = () => {
                   >
                     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[380px] border border-gray-100 flex flex-col">
                       {/* Image */}
-                      <div className="h-40 rounded-t-xl overflow-hidden flex-shrink-0">
+                      <div className="h-56 rounded-t-xl overflow-hidden flex-shrink-0">
                         <img
-                          src="https://cdn.legendholding.com/images/cdn_6846a1dd7894d5.04152247_20250609_085701.jpg"
+                          src={study.image}
                           alt="Case Study"
                           className="w-full h-full object-cover"
                         />
                       </div>
                       
                       {/* Content */}
-                      <div className="p-4 flex-1 flex flex-col">
-                        <h3 className="font-subhead text-zul-green mb-3 text-sm flex-shrink-0">
+                      <div className="p-3 flex-1 flex flex-col">
+                        <h3 className="font-subhead text-zul-green mb-2 text-sm flex-shrink-0">
                           {study.title}
                         </h3>
                         <p className="font-body text-zul-grey-dark leading-relaxed text-xs flex-1 overflow-hidden">
@@ -128,17 +133,17 @@ const CaseStudies = () => {
                   >
                     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[420px] border border-gray-100 flex flex-col">
                       {/* Image */}
-                      <div className="h-44 rounded-t-xl overflow-hidden flex-shrink-0">
+                      <div className="h-60 rounded-t-xl overflow-hidden flex-shrink-0">
                         <img
-                          src="https://cdn.legendholding.com/images/cdn_6846a1dd7894d5.04152247_20250609_085701.jpg"
+                          src={study.image}
                           alt="Case Study"
                           className="w-full h-full object-cover"
                         />
                       </div>
                       
                       {/* Content */}
-                      <div className="p-5 flex-1 flex flex-col">
-                        <h3 className="font-subhead text-zul-green mb-3 text-sm flex-shrink-0">
+                      <div className="p-3 flex-1 flex flex-col">
+                        <h3 className="font-subhead text-zul-green mb-2 text-sm flex-shrink-0">
                           {study.title}
                         </h3>
                         <p className="font-body text-zul-grey-dark leading-relaxed text-xs flex-1 overflow-hidden">
@@ -167,17 +172,17 @@ const CaseStudies = () => {
                   >
                     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[480px] border border-gray-100 flex flex-col">
                       {/* Image */}
-                      <div className="h-48 rounded-t-xl overflow-hidden flex-shrink-0">
+                      <div className="h-64 rounded-t-xl overflow-hidden flex-shrink-0">
                         <img
-                          src="https://cdn.legendholding.com/images/cdn_6846a1dd7894d5.04152247_20250609_085701.jpg"
+                          src={study.image}
                           alt="Case Study"
                           className="w-full h-full object-cover"
                         />
                       </div>
                       
                       {/* Content */}
-                      <div className="p-6 flex-1 flex flex-col">
-                        <h3 className="font-subhead text-zul-green mb-4 text-base flex-shrink-0">
+                      <div className="p-4 flex-1 flex flex-col">
+                        <h3 className="font-subhead text-zul-green mb-2 text-base flex-shrink-0">
                           {study.title}
                 </h3>
                         <p className="font-body text-zul-grey-dark leading-relaxed text-sm flex-1 overflow-hidden">

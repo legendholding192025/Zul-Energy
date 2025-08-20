@@ -8,8 +8,18 @@ export default function InnovationPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-44 pb-32 min-h-[70vh] bg-gradient-to-br from-zul-green to-zul-green-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-44 pb-32 min-h-[80vh] bg-gradient-to-br from-zul-green to-zul-green-dark">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68a5676a4b2db6.53893410_20250820_061258.webp")'
+          }}
+        >
+        </div>
+        
+        {/* Content Overlay */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mt-16">
             <h1 className="font-headline mb-4">
               R&D AND
@@ -34,9 +44,9 @@ export default function InnovationPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* In-house Laboratory Testing */}
             <div className="text-center">
-              <div className="w-full h-56 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="https://cdn.legendholding.com/images/cdn_68a2f85624b3b8.28018141_20250818_095430.webp" 
+                  src="https://cdn.legendholding.com/images/cdn_68a5617350c1c8.45219062_20250820_054731.webp" 
                   alt="Oil drilling rig at sunset" 
                   className="w-full h-full object-cover"
                 />
@@ -51,9 +61,9 @@ export default function InnovationPage() {
             
             {/* Custom Formulation */}
             <div className="text-center">
-              <div className="w-full h-56 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="https://cdn.legendholding.com/images/cdn_68a310e295aa74.07885346_20250818_113914.webp" 
+                  src="https://cdn.legendholding.com/images/cdn_68a561d2b95ad5.26167432_20250820_054906.webp" 
                   alt="Oil pumpjack in snowy landscape" 
                   className="w-full h-full object-cover"
                 />
@@ -68,9 +78,9 @@ export default function InnovationPage() {
             
             {/* Field Simulation */}
             <div className="text-center">
-              <div className="w-full h-56 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="https://cdn.legendholding.com/images/cdn_68a2f85624b3b8.28018141_20250818_095430.webp" 
+                  src="https://cdn.legendholding.com/images/cdn_68a563173006d7.16515658_20250820_055431.webp" 
                   alt="Offshore oil rig in ocean" 
                   className="w-full h-full object-cover"
                 />
@@ -85,9 +95,9 @@ export default function InnovationPage() {
             
             {/* Rapid Response */}
             <div className="text-center">
-              <div className="w-full h-56 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src="https://cdn.legendholding.com/images/cdn_68a310e295aa74.07885346_20250818_113914.webp" 
+                  src="https://cdn.legendholding.com/images/cdn_68a56344f16dc0.38864538_20250820_055516.webp" 
                   alt="Underwater pipeline on seabed" 
                   className="w-full h-full object-cover"
                 />

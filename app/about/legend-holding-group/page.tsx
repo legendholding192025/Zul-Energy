@@ -8,8 +8,18 @@ export default function LegendHoldingGroupPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-44 pb-32 min-h-[70vh] bg-gradient-to-br from-zul-green to-zul-green-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-44 pb-32 min-h-[80vh] bg-gradient-to-br from-zul-green to-zul-green-dark">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68a56983066904.95341207_20250820_062155.webp")'
+          }}
+        >
+        </div>
+        
+        {/* Content Overlay */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mt-16">
             <h1 className="font-headline mb-4">
               ABOUT US

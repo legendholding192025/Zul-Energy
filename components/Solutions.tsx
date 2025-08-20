@@ -18,9 +18,9 @@ const Solutions = () => {
                   {/* Image - Left Side */}
                   <div className="w-full lg:w-1/2">
                     <div className="relative">
-                      <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                      <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                         <img
-                          src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                          src="https://cdn.legendholding.com/images/cdn_68a55d78eab5e0.45150741_20250820_053032.webp"
                           alt="Drilling Mud Chemicals"
                           className="w-full h-full object-cover"
                         />
@@ -76,9 +76,9 @@ const Solutions = () => {
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    src="https://cdn.legendholding.com/images/cdn_68a55dcf0f9b39.36102089_20250820_053159.webp"
                     alt="Cementing Additives"
                     className="w-full h-full object-cover"
                   />
@@ -134,9 +134,9 @@ const Solutions = () => {
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
                     alt="Completion Fluids Additives"
                     className="w-full h-full object-cover"
                   />
@@ -192,9 +192,9 @@ const Solutions = () => {
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    src="https://cdn.legendholding.com/images/cdn_68a55e2bda07d8.54791929_20250820_053331.webp"
                     alt="Stimulation Chemicals"
                     className="w-full h-full object-cover"
                   />
@@ -250,9 +250,9 @@ const Solutions = () => {
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    src="https://cdn.legendholding.com/images/cdn_68a55e5cd63997.17536611_20250820_053420.webp"
                     alt="Production Chemicals"
                     className="w-full h-full object-cover"
                   />
@@ -308,9 +308,9 @@ const Solutions = () => {
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_683e9e33367140.14677364_20250603_070315.jpg"
+                    src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
                     alt="Water Treatment Chemicals"
                     className="w-full h-full object-cover"
                   />
