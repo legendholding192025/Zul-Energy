@@ -1,3 +1,6 @@
+"use client"
+
+import React from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ContactUs from '@/components/ContactUs'
@@ -32,7 +35,15 @@ export default function DrillingMudChemicalsPage() {
             <p className="font-headline mb-8">
               SAFE DRILLING OPERATIONS
             </p>
-            <button className="bg-zul-yellow text-white px-8 py-3 rounded-lg font-body font-medium hover:bg-yellow-400 transition-colors">
+            <button 
+              onClick={() => {
+                const contactSection = document.querySelector('#contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="bg-zul-yellow text-white px-8 py-3 rounded-lg font-body font-medium hover:bg-yellow-400 transition-colors"
+            >
               Request a Quote
             </button>
           </div>
@@ -197,7 +208,9 @@ export default function DrillingMudChemicalsPage() {
        </div>
      </section>
 
-     <ContactUs />
+     <div id="contact">
+       <ContactUs />
+     </div>
       
     <Footer />
     </main>

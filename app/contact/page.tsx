@@ -9,7 +9,7 @@ export default function ContactPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-44 pb-32 min-h-[80vh] bg-gradient-to-br from-zul-green to-zul-green-dark">
+      <section className="relative pt-24 pb-16 min-h-[50vh] bg-gradient-to-br from-zul-green to-zul-green-dark">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -36,12 +36,12 @@ export default function ContactPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Heading */}
-          <div className="text-center mb-16">
+          {/* <div className="text-center mb-16">
             <h2 className="font-headline text-zul-grey-dark mb-4">
-              Contact & Booking
+              Contact Us
             </h2>
             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
-          </div>
+          </div> */}
           
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -49,7 +49,7 @@ export default function ContactPage() {
             <div className="space-y-8">
               <div>
                 <h3 className="font-subhead text-zul-green mb-2">
-                  Make appointment
+                  Make an appointment
                 </h3>
                 <p className="font-body text-zul-grey-dark mb-6">
                   Get in touch with Zul Energy for inquiries, partnerships, and support.

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Header from '../../../components/Header'
 import Hero from '../../../components/Hero'
@@ -33,7 +35,15 @@ export default function WaterTreatmentChemicalsPage() {
             <p className="font-headline mb-8">
               SAFE WATER TREATMENT OPERATIONS
             </p>
-            <button className="bg-zul-yellow text-white px-8 py-3 rounded-lg font-body font-medium hover:bg-yellow-400 transition-colors">
+            <button 
+              onClick={() => {
+                const contactSection = document.querySelector('#contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className="bg-zul-yellow text-white px-8 py-3 rounded-lg font-body font-medium hover:bg-yellow-400 transition-colors"
+            >
               Request a Quote
             </button>
           </div>
@@ -136,7 +146,7 @@ export default function WaterTreatmentChemicalsPage() {
                       Water Treatment Chemicals
                     </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                is an additive for improving drill mud performance, caused by instability and fluid loss, as Zul Energy custom additive package to stabilize shale and control viscosity, which improves an impact by less fluid loss on average of 30%, prevent corrosion and lubricate drill bits.
+                Water treatment chemicals are specialized formulations used to improve water quality and protect industrial systems. They help prevent scaling, fouling, and corrosion, control microbial growth with biocides and disinfectants, and enhance the efficiency of boilers, cooling towers, and other critical processes. By using the right chemicals, industries can maintain reliable operations while meeting environmental and regulatory standards.
               </p>
             </div>
           </div>
@@ -198,7 +208,9 @@ export default function WaterTreatmentChemicalsPage() {
        </div>
      </section>
 
-      <ContactUs />
+      <div id="contact">
+        <ContactUs />
+      </div>
       <Footer />
     </main>
   )
