@@ -26,9 +26,9 @@ const WhyUs = () => {
             <div className="relative mb-4">
               <div className="w-full h-80 bg-gradient-to-b from-gray-200 to-gray-300 rounded-t-[3.5rem] overflow-hidden">
                 <img
-                  src="https://cdn.legendholding.com/images/cdn_68a55bb9aa8c56.92679224_20250820_052305.webp"
+                  src="https://cdn.legendholding.com/images/cdn_68a56f5396c753.74115752_20250820_064643.webp"
                   alt="Performance"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
@@ -44,7 +44,7 @@ const WhyUs = () => {
                 <img
                   src="https://cdn.legendholding.com/images/cdn_68a55c335d1b45.35797777_20250820_052507.webp"
                   alt="Reliability"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
@@ -60,7 +60,7 @@ const WhyUs = () => {
                 <img
                   src="https://cdn.legendholding.com/images/cdn_68a55cb497ddc2.47773592_20250820_052716.webp"
                   alt="Compliance (ISO)"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
@@ -76,7 +76,7 @@ const WhyUs = () => {
                 <img
                   src="https://cdn.legendholding.com/images/cdn_68a2f85624b3b8.28018141_20250818_095430.webp"
                   alt="Local Manufacturing"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
