@@ -23,7 +23,7 @@ export default function DrillingMudChemicalsPage() {
         {/* Content Overlay */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
           <div className="text-left">
-            <h1 className="font-headline mb-0">
+            <h1 className="font-headline mb-0 text-white">
               DRILLING MUD CHEMICALS
             </h1>
             <h2 className="font-headline mb-0 text-zul-yellow">
@@ -32,7 +32,7 @@ export default function DrillingMudChemicalsPage() {
             <p className="font-headline mb-0 text-zul-yellow">
               FOR EFFICIENT
             </p>
-            <p className="font-headline mb-8">
+            <p className="font-headline mb-8 text-white">
               SAFE DRILLING OPERATIONS
             </p>
             <button 
