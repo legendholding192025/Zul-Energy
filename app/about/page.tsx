@@ -21,7 +21,7 @@ export default function AboutPage() {
         {/* Content Overlay */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mt-16">
-            <h1 className="font-headline mb-0">
+            <h1 className="font-headline mb-0 text-white">
               ZUL Energy is a manufacturer of premium quality chemical additives for every stage of
             </h1>
             <h2 className="font-headline mb-4 text-zul-yellow">
