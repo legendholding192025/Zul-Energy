@@ -73,7 +73,7 @@ export default function AboutPage() {
           
           {/* Subtitle and Description */}
           <div className="text-left mb-16 max-w-4xl">
-            <h3 className="font-subhead text-zul-black mb-4">
+            <h3 className="font-subhead text-zul-grey-dark mb-4">
               Driving Innovation in Energy Solutions
             </h3>
             <p className="text-zul-grey-dark leading-relaxed">
