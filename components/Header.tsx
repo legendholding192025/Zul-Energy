@@ -245,7 +245,7 @@ const Header = () => {
               <div>
                                  <button
                    onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)}
-                   className="w-full text-left text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium flex items-center justify-between"
+                   className="w-full text-left text-zul-green hover:text-zul-green px-3 py-2 text-base font-medium flex items-center justify-between"
                  >
                    Solutions
                    <svg className={`ml-1 h-4 w-4 transform ${mobileSolutionsOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -282,7 +282,7 @@ const Header = () => {
               <div>
                                  <button
                    onClick={() => setMobileResourcesOpen(!mobileResourcesOpen)}
-                   className="w-full text-left text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium flex items-center justify-between"
+                   className="w-full text-left text-zul-green hover:text-zul-green px-3 py-2 text-base font-medium flex items-center justify-between"
                  >
                    Resources
                    <svg className={`ml-1 h-4 w-4 transform ${mobileResourcesOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">

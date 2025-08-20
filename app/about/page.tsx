@@ -47,15 +47,31 @@ export default function AboutPage() {
             Zul Energy
           </h3>
           
-          {/* Descriptive Text */}
-          <div className="space-y-6 text-left">
-            <p className="text-zul-grey-dark leading-relaxed">
-              With a manufacturing plant in UAE, ZUL Energy is a manufacturer of premium quality chemical additives for every stage of Oil & Gas field applications. Our commitment to provide quality products, outstanding service, and zero compromises, as complemented by our business values, has seen us growing rapidly to become the preferred vendor for National and International Oil Companies and other international services providers.
-            </p>
+          {/* Two Column Layout: Text Left, Image Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left Column - Text Content */}
+            <div className="space-y-6 text-left">
+              <p className="text-zul-grey-dark leading-relaxed text-base">
+                With a manufacturing plant in UAE, ZUL Energy is a manufacturer of premium quality chemical additives for every stage of Oil & Gas field applications. Our commitment to provide quality products, outstanding service, and zero compromises, as complemented by our business values, has seen us growing rapidly to become the preferred vendor for National and International Oil Companies and other international services providers.
+              </p>
+              
+              <p className="text-zul-grey-dark leading-relaxed text-base">
+                Our commitment to quality chemical production and following environment regulations have been well acknowledged by the ISO 9001-2015, ISO 14001-2015 and ISO 45001-2018 certifications. Currently, ZUL Energy is also expanding its footprint to new Energy sectors.
+              </p>
+            </div>
             
-            <p className="text-zul-grey-dark leading-relaxed">
-              Our commitment to quality chemical production and following environment regulations have been well acknowledged by the ISO 9001-2015, ISO 14001-2015 and ISO 45001-2018 certifications. Currently, ZUL Energy is also expanding its footprint to new Energy sectors.
-            </p>
+                        {/* Right Column - Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-md -mt-8">
+                <div className="bg-gradient-to-br from-zul-green/10 to-primary-900/10 rounded-lg p-4">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_68a5649f0a16b2.35673987_20250820_060103.webp"
+                    alt="ZUL Energy Manufacturing Plant"
+                    className="w-full h-80 rounded-lg object-cover shadow-lg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
