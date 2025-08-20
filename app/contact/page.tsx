@@ -222,7 +222,7 @@ export default function ContactPage() {
                   Office Address
                 </h3>
                 <p className="text-zul-grey-dark">
-                  JBC 4 - Office No. 1903 - 19 Floor, Cluster N - Jumeirah Lake Towers, Dubai, UAE
+                  JBC 4 - Office No. 1903 - 19 Floor, Cluster N - Jumeirah Lake Towers, <br />Dubai, UAE
                 </p>
               </div>
             </div>

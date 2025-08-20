@@ -32,7 +32,7 @@ const WhyUs = () => {
                 />
               </div>
             </div>
-            <h3 className="font-subhead text-white">
+            <h3 className="font-body text-white text-xl">
               Performance
             </h3>
           </div>
@@ -48,7 +48,7 @@ const WhyUs = () => {
                 />
               </div>
             </div>
-            <h3 className="font-subhead text-white">
+            <h3 className="font-body text-white text-xl">
               Reliability
             </h3>
           </div>
@@ -64,7 +64,7 @@ const WhyUs = () => {
                 />
               </div>
             </div>
-            <h3 className="font-subhead text-white">
+            <h3 className="font-body text-white text-xl">
               Compliance (ISO)
             </h3>
           </div>
@@ -80,7 +80,7 @@ const WhyUs = () => {
                 />
               </div>
             </div>
-            <h3 className="font-subhead text-white">
+            <h3 className="font-body text-white text-xl">
               Local Manufacturing
             </h3>
           </div>
