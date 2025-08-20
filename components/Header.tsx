@@ -6,13 +6,9 @@ import Image from 'next/image'
 const Header = () => {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false)
   const [isResourcesOpen, setIsResourcesOpen] = useState(false)
-  const [isRDOpen, setIsRDOpen] = useState(false)
-  const [isAboutOpen, setIsAboutOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false)
   const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false)
-  const [mobileRDOpen, setMobileRDOpen] = useState(false)
-  const [mobileAboutOpen, setMobileAboutOpen] = useState(false)
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 
@@ -198,102 +194,19 @@ const Header = () => {
               )}
             </div>
             
-                                      {/* R&D Dropdown */}
-                           <div 
-                             className="relative group"
-                             onMouseEnter={() => setIsRDOpen(true)}
-                             onMouseLeave={() => setIsRDOpen(false)}
-                           >
-                                              <button
-                   className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium flex items-center relative"
-                 >
-                   R&D
-                   <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
-                   <svg className={`ml-1 h-4 w-4 transition-transform duration-300 ${isRDOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                   </svg>
-                 </button>
-               
-                               {isRDOpen && (
-                   <div 
-                     className="absolute top-full left-0 mt-0 w-[180px] bg-white rounded-lg shadow-lg border border-zul-green z-50"
-                   >
-                   <div className="p-5">
-                     <ul className="space-y-2">
-                      <li>
-                                               <a href="/rd/innovation" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                         Innovation
-                       </a>
-                     </li>
-                     <li>
-                       <a href="/rd/custom-solutions" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                         Custom Solutions
-                       </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              )}
-            </div>
-            
-                                      {/* About Dropdown */}
-                           <div 
-                             className="relative group"
-                             onMouseEnter={() => setIsAboutOpen(true)}
-                             onMouseLeave={() => setIsAboutOpen(false)}
-                           >
-                                              <button
-                   className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium flex items-center relative"
-                 >
-                   About
-                   <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
-                   <svg className={`ml-1 h-4 w-4 transition-transform duration-300 ${isAboutOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                   </svg>
-                 </button>
-               
-                               {isAboutOpen && (
-                   <div 
-                     className="absolute top-full left-0 mt-0 w-[200px] bg-white rounded-lg shadow-lg border border-zul-green z-50"
-                   >
-                   <div className="p-5">
-                     <ul className="space-y-2">
-                      <li>
-                                               <a href="/about/legend-holding-group" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                         Legend Holding Group
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                         Facilities in RAK
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                         Leadership
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                         Certifications
-                       </a>
-                     </li>
-                     <li>
-                       <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                         Company Profile
-                       </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              )}
-            </div>
-                         <a href="#news" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
-               News
+                                      {/* R&D Direct Link */}
+                           <a href="/rd" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+               R&D
                <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
              </a>
-             <a href="#careers" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
-               Careers
+            
+                                      {/* About Direct Link */}
+                           <a href="/about" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+               About
+               <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
+             </a>
+                         <a href="#news" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+               News
                <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
              </a>
              <a href="/contact" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
@@ -387,53 +300,19 @@ const Header = () => {
                  )}
               </div>
 
-              {/* Mobile R&D Menu */}
-              <div>
-                                 <button
-                   onClick={() => setMobileRDOpen(!mobileRDOpen)}
-                   className="w-full text-left text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium flex items-center justify-between"
-                 >
-                   R&D
-                   <svg className={`ml-1 h-4 w-4 transform ${mobileRDOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                   </svg>
-                 </button>
-                 {mobileRDOpen && (
-                   <div className="pl-6 space-y-1">
-                     <a href="/rd/innovation" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Innovation</a>
-                     <a href="/rd/custom-solutions" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Custom Solutions</a>
-                   </div>
-                 )}
-              </div>
+              {/* Mobile R&D Direct Link */}
+              <a href="/rd" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+                R&D
+              </a>
 
-              {/* Mobile About Menu */}
-              <div>
-                                 <button
-                   onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
-                   className="w-full text-left text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium flex items-center justify-between"
-                 >
-                   About
-                   <svg className={`ml-1 h-4 w-4 transform ${mobileAboutOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                   </svg>
-                 </button>
-                 {mobileAboutOpen && (
-                   <div className="pl-6 space-y-1">
-                     <a href="/about/legend-holding-group" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Legend Holding Group</a>
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Facilities in RAK</a>
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Leadership</a>
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Certifications</a>
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Company Profile</a>
-                   </div>
-                 )}
-              </div>
+              {/* Mobile About Direct Link */}
+              <a href="/about" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+                About
+              </a>
 
                              {/* Mobile Simple Links */}
                <a href="#news" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
                  News
-               </a>
-               <a href="#careers" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
-                 Careers
                </a>
                <a href="/contact" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
                  Contact

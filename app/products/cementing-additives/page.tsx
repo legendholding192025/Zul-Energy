@@ -9,26 +9,35 @@ export default function CementingAdditivesPage() {
     <main className="overflow-x-hidden">
       <Header />
       
-      <section id="home" className="bg-gradient-to-r from-zul-green to-primary-900 text-white mt-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
-        <div className="text-left">
-          <h1 className="font-headline mb-4">
-            DRILLING MUD CHEMICALS
-          </h1>
-          <h2 className="font-headline mb-4 text-zul-yellow">
-            OPTIMIZED PERFORMANCE
-          </h2>
-          <p className="font-headline mb-4 text-zul-yellow">
-            FOR EFFICIENT
-          </p>
-          <p className="font-headline mb-8">
-            SAFE DRILLING OPERATIONS
-          </p>
-          <button className="bg-zul-yellow text-white px-8 py-3 rounded-lg font-body font-medium hover:bg-yellow-400 transition-colors">
-            Request a Quote
-          </button>
+      <section id="home" className="relative bg-gradient-to-r from-zul-green to-primary-900 text-white mt-24">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68a5649f0a16b2.35673987_20250820_060103.webp")'
+          }}
+        >
         </div>
-      </div>
+        {/* Content Overlay */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
+          <div className="text-left">
+            <h1 className="font-headline mb-0">
+              CEMENTING ADDITIVES
+            </h1>
+            <h2 className="font-headline mb-0 text-zul-yellow">
+              OPTIMIZED PERFORMANCE
+            </h2>
+            <p className="font-headline mb-0 text-zul-yellow">
+              FOR EFFICIENT
+            </p>
+            <p className="font-headline mb-8">
+              SAFE CEMENTING OPERATIONS
+            </p>
+            <button className="bg-zul-yellow text-white px-8 py-3 rounded-lg font-body font-medium hover:bg-yellow-400 transition-colors">
+              Request a Quote
+            </button>
+          </div>
+        </div>
            </section>
        
        {/* Industry Users Section */}
@@ -46,8 +55,12 @@ export default function CementingAdditivesPage() {
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
              {/* Panel 1: Drilling Contractors */}
              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-               <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                 
+               <div className="h-72 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
+                 <img
+                   src="https://cdn.legendholding.com/images/cdn_68a565133a1568.04754394_20250820_060259.webp"
+                   alt="Drilling Contractors"
+                   className="w-full h-full object-cover"
+                 />
                </div>
                <div className="bg-zul-green py-4">
                  <h3 className="text-white font-bold text-center font-body">
@@ -58,7 +71,12 @@ export default function CementingAdditivesPage() {
              
              {/* Panel 2: Oil Field Service Companies */}
              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-               <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+               <div className="h-72 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
+                 <img
+                   src="https://cdn.legendholding.com/images/cdn_68a565be7bb385.96776264_20250820_060550.webp"
+                   alt="Oil Field Service Companies"
+                   className="w-full h-full object-cover"
+                 />
                </div>
                <div className="bg-zul-green py-4">
                  <h3 className="text-white font-bold text-center font-body">
@@ -69,8 +87,12 @@ export default function CementingAdditivesPage() {
              
              {/* Panel 3: E&P Companies */}
              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-               <div className="h-64 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                 
+               <div className="h-72 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
+                 <img
+                   src="https://cdn.legendholding.com/images/cdn_68a565ececd456.31764651_20250820_060636.webp"
+                   alt="E&P Companies"
+                   className="w-full h-full object-cover"
+                 />
                </div>
                <div className="bg-zul-green py-4">
                  <h3 className="text-white font-bold text-center font-body">
@@ -85,7 +107,7 @@ export default function CementingAdditivesPage() {
        <section id="solutions" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-headline text-zul-black mb-4">
+          <h2 className="font-headline text-zul-grey-dark mb-4">
             Product
           </h2>
           {/* Yellow underline */}
@@ -98,17 +120,23 @@ export default function CementingAdditivesPage() {
                   {/* Image - Left Side */}
                   <div className="w-full lg:w-1/2">
                     <div className="relative">
-                      <div className="w-80 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg"></div>
+                      <div className="w-96 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                        <img
+                          src="https://cdn.legendholding.com/images/cdn_68a55dcf0f9b39.36102089_20250820_053159.webp"
+                          alt="Cementing Additives Product"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
                   </div>
                   
                   {/* Content - Right Side */}
                   <div className="w-full lg:w-1/2">
                     <h3 className="font-subhead text-zul-green mb-6">
-                      Drilling Mud Chemicals
+                      Cementing Additives
                     </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                is an additive for improving drill mud performance, caused by instability and fluid loss, as Zul Energy custom additive package to stabilize shale and control viscosity, which improves an impact by less fluid loss on average of 30%, prevent corrosion and lubricate drill bits.
+                These additives serve various purposes and help enhance the properties of the cement, ensuring a reliable and effective wellbore seal. Common types of oilwell cementing additives include retarders, accelerators, dispersants, fluid loss additives, anti-gas migration agents, strength enhancers, and defoamers. These additives help control setting time, improve cement flowability, reduce fluid loss, prevent gas migration, enhance cement strength, and address other challenges encountered during the cementing process.
               </p>
             </div>
           </div>

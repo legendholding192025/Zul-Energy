@@ -20,13 +20,13 @@ export default function DrillingMudChemicalsPage() {
         {/* Content Overlay */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
           <div className="text-left">
-            <h1 className="font-headline mb-4">
+            <h1 className="font-headline mb-0">
               DRILLING MUD CHEMICALS
             </h1>
-            <h2 className="font-headline mb-4 text-zul-yellow">
+            <h2 className="font-headline mb-0 text-zul-yellow">
               OPTIMIZED PERFORMANCE
             </h2>
-            <p className="font-headline mb-4 text-zul-yellow">
+            <p className="font-headline mb-0 text-zul-yellow">
               FOR EFFICIENT
             </p>
             <p className="font-headline mb-8">

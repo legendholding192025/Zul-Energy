@@ -22,12 +22,12 @@ export default function ContactPage() {
         {/* Content Overlay */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mt-16">
-            <h1 className="font-headline mb-4">
-              CONTACT US
+            <h1 className="font-headline mb-0">
+              Reach Out To Us
             </h1>
-            {/* <h2 className="font-headline mb-4 text-zul-yellow">
-              LABORATORY
-            </h2> */}
+            <h2 className="font-headline mb-4 text-zul-yellow">
+              To Work On Your Next Project
+            </h2>
           </div>
         </div>
       </section>

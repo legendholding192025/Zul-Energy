@@ -12,13 +12,13 @@ const Hero = () => {
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
         <div className="text-right">
-          <h1 className="font-headline mb-4">
+          <h1 className="font-headline mb-0">
             CRAFTSMANSHIP
           </h1>
-          <h2 className="font-headline mb-4 text-zul-yellow">
+          <h2 className="font-headline mb-0 text-zul-yellow">
             IN OIL&GAS
           </h2>
-          <p className="font-headline mb-4 text-zul-yellow">
+          <p className="font-headline mb-0 text-zul-yellow">
             ENGINEERED
           </p>
           <p className="font-headline">

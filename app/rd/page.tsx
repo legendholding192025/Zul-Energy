@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-export default function InnovationPage() {
+export default function RDPage() {
   return (
     <main className="overflow-x-hidden">
       <Header />
@@ -21,12 +21,8 @@ export default function InnovationPage() {
         {/* Content Overlay */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mt-16">
-            <h1 className="font-headline mb-4">
-              R&D AND
-            </h1>
-            <h2 className="font-headline mb-4 text-zul-yellow">
-              LABORATORY
-            </h2>
+            <h1 className="font-headline mb-0">R&D AND</h1>
+            <h2 className="font-headline mb-4 text-zul-yellow">LABORATORY</h2>
           </div>
         </div>
       </section>
