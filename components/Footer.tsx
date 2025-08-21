@@ -166,14 +166,8 @@ const Footer = () => {
             © 2024 ZUL ENERGY. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-zul-grey-light hover:text-zul-yellow transition-colors font-body">
+            <a href="/privacy-policy" className="text-zul-grey-light hover:text-zul-yellow transition-colors font-body">
               Privacy Policy
-            </a>
-            <a href="#" className="text-zul-grey-light hover:text-zul-yellow transition-colors font-body">
-              Terms of Service
-            </a>
-            <a href="#" className="text-zul-grey-light hover:text-zul-yellow transition-colors font-body">
-              Cookie Policy
             </a>
           </div>
         </div>

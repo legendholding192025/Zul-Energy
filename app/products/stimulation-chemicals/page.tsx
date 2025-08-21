@@ -11,7 +11,7 @@ export default function StimulationChemicalsPage() {
     <main className="overflow-x-hidden">
       <Header />
       
-      <section id="home" className="relative bg-gradient-to-r from-zul-green to-primary-900 text-white mt-24">
+      <section id="home" className="relative bg-gradient-to-r from-zul-green to-primary-900 text-white mt-24" style={{ height: '672.25px' }}>
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -21,7 +21,7 @@ export default function StimulationChemicalsPage() {
         >
         </div>
         {/* Content Overlay */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-left">
             <h1 className="font-headline mb-0 text-white">
               STIMULATION CHEMICALS
