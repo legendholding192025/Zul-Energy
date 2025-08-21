@@ -205,7 +205,7 @@ const Header = () => {
                About
                <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
              </a>
-                         <a href="#news" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+                         <a href="/news" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
                News
                <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
              </a>
@@ -311,7 +311,7 @@ const Header = () => {
               </a>
 
                              {/* Mobile Simple Links */}
-               <a href="#news" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+               <a href="/news" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
                  News
                </a>
                <a href="/contact" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
