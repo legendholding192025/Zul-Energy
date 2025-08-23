@@ -2,8 +2,10 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
+  const pathname = usePathname()
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false)
   const [isResourcesOpen, setIsResourcesOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -11,6 +13,14 @@ const Header = () => {
   const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false)
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+
+  // Helper function to check if a link is active
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === '/'
+    }
+    return pathname.startsWith(path)
+  }
 
   // Header hide/show on scroll functionality
   useEffect(() => {
@@ -78,61 +88,100 @@ const Header = () => {
                        <h3 className="text-sm font-semibold text-zul-green mb-3">Industries</h3>
                       <ul className="space-y-2">
                         <li>
-                                                     <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                                                     <a href="#" className={`text-sm block py-1 transition-colors ${
+                               isActive('/industries/upstream') 
+                                 ? 'text-zul-yellow' 
+                                 : 'text-gray-600 hover:text-zul-yellow'
+                             }`}>
                              Upstream
                            </a>
                          </li>
                          <li>
-                           <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                           <a href="#" className={`text-sm block py-1 transition-colors ${
+                               isActive('/industries/production') 
+                                 ? 'text-zul-yellow' 
+                                 : 'text-gray-600 hover:text-zul-yellow'
+                             }`}>
                              Production
                            </a>
                          </li>
                          <li>
-                           <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                           <a href="#" className={`text-sm block py-1 transition-colors ${
+                               isActive('/industries/onshore') 
+                                 ? 'text-zul-yellow' 
+                                 : 'text-gray-600 hover:text-zul-yellow'
+                             }`}>
                              Onshore
                            </a>
                          </li>
                          <li>
-                           <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                           <a href="#" className={`text-sm block py-1 transition-colors ${
+                               isActive('/industries/offshore') 
+                                 ? 'text-zul-yellow' 
+                                 : 'text-gray-600 hover:text-zul-yellow'
+                             }`}>
                              Offshore
                            </a>
                         </li>
                       </ul>
                     </div>
-                    
-                                         {/* Products Section */}
-                     <div className="w-3/5 p-5">
-                       <h3 className="text-sm font-semibold text-zul-green mb-3">Products</h3>
+                    {/* Products Section */}
+                    <div className="w-3/5 p-5">
+                      <h3 className="text-sm font-semibold text-zul-green mb-3">Products</h3>
                       <ul className="space-y-2">
                         <li>
-                                                     <a href="/products/drilling-mud-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                             Drilling Mud Chemicals
-                           </a>
-                         </li>
-                         <li>
-                           <a href="/products/completion-fluids-additives" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                             Completion Fluids Additives
-                           </a>
-                         </li>
-                         <li>
-                           <a href="/products/cementing-additives" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                             Cementing Additives
-                           </a>
-                         </li>
-                         <li>
-                           <a href="/products/stimulation-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                             Stimulation Chemicals
-                           </a>
-                         </li>
-                         <li>
-                           <a href="/products/production-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                             Production Chemicals
-                           </a>
-                         </li>
-                         <li>
-                           <a href="/products/water-treatment-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
-                             Water Treatment Chemicals
-                           </a>
+                          <a href="/products/drilling-mud-chemicals" className={`text-sm block py-1 transition-colors ${
+                            isActive('/products/drilling-mud-chemicals') 
+                              ? 'text-zul-yellow' 
+                              : 'text-gray-600 hover:text-zul-yellow'
+                          }`}>
+                            Drilling Mud Chemicals
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/products/completion-fluids-additives" className={`text-sm block py-1 transition-colors ${
+                            isActive('/products/completion-fluids-additives') 
+                              ? 'text-zul-yellow' 
+                              : 'text-gray-600 hover:text-zul-yellow'
+                          }`}>
+                            Completion Fluids Additives
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/products/cementing-additives" className={`text-sm block py-1 transition-colors ${
+                            isActive('/products/cementing-additives') 
+                              ? 'text-zul-yellow' 
+                              : 'text-gray-600 hover:text-zul-yellow'
+                          }`}>
+                            Cementing Additives
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/products/stimulation-chemicals" className={`text-sm block py-1 transition-colors ${
+                            isActive('/products/stimulation-chemicals') 
+                              ? 'text-zul-yellow' 
+                              : 'text-gray-600 hover:text-zul-yellow'
+                          }`}>
+                            Stimulation Chemicals
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/products/production-chemicals" className={`text-sm block py-1 transition-colors ${
+                            isActive('/products/production-chemicals') 
+                              ? 'text-zul-yellow' 
+                              : 'text-gray-600 hover:text-zul-yellow'
+                          }`}>
+                            Production Chemicals
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/products/water-treatment-chemicals" className={`text-sm block py-1 transition-colors ${
+                            isActive('/products/water-treatment-chemicals') 
+                              ? 'text-zul-yellow' 
+                              : 'text-gray-600 hover:text-zul-yellow'
+                          }`}>
+                            Water Treatment Chemicals
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -195,23 +244,59 @@ const Header = () => {
             </div>
             
                                       {/* R&D Direct Link */}
-                           <a href="/rd" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+                           <a 
+                             href="/rd" 
+                             className={`px-3 py-2 text-sm font-medium relative group transition-colors ${
+                               isActive('/rd') 
+                                 ? 'text-zul-yellow' 
+                                 : 'text-zul-green hover:text-zul-green'
+                             }`}
+                           >
                R&D
-               <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
+               <div className={`absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transition-transform duration-300 ${
+                 !isActive('/rd') ? 'scale-x-0 group-hover:scale-x-100' : 'scale-x-0'
+               } origin-left`}></div>
              </a>
             
                                       {/* About Direct Link */}
-                           <a href="/about" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+                           <a 
+                             href="/about" 
+                             className={`px-3 py-2 text-sm font-medium relative group transition-colors ${
+                               isActive('/about') 
+                                 ? 'text-zul-yellow' 
+                                 : 'text-zul-green hover:text-zul-green'
+                             }`}
+                           >
                About
-               <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
+               <div className={`absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transition-transform duration-300 ${
+                 !isActive('/about') ? 'scale-x-0 group-hover:scale-x-100' : 'scale-x-0'
+               } origin-left`}></div>
              </a>
-                         <a href="/news" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+                         <a 
+                           href="/news" 
+                           className={`px-3 py-2 text-sm font-medium relative group transition-colors ${
+                             isActive('/news') 
+                               ? 'text-zul-yellow' 
+                               : 'text-zul-green hover:text-zul-green'
+                           }`}
+                         >
                News
-               <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
+               <div className={`absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transition-transform duration-300 ${
+                 !isActive('/news') ? 'scale-x-0 group-hover:scale-x-100' : 'scale-x-0'
+               } origin-left`}></div>
              </a>
-             <a href="/contact" className="text-zul-green hover:text-zul-green px-3 py-2 text-sm font-medium relative group">
+             <a 
+               href="/contact" 
+               className={`px-3 py-2 text-sm font-medium relative group transition-colors ${
+                 isActive('/contact') 
+                   ? 'text-zul-yellow' 
+                   : 'text-zul-green hover:text-zul-green'
+               }`}
+             >
                Contact
-               <div className="absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></div>
+               <div className={`absolute bottom-0 left-3 right-3 h-1 bg-zul-yellow transition-transform duration-300 ${
+                 !isActive('/contact') ? 'scale-x-0 group-hover:scale-x-100' : 'scale-x-0'
+               } origin-left`}></div>
              </a>
           </nav>
 
@@ -266,12 +351,66 @@ const Header = () => {
                      <div className="py-2">
                        <p className="text-sm font-semibold text-zul-green mb-2">Products</p>
                        <div className="space-y-1">
-                         <a href="/products/drilling-mud-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">DrillingMudChemicals</a>
-                         <a href="/products/completion-fluids-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Completion Fluids Additives</a>
-                         <a href="/products/cementing-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Cementing Additives</a>
-                         <a href="/products/stimulation-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Stimulation Chemicals</a>
-                         <a href="/products/production-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Production Chemicals</a>
-                         <a href="/products/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
+                         <a 
+                           href="/products/drilling-mud-chemicals" 
+                           className={`block text-sm py-1 transition-colors ${
+                             isActive('/products/drilling-mud-chemicals') 
+                               ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                               : 'text-zul-grey-dark hover:text-zul-green'
+                           }`}
+                         >
+                           DrillingMudChemicals
+                         </a>
+                         <a 
+                           href="/products/completion-fluids-additives" 
+                           className={`block text-sm py-1 transition-colors ${
+                             isActive('/products/completion-fluids-additives') 
+                               ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                               : 'text-zul-grey-dark hover:text-zul-green'
+                           }`}
+                         >
+                           Completion Fluids Additives
+                         </a>
+                         <a 
+                           href="/products/cementing-additives" 
+                           className={`block text-sm py-1 transition-colors ${
+                             isActive('/products/cementing-additives') 
+                               ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                               : 'text-zul-grey-dark hover:text-zul-green'
+                           }`}
+                         >
+                           Cementing Additives
+                         </a>
+                         <a 
+                           href="/products/stimulation-chemicals" 
+                           className={`block text-sm py-1 transition-colors ${
+                             isActive('/products/stimulation-chemicals') 
+                               ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                               : 'text-zul-green hover:text-zul-green'
+                           }`}
+                         >
+                           Stimulation Chemicals
+                         </a>
+                         <a 
+                           href="/products/production-chemicals" 
+                           className={`block text-sm py-1 transition-colors ${
+                             isActive('/products/production-chemicals') 
+                               ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                               : 'text-zul-green hover:text-zul-green'
+                           }`}
+                         >
+                           Production Chemicals
+                         </a>
+                         <a 
+                           href="/products/water-treatment-chemicals" 
+                           className={`block text-sm py-1 transition-colors ${
+                             isActive('/products/water-treatment-chemicals') 
+                               ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                               : 'text-zul-green hover:text-zul-green'
+                           }`}
+                         >
+                           Water Treatment Chemicals
+                         </a>
                        </div>
                      </div>
                    </div>
@@ -301,20 +440,48 @@ const Header = () => {
               </div>
 
               {/* Mobile R&D Direct Link */}
-              <a href="/rd" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+              <a 
+                href="/rd" 
+                className={`block px-3 py-2 text-base font-medium transition-colors ${
+                  isActive('/rd') 
+                    ? 'text-zul-yellow bg-zul-yellow bg-opacity-10' 
+                    : 'text-zul-green hover:text-zul-green'
+                }`}
+              >
                 R&D
               </a>
 
               {/* Mobile About Direct Link */}
-              <a href="/about" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+              <a 
+                href="/about" 
+                className={`block px-3 py-2 text-base font-medium transition-colors ${
+                  isActive('/about') 
+                    ? 'text-zul-yellow bg-zul-yellow bg-opacity-10' 
+                    : 'text-zul-green hover:text-zul-green'
+                }`}
+              >
                 About
               </a>
 
                              {/* Mobile Simple Links */}
-               <a href="/news" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+               <a 
+                 href="/news" 
+                 className={`block px-3 py-2 text-base font-medium transition-colors ${
+                   isActive('/news') 
+                     ? 'text-zul-yellow bg-zul-yellow bg-opacity-10' 
+                     : 'text-zul-green hover:text-zul-green'
+                 }`}
+               >
                  News
                </a>
-               <a href="/contact" className="text-zul-green hover:text-zul-green block px-3 py-2 text-base font-medium">
+               <a 
+                 href="/contact" 
+                 className={`block px-3 py-2 text-base font-medium transition-colors ${
+                   isActive('/contact') 
+                     ? 'text-zul-yellow bg-zul-yellow bg-opacity-10' 
+                     : 'text-zul-green hover:text-zul-green'
+                 }`}
+               >
                  Contact
                </a>
             </div>

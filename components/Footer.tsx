@@ -90,7 +90,7 @@ const Footer = () => {
                 href="https://www.facebook.com/share/19KowfbS7s/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-green transition-colors"
+                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-yellow transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -103,7 +103,7 @@ const Footer = () => {
                 href="https://x.com/ZulEnergy?s=09"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-green transition-colors"
+                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-yellow transition-colors"
                 aria-label="X (Twitter)"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -116,7 +116,7 @@ const Footer = () => {
                 href="https://www.youtube.com/@zulenergy2618"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-green transition-colors"
+                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-yellow transition-colors"
                 aria-label="YouTube"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -129,7 +129,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/zul-energy/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-green transition-colors"
+                className="w-10 h-10 bg-zul-grey-dark rounded-full flex items-center justify-center hover:bg-zul-yellow transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">

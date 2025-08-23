@@ -13,8 +13,8 @@ const OurClients = () => {
     { src: "/logo/logo-06.svg", alt: "Client Logo 6" },
   ]
 
-  // Duplicate logos for seamless infinite scroll
-  const duplicatedLogos = [...logos, ...logos, ...logos]
+  // Duplicate logos for seamless infinite scroll (two identical sequences)
+  const duplicatedLogos = [...logos, ...logos]
 
   return (
     <section id="clients" className="py-20 bg-white overflow-hidden">
@@ -30,11 +30,11 @@ const OurClients = () => {
         {/* Infinite Scrolling Logo Carousel */}
         <div className="relative">
           <div className="overflow-hidden">
-            <div className="flex animate-scroll-smooth">
+            <div className="flex w-max animate-scroll-smooth">
               {duplicatedLogos.map((logo, index) => (
                 <div 
                   key={index}
-                  className="flex-shrink-0 mx-4 sm:mx-6 lg:mx-8 bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 p-3 sm:p-4 lg:p-6 flex items-center justify-center min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] min-h-[80px] sm:min-h-[90px] lg:min-h-[100px]"
+                  className="flex-shrink-0 mx-4 sm:mx-6 lg:mx-8 flex items-center justify-center min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] min-h-[80px] sm:min-h-[90px] lg:min-h-[100px]"
                 >
                   <Image
                     src={logo.src}
@@ -59,15 +59,15 @@ const OurClients = () => {
       <style jsx>{`
         @keyframes scroll-smooth {
           0% {
-            transform: translateX(0);
+            transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: translateX(-33.333%);
+            transform: translate3d(-50%, 0, 0);
           }
         }
         
         .animate-scroll-smooth {
-          animation: scroll-smooth 12s linear infinite;
+          animation: scroll-smooth 8s linear infinite;
           will-change: transform;
         }
         
@@ -79,7 +79,7 @@ const OurClients = () => {
         /* Ensure smooth animation on mobile */
         @media (max-width: 768px) {
           .animate-scroll-smooth {
-            animation-duration: 8s;
+            animation-duration: 6s;
           }
         }
       `}</style>
