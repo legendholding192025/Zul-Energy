@@ -25,9 +25,6 @@ export default function ContactPage() {
             <h1 className="font-headline mb-0 text-white">
               Reach Out To Us
             </h1>
-            <h2 className="font-headline mb-4 text-zul-yellow">
-              To Work On Your Next Project
-            </h2>
           </div>
         </div>
       </section>
@@ -46,8 +43,8 @@ export default function ContactPage() {
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Contact Form */}
-            <div className="space-y-8">
-              <div>
+            <div className="bg-gray-200 rounded-xl p-8 shadow-sm">
+              <div className="mb-6">
                 <h3 className="font-subhead text-zul-green mb-2">
                   Make an appointment
                 </h3>

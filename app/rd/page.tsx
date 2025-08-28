@@ -110,7 +110,7 @@ export default function RDPage() {
       </section>
 
       {/* Method of Work Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-headline text-zul-grey-dark mb-4">
@@ -119,9 +119,9 @@ export default function RDPage() {
             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8"> */}
             {/* Sample Collection & Analysis */}
-            <div className="text-center relative">
+            {/* <div className="text-center relative">
               <img 
                 src="/logo/method.png" 
                 alt="Method of Work" 
@@ -139,10 +139,10 @@ export default function RDPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             
             {/* Problem Identification */}
-            <div className="text-center relative">
+            {/* <div className="text-center relative">
               <img 
                 src="/logo/method.png" 
                 alt="Method of Work" 
@@ -160,10 +160,10 @@ export default function RDPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             
             {/* Formulation & Testing */}
-            <div className="text-center relative">
+            {/* <div className="text-center relative">
               <img 
                 src="/logo/method.png" 
                 alt="Method of Work" 
@@ -181,10 +181,10 @@ export default function RDPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             
             {/* Pilot Application */}
-            <div className="text-center relative">
+            {/* <div className="text-center relative">
               <img 
                 src="/logo/method.png" 
                 alt="Method of Work" 
@@ -202,10 +202,10 @@ export default function RDPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             
             {/* Optimization & Scale-up */}
-            <div className="text-center relative">
+            {/* <div className="text-center relative">
               <img 
                 src="/logo/method.png" 
                 alt="Method of Work" 
@@ -226,7 +226,7 @@ export default function RDPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Customer Benefits Section */}
       <section className="py-20 bg-white">

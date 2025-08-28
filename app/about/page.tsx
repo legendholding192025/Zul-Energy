@@ -52,7 +52,7 @@ export default function AboutPage() {
             {/* Left Column - Text Content */}
             <div className="space-y-6 text-left">
               <p className="text-zul-grey-dark leading-relaxed text-base">
-                With a manufacturing plant in UAE, ZUL Energy is a manufacturer of premium quality chemical additives for every stage of Oil & Gas field applications. Our commitment to provide quality products, outstanding service, and zero compromises, as complemented by our business values, has seen us growing rapidly to become the preferred vendor for National and International Oil Companies and other international services providers.
+                With a manufacturing plant in UAE and <span className="font-semibold text-zul-green">10+ years of experience</span>, ZUL Energy is a manufacturer of premium quality chemical additives for every stage of Oil & Gas field applications. Our commitment to provide quality products, outstanding service, and zero compromises, as complemented by our business values, has seen us growing rapidly to become the preferred vendor for National and International Oil Companies and other international services providers.
               </p>
               
               <p className="text-zul-grey-dark leading-relaxed text-base">
@@ -60,14 +60,26 @@ export default function AboutPage() {
               </p>
             </div>
             
-                        {/* Right Column - Image */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-md -mt-8">
-                <div className="bg-gradient-to-br from-zul-green/10 to-primary-900/10 rounded-lg p-4">
+                        {/* Right Column - Overlapping Images Layout */}
+            <div className="relative w-full max-w-lg lg:max-w-xl">
+              {/* First Image - Background */}
+              <div className="relative w-full">
+                <div className="bg-gradient-to-br from-zul-green/10 to-primary-900/10 rounded-lg p-3 sm:p-4">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_68a5649f0a16b2.35673987_20250820_060103.webp"
+                    src="https://cdn.legendholding.com/images/cdn_68a55c335d1b45.35797777_20250820_052507.webp"
                     alt="ZUL Energy Manufacturing Plant"
-                    className="w-full h-80 rounded-lg object-cover shadow-lg"
+                    className="w-full h-64 sm:h-72 lg:h-80 rounded-lg object-cover shadow-lg"
+                  />
+                </div>
+              </div>
+              
+              {/* Second Image - Overlapping */}
+              <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 lg:-top-8 lg:-right-8 w-48 h-36 sm:w-56 sm:h-40 lg:w-72 lg:h-56">
+                <div className="bg-gradient-to-br from-zul-green/5 to-zul-grey-dark/5 rounded-lg p-2 sm:p-3 border border-zul-green/20 shadow-xl">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_68a2f85624b3b8.28018141_20250818_095430.webp"
+                    alt="ZUL Energy Chemical Solutions"
+                    className="w-full h-full rounded-lg object-cover"
                   />
                 </div>
               </div>
@@ -128,7 +140,7 @@ export default function AboutPage() {
           {/* Five Cards Layout */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* Card 1: Comprehensive Portfolio */}
-            <div className="bg-zul-green p-6 rounded-lg text-left">
+            <div className="bg-zul-green p-6 rounded-lg text-left transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
               <h3 className="text-lg text-white font-bold mb-2">
                 Comprehensive Portfolio
               </h3>
@@ -138,7 +150,7 @@ export default function AboutPage() {
             </div>
             
             {/* Card 2: In-House R&D */}
-            <div className="bg-white border border-zul-grey-dark p-6 rounded-lg text-left">
+            <div className="bg-white border border-zul-grey-dark p-6 rounded-lg text-left transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-zul-green cursor-pointer">
               <h3 className="text-lg text-zul-green font-bold mb-2">
                 In-House R&D
               </h3>
@@ -148,7 +160,7 @@ export default function AboutPage() {
             </div>
             
             {/* Card 3: Quality & Safety */}
-            <div className="bg-zul-grey-dark p-6 rounded-lg text-left">
+            <div className="bg-zul-grey-dark p-6 rounded-lg text-left transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
               <h3 className="text-lg text-white font-bold mb-2">
                 Quality & Safety
               </h3>
@@ -158,7 +170,7 @@ export default function AboutPage() {
             </div>
             
             {/* Card 4: Local Advantage */}
-            <div className="bg-zul-yellow p-6 rounded-lg text-left">
+            <div className="bg-zul-yellow p-6 rounded-lg text-left transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
               <h3 className="text-lg text-zul-grey-dark font-bold mb-2">
                 Local Advantage
               </h3>
@@ -168,7 +180,7 @@ export default function AboutPage() {
             </div>
             
             {/* Card 5: Global Reach */}
-            <div className="bg-zul-green p-6 rounded-lg text-left">
+            <div className="bg-zul-green p-6 rounded-lg text-left transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
               <h3 className="text-lg text-white font-bold mb-2">
                 Global Reach
               </h3>

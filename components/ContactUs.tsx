@@ -100,10 +100,10 @@ const ContactUs = () => {
 
         {/* Desktop: Side by Side Layout */}
         <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Form */}
-          <div className="space-y-8">
+                     {/* Left Side - Form */}
+           <div className="bg-gray-200 rounded-xl p-8 shadow-sm">
             {/* Request A Quote Section */}
-            <div>
+            <div className="mb-6">
               <h3 className="font-subhead text-zul-green mb-2">
                 Request A Quote
               </h3>
@@ -215,11 +215,11 @@ const ContactUs = () => {
           </div>
         </div>
 
-        {/* Mobile: Form Below Image */}
-        <div className="block lg:hidden">
-          <div className="space-y-8">
+                 {/* Mobile: Form Below Image */}
+         <div className="block lg:hidden">
+           <div className="bg-gray-200 rounded-xl p-6 shadow-sm">
             {/* Request A Quote Section */}
-            <div>
+            <div className="mb-6">
               <h3 className="font-subhead text-zul-green mb-2">
                 Request A Quote
               </h3>
