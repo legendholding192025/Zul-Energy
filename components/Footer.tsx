@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <footer className="text-black" style={{ backgroundColor: 'rgb(188, 190, 192)' }}>
+    <footer className="text-white" style={{ backgroundColor: '#1f2e3c' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
@@ -20,15 +20,15 @@ const Footer = () => {
                 priority
               />
             </div>
-            <p className="text-gray-700 text-base leading-relaxed max-w-md font-body">
+            <p className="text-white text-base leading-relaxed max-w-md font-body">
               Zul Energy is a subsidiary of Legend Holding Group, delivering innovative and sustainable chemical solutions for the Oil & Gas industry.
             </p>
           </div>
           
-          {/* Quick Links - Spans 3 columns with left border */}
-          <div className="lg:col-span-3 lg:relative">
-            <div className="lg:absolute lg:left-0 lg:top-0 lg:bottom-0 lg:w-px lg:bg-black"></div>
-            <div className="lg:pl-8">
+                     {/* Quick Links - Spans 3 columns with left border */}
+           <div className="lg:col-span-3 lg:relative">
+             <div className="lg:absolute lg:left-0 lg:top-0 lg:bottom-0 lg:w-px lg:bg-white"></div>
+             <div className="lg:pl-8">
               <h4 className="text-lg font-semibold mb-6 font-subhead text-zul-green">Quick Links</h4>
               <ul className="space-y-3">
                 {[
@@ -40,7 +40,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-gray-700 hover:text-zul-yellow transition-colors font-body text-base"
+                      className="text-white hover:text-zul-yellow transition-colors font-body text-base"
                     >
                       {link.name}
                     </Link>
@@ -50,25 +50,25 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Company Contact Info - Spans 4 columns with left border */}
-          <div className="lg:col-span-4 lg:relative">
-            <div className="lg:absolute lg:left-0 lg:top-0 lg:bottom-0 lg:w-px lg:bg-black"></div>
-            <div className="lg:pl-8">
+                     {/* Company Contact Info - Spans 4 columns with left border */}
+           <div className="lg:col-span-4 lg:relative">
+             <div className="lg:absolute lg:left-0 lg:top-0 lg:bottom-0 lg:w-px lg:bg-white"></div>
+             <div className="lg:pl-8">
               <h4 className="text-lg font-semibold mb-6 font-subhead text-zul-green">ZUL ENERGY MIDDLE EAST FZ LLC</h4>
               <ul className="space-y-3 mb-8">
                 <li>
-                  <span className="text-gray-700 font-body text-base">+971 7 236 2065</span>
+                  <span className="text-white font-body text-base">+971 7 236 2065</span>
                 </li>
                 <li>
-                  <a href="mailto:info@zulenergy.com" className="text-gray-700 hover:text-zul-yellow transition-colors font-body text-base">
+                  <a href="mailto:info@zulenergy.com" className="text-white hover:text-zul-yellow transition-colors font-body text-base">
                     info@zulenergy.com
                   </a>
                 </li>
                 <li>
-                  <span className="text-gray-700 font-body text-base">Corporate Office: Dubai, UAE</span>
+                  <span className="text-white font-body text-base">Corporate Office: Dubai, UAE</span>
                 </li>
                 <li>
-                  <span className="text-gray-700 font-body text-base">Plant: Ras Al Khaimah, UAE</span>
+                  <span className="text-white font-body text-base">Plant: Ras Al Khaimah, UAE</span>
                 </li>
               </ul>
               
@@ -131,15 +131,15 @@ const Footer = () => {
         </div>
         
         {/* Bottom Bar */}
-        <div className="border-t border-black mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-700 text-sm mb-4 md:mb-0 font-body">
+        <div className="border-t border-white mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-white text-sm mb-4 md:mb-0 font-body">
             © 2024 ZUL ENERGY. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
-            <a href="/privacy-policy" className="text-gray-700 hover:text-zul-yellow transition-colors font-body">
+            <a href="/privacy-policy" className="text-white hover:text-zul-yellow transition-colors font-body">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-700 hover:text-zul-yellow transition-colors font-body">
+            <a href="#" className="text-white hover:text-zul-yellow transition-colors font-body">
               Cookie Policy
             </a>
           </div>
