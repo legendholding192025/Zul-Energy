@@ -204,9 +204,9 @@ export default function DatasheetsPage() {
 
       {/* Download Form Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg max-w-md w-full">
-            <div className="p-6">
+                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
+                      <div className="bg-white rounded-lg max-w-2xl w-full mx-4 sm:mx-auto max-h-[90vh] overflow-y-auto">
+             <div className="p-4 sm:p-6">
               <div className="flex justify-between items-center mb-6">
                 <h3 className="font-subhead text-zul-green">
                   Download Datasheet
@@ -232,101 +232,103 @@ export default function DatasheetsPage() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                    Full Name *
-                  </label>
-                                     <input
-                     type="text"
-                     id="name"
-                     name="name"
-                     value={formData.name}
-                     onChange={handleInputChange}
-                     required
-                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark"
-                     placeholder="Enter your full name"
-                   />
-                </div>
+                             <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+                   <div>
+                     <label htmlFor="name" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                       Full Name *
+                     </label>
+                                            <input
+                         type="text"
+                         id="name"
+                         name="name"
+                         value={formData.name}
+                         onChange={handleInputChange}
+                         required
+                         className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                         placeholder="Enter your full name"
+                       />
+                   </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                    Email Address *
-                  </label>
-                                     <input
-                     type="email"
-                     id="email"
-                     name="email"
-                     value={formData.email}
-                     onChange={handleInputChange}
-                     required
-                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark"
-                     placeholder="Enter your email address"
-                   />
-                </div>
+                   <div>
+                     <label htmlFor="email" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                       Email Address *
+                     </label>
+                                            <input
+                         type="email"
+                         id="email"
+                         name="email"
+                         value={formData.email}
+                         onChange={handleInputChange}
+                         required
+                         className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                         placeholder="Enter your email address"
+                       />
+                   </div>
 
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                    Phone Number *
-                  </label>
-                                     <input
-                     type="tel"
-                     id="phone"
-                     name="phone"
-                     value={formData.phone}
-                     onChange={handleInputChange}
-                     required
-                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark"
-                     placeholder="Enter your phone number"
-                   />
-                </div>
+                   <div>
+                     <label htmlFor="phone" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                       Phone Number *
+                     </label>
+                                            <input
+                         type="tel"
+                         id="phone"
+                         name="phone"
+                         value={formData.phone}
+                         onChange={handleInputChange}
+                         required
+                         className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                         placeholder="Enter your phone number"
+                       />
+                   </div>
 
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                    Company *
-                  </label>
-                                     <input
-                     type="text"
-                     id="company"
-                     name="company"
-                     value={formData.company}
-                     onChange={handleInputChange}
-                     required
-                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark"
-                     placeholder="Enter your company name"
-                   />
-                </div>
+                   <div>
+                     <label htmlFor="company" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                       Company *
+                     </label>
+                                            <input
+                         type="text"
+                         id="company"
+                         name="company"
+                         value={formData.company}
+                         onChange={handleInputChange}
+                         required
+                         className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                         placeholder="Enter your company name"
+                       />
+                   </div>
+                 </div>
 
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                    Additional Message
-                  </label>
-                                     <textarea
-                     id="message"
-                     name="message"
-                     value={formData.message}
-                     onChange={handleInputChange}
-                     rows={4}
-                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark"
-                     placeholder="Tell us about your specific requirements or questions..."
-                   />
-                </div>
+                 <div>
+                   <label htmlFor="message" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                     Additional Message
+                   </label>
+                                        <textarea
+                       id="message"
+                       name="message"
+                       value={formData.message}
+                       onChange={handleInputChange}
+                       rows={3}
+                       className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                       placeholder="Tell us about your specific requirements or questions..."
+                     />
+                 </div>
 
-                <div className="flex space-x-3 pt-4">
-                  <button
-                    type="button"
-                    onClick={() => setIsModalOpen(false)}
-                    className="flex-1 bg-gray-300 text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-gray-400 transition-colors"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="submit"
-                    className="flex-1 bg-zul-yellow text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors"
-                  >
-                    Download
-                  </button>
-                </div>
+                                 <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 pt-4">
+                   <button
+                     type="button"
+                     onClick={() => setIsModalOpen(false)}
+                     className="w-full sm:flex-1 bg-gray-300 text-gray-700 px-4 py-3 sm:py-2 rounded-lg font-medium hover:bg-gray-400 transition-colors"
+                   >
+                     Cancel
+                   </button>
+                   <button
+                     type="submit"
+                     className="w-full sm:flex-1 bg-zul-yellow text-white px-4 py-3 sm:py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors"
+                   >
+                     Download
+                   </button>
+                 </div>
               </form>
             </div>
           </div>
