@@ -342,11 +342,24 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                            Brochures
                          </a>
                        </li>
-                       <li>
-                         <a href="#" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">
+                                                                       <li>
+                         <a href="/case-studies" className={`text-sm block py-1 transition-colors ${
+                           isActive('/case-studies') 
+                             ? 'text-zul-yellow' 
+                             : 'text-gray-600 hover:text-zul-yellow'
+                         }`}>
                            Case Studies
                          </a>
-                        </li>
+                          </li>
+                          <li>
+                            <a href="/datasheets" className={`text-sm block py-1 transition-colors ${
+                              isActive('/datasheets') 
+                                ? 'text-zul-yellow' 
+                                : 'text-gray-600 hover:text-zul-yellow'
+                            }`}>
+                              Datasheets
+                            </a>
+                          </li>
                     </ul>
                   </div>
                 </div>
@@ -518,7 +531,26 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                      >
                        Brochures
                      </a>
-                     <a href="#" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Case Studies</a>
+                     <a 
+                       href="/case-studies" 
+                       className={`block text-sm py-1 transition-colors ${
+                         isActive('/case-studies') 
+                           ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                           : 'text-zul-grey-dark hover:text-zul-green'
+                       }`}
+                     >
+                       Case Studies
+                     </a>
+                     <a 
+                       href="/datasheets" 
+                       className={`block text-sm py-1 transition-colors ${
+                         isActive('/datasheets') 
+                           ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
+                           : 'text-zul-grey-dark hover:text-zul-green'
+                       }`}
+                     >
+                       Datasheets
+                     </a>
                    </div>
                  )}
               </div>
