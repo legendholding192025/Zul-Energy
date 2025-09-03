@@ -145,8 +145,119 @@ export default function WaterBasedMudAdditivesPage() {
                   Water Based Mud Additives
                 </h3>
                 <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                  are specialized chemical additives designed to enhance the performance of water-based drilling fluids. These additives provide superior shale inhibition, fluid loss control, and rheological stability, ensuring optimal drilling performance while maintaining environmental compliance and cost-effectiveness.
+                  Water-based drilling fluids are widely used due to their cost-effectiveness, environmental compliance, and ease of handling. Additives in water-based muds are designed to:
                 </p>
+                
+                <div className="mb-6">
+                  <ul className="space-y-2">
+                    <li className="font-body text-zul-grey-dark flex items-start">
+                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Increase viscosity and density
+                    </li>
+                    <li className="font-body text-zul-grey-dark flex items-start">
+                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Control fluid loss
+                    </li>
+                    <li className="font-body text-zul-grey-dark flex items-start">
+                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Stabilize shale formations
+                    </li>
+                    <li className="font-body text-zul-grey-dark flex items-start">
+                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Reduce corrosion
+                    </li>
+                    <li className="font-body text-zul-grey-dark flex items-start">
+                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Enhance lubrication and drilling efficiency
+                    </li>
+                  </ul>
+                </div>
+                
+                <p className="font-body text-zul-grey-dark leading-relaxed">
+                  Zul Energy provides a full range of high-quality water-based additives, sourced from trusted global manufacturers. With robust warehousing and logistics, we ensure timely delivery, superior packaging, and reliable supply to meet your operational requirements.
+                </p>
+              </div>
+            </div>
+
+            {/* Product List Heading */}
+            <div className="text-center mb-8">
+              <h4 className="font-body helvetica-bold text-zul-green text-2xl">Product List</h4>
+            </div>
+
+            {/* Product List Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Column 1 */}
+              <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                <ul className="space-y-2">
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Viscosifiers
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Weighting Materials
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Fluid Loss Reducers
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Mud Detergents
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Lubricants
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 2 */}
+              <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                <ul className="space-y-2">
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Defoamer - Antifoam Agents
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Wetting Agents
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Shale Stabilizers
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Lost Circulation Materials (LCM)
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Biocides
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 3 */}
+              <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                <ul className="space-y-2">
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Rig Wash
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Dispersants
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Deflocculants
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Water-Based Thinners
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

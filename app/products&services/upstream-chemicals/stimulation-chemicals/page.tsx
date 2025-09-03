@@ -143,16 +143,93 @@ export default function StimulationChemicalsPage() {
                   {/* Content - Right Side */}
                   <div className="w-full lg:w-1/2">
                     <h3 className="font-subhead text-zul-green mb-6">
-                      Stimulation Additives
+                      Stimulation Chemicals
                     </h3>
-              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                Acidization is a well stimulation technique that involves pumping acid into the wellbore and formation to dissolve or remove materials that may impede the flow of hydrocarbons. These chemical additives are designed to enhance the effectiveness and efficiency of the acidizing process. They contribute to the overall effectiveness and success of the acidizing treatment by optimizing the acid's performance and mitigating potential issues.
-              </p>
+                    <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                      Acidization is a well stimulation technique that involves pumping acid into the wellbore and formation to dissolve or remove materials that may impede the flow of hydrocarbons. These chemical additives are designed to enhance the effectiveness and efficiency of the acidizing process. They contribute to the overall effectiveness and success of the acidizing treatment by optimizing the acid's performance and mitigating potential issues.
+                    </p>
+                    <p className="font-body text-zul-grey-dark leading-relaxed">
+                      Zul Energy is also able to provide chemical additives used in Fracturing operations for well stimulation.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Product List Heading */}
+                <div className="text-center mb-8">
+                  <h4 className="font-body helvetica-bold text-zul-green text-2xl">Product List</h4>
+                </div>
+
+                {/* Product List Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {/* Column 1 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Acid Corrosion Inhibitors
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Friction Reducer
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Acid Emulsifiers
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Mutual Solvent
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 2 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Acid Intensifier
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Gelling Agents
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Surfactants
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Foaming Agent
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 3 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        H₂S Scavenger
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Clay Stabilizer
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Anti Sludge Agent
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Iron Control Agent
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-             </div>
-     </section>
+          </section>
 
                                                                                                {/* New Section with CDN Image */}
          <section className="py-20 bg-gray-100">

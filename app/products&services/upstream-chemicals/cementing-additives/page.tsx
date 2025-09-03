@@ -145,14 +145,94 @@ export default function CementingAdditivesPage() {
                     <h3 className="font-subhead text-zul-green mb-6">
                       Cementing Additives
                     </h3>
-              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                These additives serve various purposes and help enhance the properties of the cement, ensuring a reliable and effective wellbore seal. Common types of oilwell cementing additives include retarders, accelerators, dispersants, fluid loss additives, anti-gas migration agents, strength enhancers, and defoamers. These additives help control setting time, improve cement flowability, reduce fluid loss, prevent gas migration, enhance cement strength, and address other challenges encountered during the cementing process.
-              </p>
+                    <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                      These additives serve various purposes and help enhance the properties of the cement, ensuring a reliable and effective wellbore seal. Common types of oilwell cementing additives include retarders, accelerators, dispersants, fluid loss additives, anti-gas migration agents, strength enhancers, and defoamers. These additives help control setting time, improve cement flowability, reduce fluid loss, prevent gas migration, enhance cement strength, and address other challenges encountered during the cementing process.
+                    </p>
+                    <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                      They are essential for achieving a secure and long-lasting wellbore isolation.
+                    </p>
+                    <p className="font-body text-zul-grey-dark leading-relaxed">
+                      Zul Energy supplies a comprehensive range of high-quality chemicals for the Oil & Gas industry, backed by years of expertise. Our global network of trusted manufacturers ensures top-tier products, superior packaging, and timely delivery. With extensive warehouse facilities and storage capacity, we offer flexibility and reliable supply to meet our customers' demands with minimal lead time. Below is an overview of the key products we supply across the MENA region.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Product List Heading */}
+                <div className="text-center mb-8">
+                  <h4 className="font-body helvetica-bold text-zul-green text-2xl">Key Product List</h4>
+                </div>
+
+                {/* Product List Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {/* Column 1 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Accelerators
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Retarders
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Fluid Loss Reducers
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Extenders
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 2 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Weighting Agents
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Corrosion Inhibitors
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Antifoams/ Defoamers
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Lost Circulation Materials
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 3 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Friction Reducers
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Dispersant
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Spacer Fluids
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Foaming Agents
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-             </div>
-     </section>
+          </section>
 
                                                                                                {/* New Section with CDN Image */}
          <section className="py-20 bg-gray-100">

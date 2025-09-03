@@ -126,8 +126,8 @@ export default function WaterTreatmentChemicalsPage() {
           
           <div className="space-y-16">
             {/* Water Treatment Chemicals Section */}
-            <div className="flex flex-col lg:flex-row items-center gap-12 mb-12">
-              {/* Content - Left Side */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-12">
+              {/* Content - Right Side */}
               <div className="w-full lg:w-1/2">
                 <h3 className="font-subhead text-zul-green mb-6">
                   Water Treatment Chemicals
@@ -137,7 +137,7 @@ export default function WaterTreatmentChemicalsPage() {
                 </p>
               </div>
               
-              {/* Image - Right Side */}
+              {/* Image - Left Side */}
               <div className="w-full lg:w-1/2">
                 <div className="relative">
                   <div className="w-96 h-80 mx-auto bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg overflow-hidden">
@@ -151,148 +151,168 @@ export default function WaterTreatmentChemicalsPage() {
               </div>
             </div>
 
-            {/* Product Categories Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Boiler Water Treatment */}
-              <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-100">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-zul-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                    </svg>
+                        {/* Product Categories Grid */}
+            <div className="space-y-8">
+              {/* First Row - 3 Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Boiler Water Treatment */}
+                <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                  <div className="mb-6">
+                    <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Boiler Water Treatment</h4>
                   </div>
-                  <h4 className="font-body helvetica-bold text-zul-green text-lg">Boiler Water Treatment</h4>
+                  <ul className="space-y-2">
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Oxygen Scavengers
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Scale Inhibitors
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Alkalinity Builders
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Sludge Conditioners / Dispersants
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Condensate Line Corrosion Inhibitors
+                    </li>
+                  </ul>
                 </div>
-                <ul className="space-y-2">
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Oxygen Scavengers
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Scale Inhibitors
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Alkalinity Builders
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Sludge Conditioners / Dispersants
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Condensate Line Corrosion Inhibitors
-                  </li>
-                </ul>
+
+                {/* Cooling Water Treatment */}
+                <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                  <div className="mb-6">
+                    <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Cooling Water Treatment</h4>
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Scale Inhibitors
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Corrosion Inhibitors
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Biocides
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Dispersants
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      pH Control Agents
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Defoamers / Antifoams
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Process Water Treatment */}
+                <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                  <div className="mb-6">
+                    <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Process Water Treatment</h4>
+                  </div>
+                  <p className="text-sm text-white mb-3">(Refining / Petrochemicals)</p>
+                  <ul className="space-y-2">
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Demulsifiers
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Deoilers
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Coagulants
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Flocculants
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      pH Neutralizers
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Cooling Water Treatment */}
-              <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-100">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-zul-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                    </svg>
+              {/* Second Row - 2 Cards Centered */}
+              <div className="flex justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8" style={{ maxWidth: 'calc(66.666667% + 1rem)' }}>
+                  {/* Wastewater Treatment */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <div className="mb-6">
+                      <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Wastewater Treatment & Effluent Polishing</h4>
+                    </div>
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Coagulants & Flocculants
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Activated Carbon / Adsorbents
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Heavy Metal Precipitants
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Nutrient Additives
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Oxidizing Agents
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Defoamers / Odor Control Agents 
+                      </li>
+                    </ul>
                   </div>
-                  <h4 className="font-body helvetica-bold text-zul-green text-lg">Cooling Water Treatment</h4>
-                </div>
-                <ul className="space-y-2">
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Scale Inhibitors
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Corrosion Inhibitors
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Biocides
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Dispersants
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    pH Control Agents
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Defoamers / Antifoams
-                  </li>
-                </ul>
-              </div>
 
-              {/* Process Water Treatment */}
-              <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-100">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-zul-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                    </svg>
+                  {/* Specialty Chemicals */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <div className="mb-6">
+                      <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Specialty Chemicals</h4>
+                    </div>
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Reverse Osmosis (RO) Antiscalants & Cleaning Agents
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Membrane Biocides & Preservatives
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        H₂S Scavengers
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Hydrocarbon Dewatering Agents
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Corrosion Inhibitors (specific for refinery effluent systems)
+                      </li>
+                    </ul>
                   </div>
-                  <h4 className="font-body helvetica-bold text-zul-green text-lg">Process Water Treatment</h4>
                 </div>
-                <p className="text-sm text-zul-grey-dark mb-3">(Refining / Petrochemicals)</p>
-                <ul className="space-y-2">
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Demulsifiers
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Deoilers
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Coagulants
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Flocculants
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    pH Neutralizers
-                  </li>
-                </ul>
-              </div>
-
-              {/* Wastewater Treatment */}
-              <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-100">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-zul-green rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                  </div>
-                  <h4 className="font-body helvetica-bold text-zul-green text-lg">Wastewater Treatment</h4>
-                </div>
-                <p className="text-sm text-zul-grey-dark mb-3">& Effluent Polishing</p>
-                <ul className="space-y-2">
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Coagulants & Flocculants
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Activated Carbon / Adsorbents
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Heavy Metal Precipitants
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Nutrient Additives
-                  </li>
-                  <li className="font-body text-zul-grey-dark flex items-center">
-                    <span className="w-2 h-2 bg-zul-green rounded-full mr-3 flex-shrink-0"></span>
-                    Oxidizing Agents
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

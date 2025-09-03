@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Solutions = () => {
   return (
@@ -59,11 +60,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                    Drilling contractors, oilfield service companies, E&P operators.
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/upstream-chemicals/drilling-fluid-chemicals/water-based-mud-additives"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
             </div>
           </div>
@@ -117,11 +127,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                    Drilling contractors, oilfield service companies, E&P operators in challenging environments.
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/upstream-chemicals/drilling-fluid-chemicals/oil-based-mud-additives"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
             </div>
           </div>
@@ -175,11 +194,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                    Completion service providers, well intervention teams, production engineers.
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/upstream-chemicals/completion-fluids-additives"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
             </div>
           </div>
@@ -233,11 +261,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                    Stimulation service providers, production optimization teams, reservoir engineers.
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/upstream-chemicals/stimulation-chemicals"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
             </div>
           </div>
@@ -291,11 +328,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                    Cementing service providers, drilling contractors, well integrity teams.
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/upstream-chemicals/cementing-additives"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
             </div>
           </div>         
@@ -349,12 +395,21 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                    Production operators, flow assurance teams, maintenance engineers.
-          </p>
-        </div>
+                 </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/upstream-chemicals/production-chemicals"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
+               </div>
             </div>
           </div>
 
@@ -407,11 +462,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                   Industrial facility operators, utilities, water treatment contractors, oil & gas processing plants
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/upstream-chemicals/water-treatment-chemicals"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
               </div>
             </div>
@@ -465,11 +529,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                    Refineries, petrochemical plants, chemical processing facilities.
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/downstream-chemicals/refining-chemicals"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
             </div>
           </div>
@@ -523,11 +596,20 @@ const Solutions = () => {
                  </ul>
                </div>
                
-               <div>
+               <div className="mb-6">
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
                   Industrial facility operators, utilities, water treatment contractors, oil & gas processing plants
                  </p>
+               </div>
+               
+               <div className="mt-auto">
+                 <Link 
+                   href="/products&services/downstream-chemicals/water-treatment-chemicals"
+                   className="inline-flex items-center px-4 py-2 bg-zul-green text-white text-sm font-body helvetica-bold rounded-lg hover:bg-zul-green-dark transition-colors duration-300"
+                 >
+                   Learn More
+                 </Link>
                </div>
               </div>
             </div>

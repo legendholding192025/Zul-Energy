@@ -187,7 +187,7 @@ export default function ContactPage() {
               {/* Mail Us */}
               <div>
                 <h3 className="text-lg font-subhead text-zul-green mb-4">
-                  Mail Us
+                  Email Us
                 </h3>
                 <div className="space-y-2">
                   <p className="text-zul-grey-dark">

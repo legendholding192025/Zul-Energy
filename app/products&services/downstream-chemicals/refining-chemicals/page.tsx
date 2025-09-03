@@ -126,7 +126,17 @@ export default function RefiningChemicalsPage() {
           
           <div className="space-y-16">
             {/* Refining Chemicals Section */}
-            <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-12">
+              {/* Content - Right Side */}
+              <div className="w-full lg:w-1/2">
+                <h3 className="font-subhead text-zul-green mb-6">
+                  Refining Chemicals
+                </h3>
+                <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                  Petroleum refining is the process of converting crude oil into useful petroleum products such as gasoline, diesel, kerosene, jet fuel, lubricants, and petrochemical feedstocks. The refining process involves physical separation (distillation), chemical conversion (cracking, reforming, alkylation), and treatment steps (desulfurization, hydrotreating) to remove impurities and improve product quality. Chemicals play a vital role in enhancing efficiency, protecting equipment, ensuring compliance with environmental regulations, and maximizing yields.
+                </p>
+              </div>
+              
               {/* Image - Left Side */}
               <div className="w-full lg:w-1/2">
                 <div className="relative">
@@ -139,15 +149,118 @@ export default function RefiningChemicalsPage() {
                   </div>
                 </div>
               </div>
-              
-              {/* Content - Right Side */}
-              <div className="w-full lg:w-1/2">
-                <h3 className="font-subhead text-zul-green mb-6">
-                  Refining Chemicals
-                </h3>
-                <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                  are specialized chemicals designed to optimize refinery operations and enhance product quality. Our comprehensive range of refining chemicals addresses the complex challenges faced by modern refineries, from crude oil processing to final product refinement, ensuring operational efficiency and environmental compliance.
-                </p>
+            </div>
+
+            {/* Product Categories Grid */}
+            <div className="space-y-8">
+              {/* First Row - 2 Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Catalysts */}
+                <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                  <div className="mb-6">
+                    <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Catalysts</h4>
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Fluid catalytic cracking (FCC) catalysts
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Hydrocracking catalysts
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Reforming catalysts (platinum, rhenium on alumina)
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Alkylation catalysts (sulfuric acid, hydrofluoric acid)
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Process Chemicals */}
+                <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                  <div className="mb-6">
+                    <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Process Chemicals</h4>
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Sulfuric acid & hydrofluoric acid – alkylation units
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Amine solutions (DEA, MDEA, MEA) – for acid gas removal (CO₂, H₂S)
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Caustic soda (NaOH) – for acid gas scrubbing and neutralization
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Second Row - 2 Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Water Treatment & Utility Chemicals */}
+                <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                  <div className="mb-6">
+                    <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Water Treatment & Utility Chemicals</h4>
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Oxygen scavengers
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Biocides
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Scale inhibitors
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Corrosion inhibitors
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Demulsifiers
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Additives & Specialty Chemicals */}
+                <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                  <div className="mb-6">
+                    <h4 className="font-body helvetica-bold text-zul-yellow text-lg">Additives & Specialty Chemicals</h4>
+                  </div>
+                  <ul className="space-y-2">
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Pour point depressants
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Antioxidants
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Metal deactivators
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Octane boosters
+                    </li>
+                    <li className="font-body text-white flex items-center">
+                      <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                      Cetane improvers
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

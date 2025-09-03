@@ -146,8 +146,106 @@ export default function UpstreamWaterTreatmentChemicalsPage() {
                   Upstream Water Treatment Chemicals
                 </h3>
                 <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                  are specialized formulations designed for upstream oil and gas operations, including drilling, production, and well completion activities. These chemicals help manage water quality in drilling fluids, control scale and corrosion in production systems, and ensure optimal performance of water-based operations throughout the upstream value chain.
+                  In the upstream oil and gas sector, water management plays a critical role in maintaining production efficiency, protecting assets, and meeting environmental compliance. Water treatment chemicals and additives are specifically engineered solutions designed to treat produced water, injection water, and process water across exploration, drilling, and production operations.
                 </p>
+              </div>
+            </div>
+
+            {/* Product List Heading */}
+            <div className="text-center mb-8">
+              <h4 className="font-body helvetica-bold text-zul-green text-2xl">Product List</h4>
+            </div>
+
+            {/* Product List Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Column 1 */}
+              <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                <ul className="space-y-2">
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Defoamer
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Biocide
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Aluminium chloride
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Alum
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Ferrous sulfate
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Ferric chloride
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 2 */}
+              <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                <ul className="space-y-2">
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    DADMAC
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Anionic PAM
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Cationic PAM
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    PHPA
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Corrosion Inhibitor
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    TRIO PAC
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 3 */}
+              <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                <ul className="space-y-2">
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Sodium Hydroxide
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Magnesium hydroxide
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Hydrochloric acid
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Chlorine dioxide
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Oxygen Scavenger
+                  </li>
+                  <li className="font-body text-white flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                    Scale Inhibitor
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

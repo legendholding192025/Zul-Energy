@@ -145,14 +145,76 @@ export default function ProductionChemicalsPage() {
                     <h3 className="font-subhead text-zul-green mb-6">
                       Production Chemicals
                     </h3>
-              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                These additives help improve production efficiency, mitigate production challenges, and ensure the smooth flow of hydrocarbons. Their use helps optimize production operations, maximize productivity, and ensure the efficient and cost-effective extraction of hydrocarbon resources.
-              </p>
+                    <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                      These additives help improve production efficiency, mitigate production challenges, and ensure the smooth flow of hydrocarbons. Their use helps optimize production operations, maximize productivity, and ensure the efficient and cost-effective extraction of hydrocarbon resources.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Product List Heading */}
+                <div className="text-center mb-8">
+                  <h4 className="font-body helvetica-bold text-zul-green text-2xl">Product List</h4>
+                </div>
+
+                {/* Product List Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {/* Column 1 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Corrosion Inhibitors
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Defoamer
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Biocide
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 2 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Anti Sludge Agent
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Oxygen Scavenger
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        H₂S Scavenger
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 3 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Surfactants
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Drag Reducing Agents
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Demulsifiers
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-             </div>
-     </section>
+          </section>
 
                                                                                                {/* New Section with CDN Image */}
          <section className="py-20 bg-gray-100">

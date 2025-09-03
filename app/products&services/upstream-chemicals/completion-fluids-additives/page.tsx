@@ -145,14 +145,80 @@ export default function CompletionFluidsAdditivesPage() {
                     <h3 className="font-subhead text-zul-green mb-6">
                       Completion Fluids Additives
                     </h3>
-              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                Oilwell completion fluid chemical additives are substances used in the formulation of completion fluids, which are fluids used during the final stages of oil and gas well drilling and completion. These additives serve different functions, including preventing formation damage, controlling fluid loss, reducing friction, inhibiting corrosion, providing viscosity control, enhancing fluid stability, and facilitating well clean-up. They play a critical role in ensuring successful well completion and maximizing production efficiency.
-              </p>
+                    <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                      Oilwell completion fluid chemical additives are substances used in the formulation of completion fluids, which are fluids used during the final stages of oil and gas well drilling and completion. These additives serve different functions, including preventing formation damage, controlling fluid loss, reducing friction, inhibiting corrosion, providing viscosity control, enhancing fluid stability, and facilitating well clean-up. They play a critical role in ensuring successful well completion and maximizing production efficiency.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Product List Heading */}
+                <div className="text-center mb-8">
+                  <h4 className="font-body helvetica-bold text-zul-green text-2xl">Key Product List</h4>
+                </div>
+
+                {/* Product List Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {/* Column 1 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Brine Corrosion Inhibitors
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Biocides
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Oxygen Scavengers
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Defoamers
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 2 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Lost Circulation Materials
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        pH Adjusters
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Salts
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Fluid Loss Control Additives
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Column 3 */}
+                  <div className="bg-zul-green rounded-3xl shadow-lg p-8 border border-gray-100">
+                    <ul className="space-y-2">
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Scale Inhibitors
+                      </li>
+                      <li className="font-body text-white flex items-center">
+                        <span className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                        Clay Stabilizers
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-             </div>
-     </section>
+          </section>
 
                                                                                                {/* New Section with CDN Image */}
          <section className="py-20 bg-gray-100">
