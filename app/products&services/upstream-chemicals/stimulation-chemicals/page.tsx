@@ -1,12 +1,12 @@
 "use client"
 
 import React from 'react'
-import Header from '../../../components/Header'
-import Hero from '../../../components/Hero'
-import ContactUs from '../../../components/ContactUs'
-import Footer from '../../../components/Footer'
+import Header from '../../../../components/Header'
+import Hero from '../../../../components/Hero'
+import ContactUs from '../../../../components/ContactUs'
+import Footer from '../../../../components/Footer'
 
-export default function CompletionFluidsAdditivesPage() {
+export default function StimulationChemicalsPage() {
   return (
     <main className="overflow-x-hidden">
       <Header />
@@ -24,7 +24,7 @@ export default function CompletionFluidsAdditivesPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-left">
             <h1 className="font-headline mb-0 text-white">
-              COMPLETION FLUIDS ADDITIVES
+              STIMULATION CHEMICALS
             </h1>
             <h2 className="font-headline mb-0 text-zul-yellow">
               OPTIMIZED PERFORMANCE
@@ -33,7 +33,7 @@ export default function CompletionFluidsAdditivesPage() {
               FOR EFFICIENT
             </p>
             <p className="font-headline mb-8 text-white">
-              SAFE COMPLETION OPERATIONS
+              SAFE STIMULATION OPERATIONS
             </p>
             <button 
               onClick={() => {
@@ -132,8 +132,8 @@ export default function CompletionFluidsAdditivesPage() {
                     <div className="relative">
                       <div className="w-96 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                         <img
-                          src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
-                          alt="Completion Fluids Additives Product"
+                          src="https://cdn.legendholding.com/images/cdn_68a55e2bda07d8.54791929_20250820_053331.webp"
+                          alt="Stimulation Chemicals Product"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -143,10 +143,10 @@ export default function CompletionFluidsAdditivesPage() {
                   {/* Content - Right Side */}
                   <div className="w-full lg:w-1/2">
                     <h3 className="font-subhead text-zul-green mb-6">
-                      Completion Fluids Additives
+                      Stimulation Additives
                     </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                Oilwell completion fluid chemical additives are substances used in the formulation of completion fluids, which are fluids used during the final stages of oil and gas well drilling and completion. These additives serve different functions, including preventing formation damage, controlling fluid loss, reducing friction, inhibiting corrosion, providing viscosity control, enhancing fluid stability, and facilitating well clean-up. They play a critical role in ensuring successful well completion and maximizing production efficiency.
+                Acidization is a well stimulation technique that involves pumping acid into the wellbore and formation to dissolve or remove materials that may impede the flow of hydrocarbons. These chemical additives are designed to enhance the effectiveness and efficiency of the acidizing process. They contribute to the overall effectiveness and success of the acidizing treatment by optimizing the acid's performance and mitigating potential issues.
               </p>
             </div>
           </div>

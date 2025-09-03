@@ -31,7 +31,7 @@ const Solutions = () => {
                   {/* Content - Right Side */}
                   <div className="w-full lg:w-1/2">
                     <h3 className="font-subhead text-zul-green mb-6">
-                      Drilling Mud Chemicals
+                      Water Based Mud Additives
                     </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
                 Engineered formulations to optimize drilling fluid performance and ensure efficient, safe wellbore operations.
@@ -71,15 +71,15 @@ const Solutions = () => {
           {/* Yellow separator line */}
           <div className="w-full h-px bg-zul-yellow my-8"></div>
 
-          {/* Cementing Additives Section */}
+          {/* Oil Based Mud Additives Section */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
                 <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_68a55dcf0f9b39.36102089_20250820_053159.webp"
-                    alt="Cementing Additives"
+                    src="https://cdn.legendholding.com/images/cdn_68a565133a1568.04754394_20250820_060259.webp"
+                    alt="Oil Based Mud Additives"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -89,10 +89,10 @@ const Solutions = () => {
             {/* Content - Left Side */}
             <div className="w-full lg:w-1/2">
               <h3 className="font-subhead text-zul-green mb-6">
-                Cementing Additives
+                Oil Based Mud Additives
               </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                Specialized chemical solutions to enhance cement slurry performance and maintain long-term well integrity.
+                Advanced oil-based drilling fluid additives designed for challenging drilling environments, providing superior performance in high-temperature and high-pressure conditions.
               </p>
               
                 <div className="mb-6">
@@ -100,19 +100,19 @@ const Solutions = () => {
                  <ul className="space-y-2">
                    <li className="font-body text-zul-grey-dark flex items-start">
                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Control cement setting time for various operational needs
+                     Superior shale inhibition and wellbore stability
                    </li>
                    <li className="font-body text-zul-grey-dark flex items-start">
                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Improve compressive strength and bonding with casing and formation
+                     Excellent thermal stability in high-temperature environments
                    </li>
                    <li className="font-body text-zul-grey-dark flex items-start">
                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Prevent gas migration and channeling during setting
+                     Enhanced lubricity for reduced torque and drag
                    </li>
                    <li className="font-body text-zul-grey-dark flex items-start">
                      <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                     Enhance zonal isolation and durability of the cement sheath
+                     Improved drilling efficiency and rate of penetration
                    </li>
                  </ul>
                </div>
@@ -120,7 +120,7 @@ const Solutions = () => {
                <div>
                  <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
                  <p className="font-body text-zul-grey-dark">
-                   Cementing service providers, drilling contractors, well integrity teams.
+                   Drilling contractors, oilfield service companies, E&P operators in challenging environments.
                  </p>
                </div>
             </div>
@@ -245,9 +245,67 @@ const Solutions = () => {
           {/* Yellow separator line */}
           <div className="w-full h-px bg-zul-yellow my-8"></div>
 
-          {/* Production Chemicals Section */}
+          {/* Cementing Additives Section */}
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image - Left Side */}
+            <div className="w-full lg:w-1/2">
+              <div className="relative">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_68a55dcf0f9b39.36102089_20250820_053159.webp"
+                    alt="Cementing Additives"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Content - Right Side */}
+            <div className="w-full lg:w-1/2">
+              <h3 className="font-subhead text-zul-green mb-6">
+                Cementing Additives
+              </h3>
+              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                Specialized chemical solutions to enhance cement slurry performance and maintain long-term well integrity.
+              </p>
+              
+                <div className="mb-6">
+                 <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
+                 <ul className="space-y-2">
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Control cement setting time for various operational needs
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Improve compressive strength and bonding with casing and formation
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Prevent gas migration and channeling during setting
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Enhance zonal isolation and durability of the cement sheath
+                   </li>
+                 </ul>
+               </div>
+               
+               <div>
+                 <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
+                 <p className="font-body text-zul-grey-dark">
+                   Cementing service providers, drilling contractors, well integrity teams.
+                 </p>
+               </div>
+            </div>
+          </div>         
+
+          {/* Yellow separator line */}
+          <div className="w-full h-px bg-zul-yellow my-8"></div>
+
+          {/* Production Chemicals Section */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+            {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
                 <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
@@ -260,7 +318,7 @@ const Solutions = () => {
               </div>
             </div>
             
-            {/* Content - Right Side */}
+            {/* Content - Left Side */}
             <div className="w-full lg:w-1/2">
               <h3 className="font-subhead text-zul-green mb-6">
                 Production Chemicals
@@ -304,8 +362,8 @@ const Solutions = () => {
           <div className="w-full h-px bg-zul-yellow my-8"></div>
 
           {/* Water Treatment Chemicals Section */}
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
-            {/* Image - Right Side */}
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
                 <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
@@ -318,7 +376,7 @@ const Solutions = () => {
               </div>
             </div>
             
-            {/* Content - Left Side */}
+            {/* Content - Right Side */}
             <div className="w-full lg:w-1/2">
               <h3 className="font-subhead text-zul-green mb-6">
                 Water Treatment Chemicals
@@ -357,6 +415,123 @@ const Solutions = () => {
                </div>
               </div>
             </div>
+
+          {/* Yellow separator line */}
+          <div className="w-full h-px bg-zul-yellow my-8"></div>
+
+          {/* Refining Chemicals Section */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+            {/* Image - Right Side */}
+            <div className="w-full lg:w-1/2">
+              <div className="relative">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_68a55c335d1b45.35797777_20250820_052507.webp"
+                    alt="Refining Chemicals"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Content - Left Side */}
+            <div className="w-full lg:w-1/2">
+              <h3 className="font-subhead text-zul-green mb-6">
+                Refining Chemicals
+              </h3>
+              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                Advanced chemical solutions designed to optimize refinery operations, enhance product quality, and ensure operational efficiency across all refining processes.
+              </p>
+              
+                <div className="mb-6">
+                 <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
+                 <ul className="space-y-2">
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Enhanced crude oil desalting and desulfurization processes
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Improved catalyst performance and longevity
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Advanced corrosion inhibition and protection systems
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                     Optimized heat transfer and fouling control
+                   </li>
+                 </ul>
+               </div>
+               
+               <div>
+                 <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
+                 <p className="font-body text-zul-grey-dark">
+                   Refineries, petrochemical plants, chemical processing facilities.
+                 </p>
+               </div>
+            </div>
+          </div>
+
+           {/* Yellow separator line */}
+           <div className="w-full h-px bg-zul-yellow my-8"></div>
+
+          {/* Water Treatment Chemicals Section */}
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Image - Left Side */}
+            <div className="w-full lg:w-1/2">
+              <div className="relative">
+                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                  <img
+                    src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
+                    alt="Water Treatment Chemicals"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Content - Right Side */}
+            <div className="w-full lg:w-1/2">
+              <h3 className="font-subhead text-zul-green mb-6">
+                Water Treatment Chemicals
+                </h3>
+              <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                Comprehensive range of industrial water treatment chemicals to protect systems and meet regulatory requirements.
+              </p>
+              
+                <div className="mb-6">
+                 <h4 className="font-body helvetica-bold text-zul-green mb-3">Benefits</h4>
+                 <ul className="space-y-2">
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Control scaling, fouling, and corrosion in water systems
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Provide microbial control with biocides and disinfectants
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Optimize performance of boilers, cooling towers, and injection systems
+                   </li>
+                   <li className="font-body text-zul-grey-dark flex items-start">
+                     <span className="w-2 h-2 bg-zul-green rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      Ensure compliance with environmental discharge standards
+                   </li>
+                 </ul>
+               </div>
+               
+               <div>
+                 <h4 className="font-body helvetica-bold text-zul-green mb-2">Uses</h4>
+                 <p className="font-body text-zul-grey-dark">
+                  Industrial facility operators, utilities, water treatment contractors, oil & gas processing plants
+                 </p>
+               </div>
+              </div>
+            </div>
+          
         </div>
       </div>
     </section>

@@ -1,12 +1,12 @@
 "use client"
 
 import React from 'react'
-import Header from '../../../components/Header'
-import Hero from '../../../components/Hero'
-import ContactUs from '../../../components/ContactUs'
-import Footer from '../../../components/Footer'
+import Header from '../../../../components/Header'
+import Hero from '../../../../components/Hero'
+import ContactUs from '../../../../components/ContactUs'
+import Footer from '../../../../components/Footer'
 
-export default function ProductionChemicalsPage() {
+export default function CementingAdditivesPage() {
   return (
     <main className="overflow-x-hidden">
       <Header />
@@ -24,7 +24,7 @@ export default function ProductionChemicalsPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-left">
             <h1 className="font-headline mb-0 text-white">
-              PRODUCTION CHEMICALS
+              CEMENTING ADDITIVES
             </h1>
             <h2 className="font-headline mb-0 text-zul-yellow">
               OPTIMIZED PERFORMANCE
@@ -33,7 +33,7 @@ export default function ProductionChemicalsPage() {
               FOR EFFICIENT
             </p>
             <p className="font-headline mb-8 text-white">
-              SAFE PRODUCTION OPERATIONS
+              SAFE CEMENTING OPERATIONS
             </p>
             <button 
               onClick={() => {
@@ -132,8 +132,8 @@ export default function ProductionChemicalsPage() {
                     <div className="relative">
                       <div className="w-96 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                         <img
-                          src="https://cdn.legendholding.com/images/cdn_68a55e5cd63997.17536611_20250820_053420.webp"
-                          alt="Production Chemicals Product"
+                          src="https://cdn.legendholding.com/images/cdn_68a55dcf0f9b39.36102089_20250820_053159.webp"
+                          alt="Cementing Additives Product"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -143,10 +143,10 @@ export default function ProductionChemicalsPage() {
                   {/* Content - Right Side */}
                   <div className="w-full lg:w-1/2">
                     <h3 className="font-subhead text-zul-green mb-6">
-                      Production Chemicals
+                      Cementing Additives
                     </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                These additives help improve production efficiency, mitigate production challenges, and ensure the smooth flow of hydrocarbons. Their use helps optimize production operations, maximize productivity, and ensure the efficient and cost-effective extraction of hydrocarbon resources.
+                These additives serve various purposes and help enhance the properties of the cement, ensuring a reliable and effective wellbore seal. Common types of oilwell cementing additives include retarders, accelerators, dispersants, fluid loss additives, anti-gas migration agents, strength enhancers, and defoamers. These additives help control setting time, improve cement flowability, reduce fluid loss, prevent gas migration, enhance cement strength, and address other challenges encountered during the cementing process.
               </p>
             </div>
           </div>

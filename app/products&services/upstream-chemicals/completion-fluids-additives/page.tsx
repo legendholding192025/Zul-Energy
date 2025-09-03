@@ -1,12 +1,12 @@
 "use client"
 
 import React from 'react'
-import Header from '../../../components/Header'
-import Hero from '../../../components/Hero'
-import ContactUs from '../../../components/ContactUs'
-import Footer from '../../../components/Footer'
+import Header from '../../../../components/Header'
+import Hero from '../../../../components/Hero'
+import ContactUs from '../../../../components/ContactUs'
+import Footer from '../../../../components/Footer'
 
-export default function CementingAdditivesPage() {
+export default function CompletionFluidsAdditivesPage() {
   return (
     <main className="overflow-x-hidden">
       <Header />
@@ -24,7 +24,7 @@ export default function CementingAdditivesPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-left">
             <h1 className="font-headline mb-0 text-white">
-              CEMENTING ADDITIVES
+              COMPLETION FLUIDS ADDITIVES
             </h1>
             <h2 className="font-headline mb-0 text-zul-yellow">
               OPTIMIZED PERFORMANCE
@@ -33,7 +33,7 @@ export default function CementingAdditivesPage() {
               FOR EFFICIENT
             </p>
             <p className="font-headline mb-8 text-white">
-              SAFE CEMENTING OPERATIONS
+              SAFE COMPLETION OPERATIONS
             </p>
             <button 
               onClick={() => {
@@ -132,8 +132,8 @@ export default function CementingAdditivesPage() {
                     <div className="relative">
                       <div className="w-96 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                         <img
-                          src="https://cdn.legendholding.com/images/cdn_68a55dcf0f9b39.36102089_20250820_053159.webp"
-                          alt="Cementing Additives Product"
+                          src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
+                          alt="Completion Fluids Additives Product"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -143,10 +143,10 @@ export default function CementingAdditivesPage() {
                   {/* Content - Right Side */}
                   <div className="w-full lg:w-1/2">
                     <h3 className="font-subhead text-zul-green mb-6">
-                      Cementing Additives
+                      Completion Fluids Additives
                     </h3>
               <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
-                These additives serve various purposes and help enhance the properties of the cement, ensuring a reliable and effective wellbore seal. Common types of oilwell cementing additives include retarders, accelerators, dispersants, fluid loss additives, anti-gas migration agents, strength enhancers, and defoamers. These additives help control setting time, improve cement flowability, reduce fluid loss, prevent gas migration, enhance cement strength, and address other challenges encountered during the cementing process.
+                Oilwell completion fluid chemical additives are substances used in the formulation of completion fluids, which are fluids used during the final stages of oil and gas well drilling and completion. These additives serve different functions, including preventing formation damage, controlling fluid loss, reducing friction, inhibiting corrosion, providing viscosity control, enhancing fluid stability, and facilitating well clean-up. They play a critical role in ensuring successful well completion and maximizing production efficiency.
               </p>
             </div>
           </div>

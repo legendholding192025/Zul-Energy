@@ -184,35 +184,35 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                                    >
                                                                                <div className="p-3">
                                           <ul className="space-y-1">
-                                            <li><a href="/products/water-based-mud-additives" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Water Based Mud Additives</a></li>
-                                            <li><a href="/products/oil-based-mud-additives" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Oil Based Mud Additives</a></li>
+                                            <li><a href="/products&services/upstream-chemicals/drilling-fluid-chemicals/water-based-mud-additives" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Water Based Mud Additives</a></li>
+                                            <li><a href="/products&services/upstream-chemicals/drilling-fluid-chemicals/oil-based-mud-additives" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Oil Based Mud Additives</a></li>
                                           </ul>
                                         </div>
                                      </div>
                                    )}
                          </li>
                                  <li><a 
-                                   href="/products/completion-fluids-additives" 
+                                   href="/products&services/upstream-chemicals/completion-fluids-additives" 
                                    className="text-sm text-gray-600 hover:text-zul-yellow block py-1"
                                    onMouseEnter={() => setSubNestedDropdowns(prev => ({ ...prev, drillingSub: false }))}
                                  >Completion Fluid Chemicals</a></li>
                                  <li><a 
-                                   href="/products/stimulation-chemicals" 
+                                   href="/products&services/upstream-chemicals/stimulation-chemicals" 
                                    className="text-sm text-gray-600 hover:text-zul-yellow block py-1"
                                    onMouseEnter={() => setSubNestedDropdowns(prev => ({ ...prev, drillingSub: false }))}
                                  >Stimulation Chemicals</a></li>
                                  <li><a 
-                                   href="/products/cementing-additives" 
+                                   href="/products&services/upstream-chemicals/cementing-additives" 
                                    className="text-sm text-gray-600 hover:text-zul-yellow block py-1"
                                    onMouseEnter={() => setSubNestedDropdowns(prev => ({ ...prev, drillingSub: false }))}
                                  >Cementing Chemicals</a></li>
                                  <li><a 
-                                   href="/products/production-chemicals" 
+                                   href="/products&services/upstream-chemicals/production-chemicals" 
                                    className="text-sm text-gray-600 hover:text-zul-yellow block py-1"
                                    onMouseEnter={() => setSubNestedDropdowns(prev => ({ ...prev, drillingSub: false }))}
                                  >Production Chemicals</a></li>
                                  <li><a 
-                                   href="/products/water-treatment-chemicals" 
+                                   href="/products&services/upstream-chemicals/water-treatment-chemicals" 
                                    className="text-sm text-gray-600 hover:text-zul-yellow block py-1"
                                    onMouseEnter={() => setSubNestedDropdowns(prev => ({ ...prev, drillingSub: false }))}
                                  >Water Treatment Chemicals</a></li>
@@ -249,8 +249,8 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                              >
                                                                <div className="p-3">
                                                                                                       <ul className="space-y-1">
-                                    <li><a href="/products/refining-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Refining Chemicals</a></li>
-                                    <li><a href="/products/water-treatment-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Water Treatment Chemicals</a></li>
+                                    <li><a href="/products&services/downstream-chemicals/refining-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Refining Chemicals</a></li>
+                                    <li><a href="/products&services/downstream-chemicals/water-treatment-chemicals" className="text-sm text-gray-600 hover:text-zul-yellow block py-1">Water Treatment Chemicals</a></li>
                                   </ul>
                     </div>
                              </div>
@@ -342,15 +342,7 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                            Brochures
                          </a>
                        </li>
-                                                                       <li>
-                         <a href="/case-studies" className={`text-sm block py-1 transition-colors ${
-                           isActive('/case-studies') 
-                             ? 'text-zul-yellow' 
-                             : 'text-gray-600 hover:text-zul-yellow'
-                         }`}>
-                           Case Studies
-                         </a>
-                          </li>
+                                                
                           <li>
                             <a href="/datasheets" className={`text-sm block py-1 transition-colors ${
                               isActive('/datasheets') 
@@ -459,16 +451,17 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                                    </button>
                                                                        {mobileSolutionsOpen.drilling && (
                                       <div className="pl-4 space-y-1 mt-2">
-                                        <a href="/products/water-based-mud-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Based Mud Additives</a>
-                                        <a href="/products/oil-based-mud-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Oil Based Mud Additives</a>
+                                        <a href="/products&services/upstream-chemicals/drilling-fluid-chemicals/water-based-mud-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Based Mud Additives</a>
+                                        <a href="/products&services/upstream-chemicals/drilling-fluid-chemicals/oil-based-mud-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Oil Based Mud Additives</a>
                                       </div>
                                     )}
                                  </div>
-                                 <a href="/products/completion-fluids-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Completion Fluid Chemicals</a>
-                                 <a href="/products/cementing-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Cementing Chemicals</a>
-                               <a href="/products/stimulation-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Stimulation Chemicals</a>
-                               <a href="/products/production-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Production Chemicals</a>
-                               <a href="/products/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
+                                 <a href="/products&services/upstream-chemicals/completion-fluids-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Completion Fluid Chemicals</a>
+                                 <a href="/products&services/upstream-chemicals/cementing-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Cementing Chemicals</a>
+                               <a href="/products&services/upstream-chemicals/stimulation-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Stimulation Chemicals</a>
+                               <a href="/products&services/upstream-chemicals/production-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Production Chemicals</a>
+                               <a href="/products&services/upstream-chemicals/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
+                               <a href="/products&services/downstream-chemicals/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
                        </div>
                            )}
                      </div>
@@ -486,8 +479,8 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                            </button>
                                                        {mobileSolutionsOpen.downstream && (
                               <div className="pl-4 space-y-1 mt-2">
-                                <a href="/products/refining-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Refining Chemicals</a>
-                                <a href="/products/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
+                                <a href="/products&services/downstream-chemicals/refining-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Refining Chemicals</a>
+                                <a href="/products&services/downstream-chemicals/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
                               </div>
                             )}
                          </div>
@@ -531,16 +524,7 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                      >
                        Brochures
                      </a>
-                     <a 
-                       href="/case-studies" 
-                       className={`block text-sm py-1 transition-colors ${
-                         isActive('/case-studies') 
-                           ? 'text-zul-yellow bg-zul-yellow bg-opacity-10 px-2 rounded' 
-                           : 'text-zul-grey-dark hover:text-zul-green'
-                       }`}
-                     >
-                       Case Studies
-                     </a>
+
                      <a 
                        href="/datasheets" 
                        className={`block text-sm py-1 transition-colors ${

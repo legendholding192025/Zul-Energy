@@ -1,10 +1,10 @@
 "use client"
 
 import React from 'react'
-import Header from '../../../components/Header'
-import Hero from '../../../components/Hero'
-import ContactUs from '../../../components/ContactUs'
-import Footer from '../../../components/Footer'
+import Header from '../../../../components/Header'
+import Hero from '../../../../components/Hero'
+import ContactUs from '../../../../components/ContactUs'
+import Footer from '../../../../components/Footer'
 
 export default function RefiningChemicalsPage() {
   return (
@@ -113,111 +113,96 @@ export default function RefiningChemicalsPage() {
           </div>
         </div>
       </section>
-      
-      {/* Product Section */}
-      <section className="py-20 bg-gray-50">
+
+      <section id="solutions" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Content */}
-            <div>
-              <h2 className="font-headline text-zul-grey-dark mb-6">
-                Advanced Refining Chemical Solutions
-              </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Our comprehensive range of refining chemicals is designed to optimize refinery operations, enhance product quality, and ensure operational efficiency. From crude oil processing to final product refinement, our solutions address the complex challenges faced by modern refineries.
-              </p>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                With over 10+ years of experience in the industry, we provide innovative chemical solutions that improve yield, reduce energy consumption, and maintain the highest standards of safety and environmental compliance.
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-zul-green rounded-full mr-3"></div>
-                  <span className="text-gray-700">Enhanced crude oil desalting and desulfurization</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-zul-green rounded-full mr-3"></div>
-                  <span className="text-gray-700">Improved catalyst performance and longevity</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-zul-green rounded-full mr-3"></div>
-                  <span className="text-gray-700">Advanced corrosion inhibition and protection</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-zul-green rounded-full mr-3"></div>
-                  <span className="text-gray-700">Optimized heat transfer and fouling control</span>
+          <div className="text-center mb-16">
+            <h2 className="font-headline text-zul-grey-dark mb-4">
+              Product
+            </h2>
+            {/* Yellow underline */}
+            <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+          </div>
+          
+          <div className="space-y-16">
+            {/* Refining Chemicals Section */}
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              {/* Image - Left Side */}
+              <div className="w-full lg:w-1/2">
+                <div className="relative">
+                  <div className="w-96 h-80 mx-auto bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg overflow-hidden">
+                    <img
+                      src="https://cdn.legendholding.com/images/cdn_68a55c335d1b45.35797777_20250820_052507.webp"
+                      alt="Refining Chemicals Product"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            {/* Right Column - Image */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8">
-                <img
-                  src="https://cdn.legendholding.com/images/cdn_68a55c335d1b45.35797777_20250820_052507.webp"
-                  alt="Refining Chemical Solutions"
-                  className="w-full h-80 rounded-lg object-cover shadow-lg"
-                />
+              
+              {/* Content - Right Side */}
+              <div className="w-full lg:w-1/2">
+                <h3 className="font-subhead text-zul-green mb-6">
+                  Refining Chemicals
+                </h3>
+                <p className="font-body text-zul-grey-dark mb-6 leading-relaxed">
+                  are specialized chemicals designed to optimize refinery operations and enhance product quality. Our comprehensive range of refining chemicals addresses the complex challenges faced by modern refineries, from crude oil processing to final product refinement, ensuring operational efficiency and environmental compliance.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Method of Work Section */}
-      <section className="py-20 bg-white">
+      {/* New Section with CDN Image */}
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Heading */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-24">
             <h2 className="font-headline text-zul-grey-dark mb-4">
-              Our Method of Work
+              Method of Work
             </h2>
             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
           </div>
           
-          {/* Workflow Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Step 1 */}
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-zul-green rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">1</span>
+          <div className="flex justify-center mb-16">
+            <div className="relative">
+              {/* R&D Formulation - Top Right */}
+              <div className="absolute -top-16 -right-12 md:-top-16 md:-right-20 lg:-top-20 lg:-right-28 text-right max-w-24 md:max-w-40">
+                <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">R&D Formulation</h4>
+                <p className="text-[10px] md:text-xs text-zul-grey-dark">Develop water-based solutions based on mud properties, required mud weight, and fluid loss limits</p>
               </div>
-              <h3 className="font-body font-semibold text-zul-grey-dark mb-2">Assessment</h3>
-              <p className="text-gray-600 text-sm">
-                Comprehensive analysis of refinery processes and chemical requirements
-              </p>
-            </div>
-            
-            {/* Step 2 */}
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-zul-green rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">2</span>
+
+              {/* Mud Testing - Right Side */}
+              <div className="absolute top-2/3 -right-16 md:top-2/3 md:-right-28 lg:-right-36 text-right max-w-24 md:max-w-40">
+                <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Mud Testing</h4>
+                <p className="text-[10px] md:text-xs text-zul-grey-dark">Water-based mud conditioning & testing / Prepare and evaluate formulations at the mud plant or rig site</p>
               </div>
-              <h3 className="font-body font-semibold text-zul-grey-dark mb-2">Solution Design</h3>
-              <p className="text-gray-600 text-sm">
-                Custom chemical formulations tailored to specific refinery needs
-              </p>
-            </div>
-            
-            {/* Step 3 */}
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-zul-green rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">3</span>
+
+              {/* Tailor-Made Production - Bottom */}
+              <div className="absolute -bottom-24 md:-bottom-28 lg:-bottom-32 left-1/2 transform -translate-x-1/2 text-center max-w-24 md:max-w-40">
+                <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Tailor-Made Production</h4>
+                <p className="text-[10px] md:text-xs text-zul-grey-dark">Manufacture customized water-based chemical blends to meet specific customer requirements</p>
               </div>
-              <h3 className="font-body font-semibold text-zul-grey-dark mb-2">Implementation</h3>
-              <p className="text-gray-600 text-sm">
-                Professional deployment and monitoring of chemical solutions
-              </p>
-            </div>
-            
-            {/* Step 4 */}
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-zul-green rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">4</span>
+
+              {/* Q&A Improvement - Left Side */}
+              <div className="absolute top-2/3 -left-16 md:top-2/3 md:-left-28 lg:-left-36 text-left max-w-24 md:max-w-40">
+                <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Q&A Improvement</h4>
+                <p className="text-[10px] md:text-xs text-zul-grey-dark">Quality Control & Continuous Improvement / Monitor performance during operations and refine as needed for optimal results</p>
               </div>
-              <h3 className="font-body font-semibold text-zul-grey-dark mb-2">Optimization</h3>
-              <p className="text-gray-600 text-sm">
-                Continuous improvement and performance enhancement
-              </p>
+
+              {/* Plant Visit - Top Left */}
+              <div className="absolute -top-16 -left-12 md:-top-16 md:-left-20 lg:-top-20 lg:-left-28 text-left max-w-24 md:max-w-40">
+                <h4 className="hidden md:block text-xs md:text-sm font-medium text-zul-green mb-1">Plant Visit</h4>
+                <p className="text-[10px] md:text-xs text-zul-grey-dark">Site Visit & Sample Collection / Assess operational conditions and collect representative water-based mud samples</p>
+              </div>
+
+              <img 
+                src="https://cdn.legendholding.com/images/cdn_68a310e295aa74.07885346_20250818_113914.webp"
+                alt="Water Based Mud Additives Product"
+                className="max-w-full h-auto rounded-lg object-contain max-h-[250px] md:max-h-[400px] lg:max-h-[600px]"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
