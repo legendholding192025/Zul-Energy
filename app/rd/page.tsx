@@ -37,73 +37,93 @@ export default function RDPage() {
             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* In-house Laboratory Testing */}
-            <div className="text-center">
-              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                         <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[380px] border border-gray-100 flex flex-col">
+              {/* Image */}
+              <div className="h-64 rounded-t-xl overflow-hidden flex-shrink-0">
                 <img 
                   src="https://cdn.legendholding.com/images/cdn_68a5617350c1c8.45219062_20250820_054731.webp" 
-                  alt="Oil drilling rig at sunset" 
+                  alt="In-house Laboratory Testing" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-zul-green mb-2 font-semibold">
-                In-house Laboratory Testing
-              </h3>
-              <p className="text-zul-grey-dark text-xs">
-                Advanced equipment to replicate downhole conditions (temperature, pressure, salinity)
-              </p>
+              
+              {/* Content */}
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-subhead text-zul-green mb-2 text-base flex-shrink-0">
+                  In-house Laboratory Testing
+                </h3>
+                <p className="font-body text-zul-grey-dark leading-relaxed text-sm flex-1 overflow-hidden">
+                  Advanced equipment to replicate downhole conditions (temperature, pressure, salinity)
+                </p>
+              </div>
             </div>
             
             {/* Custom Formulation */}
-            <div className="text-center">
-              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                         <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[380px] border border-gray-100 flex flex-col">
+              {/* Image */}
+              <div className="h-64 rounded-t-xl overflow-hidden flex-shrink-0">
                 <img 
                   src="https://cdn.legendholding.com/images/cdn_68a561d2b95ad5.26167432_20250820_054906.webp" 
-                  alt="Oil pumpjack in snowy landscape" 
+                  alt="Custom Formulation" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-zul-green mb-2 font-semibold">
-                Custom Formulation
-              </h3>
-              <p className="text-zul-grey-dark text-xs">
-                Developing chemicals suited to unique field challenges
-              </p>
+              
+              {/* Content */}
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-subhead text-zul-green mb-2 text-base flex-shrink-0">
+                  Custom Formulation
+                </h3>
+                <p className="font-body text-zul-grey-dark leading-relaxed text-sm flex-1 overflow-hidden">
+                  Developing chemicals suited to unique field challenges
+                </p>
+              </div>
             </div>
             
             {/* Field Simulation */}
-            <div className="text-center">
-              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                         <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[380px] border border-gray-100 flex flex-col">
+              {/* Image */}
+              <div className="h-64 rounded-t-xl overflow-hidden flex-shrink-0">
                 <img 
                   src="https://cdn.legendholding.com/images/cdn_68a563173006d7.16515658_20250820_055431.webp" 
-                  alt="Offshore oil rig in ocean" 
+                  alt="Field Simulation" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-zul-green mb-2 font-semibold">
-                Field Simulation
-              </h3>
-              <p className="text-zul-grey-dark text-xs">
-                Testing in controlled environments before deployment
-              </p>
+              
+              {/* Content */}
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-subhead text-zul-green mb-2 text-base flex-shrink-0">
+                  Field Simulation
+                </h3>
+                <p className="font-body text-zul-grey-dark leading-relaxed text-sm flex-1 overflow-hidden">
+                  Testing in controlled environments before deployment
+                </p>
+              </div>
             </div>
             
             {/* Rapid Response */}
-            <div className="text-center">
-              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                         <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-[380px] border border-gray-100 flex flex-col">
+              {/* Image */}
+              <div className="h-64 rounded-t-xl overflow-hidden flex-shrink-0">
                 <img 
                   src="https://cdn.legendholding.com/images/cdn_68a56344f16dc0.38864538_20250820_055516.webp" 
-                  alt="Underwater pipeline on seabed" 
+                  alt="Rapid Response" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-zul-green mb-2 font-semibold">
-                Rapid Response
-              </h3>
-              <p className="text-zul-grey-dark text-xs">
-                Fast turnaround for urgent operational needs
-              </p>
+              
+              {/* Content */}
+              <div className="p-4 flex-1 flex flex-col">
+                <h3 className="font-subhead text-zul-green mb-2 text-base flex-shrink-0">
+                  Rapid Response
+                </h3>
+                <p className="font-body text-zul-grey-dark leading-relaxed text-sm flex-1 overflow-hidden">
+                  Fast turnaround for urgent operational needs
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -176,8 +196,8 @@ export default function RDPage() {
                     <span className="hidden lg:block">Formulation & Testing</span>
                   </h3>
                   <p className="text-[clamp(9px,3vw,12px)] text-zul-grey-dark">
-                    <span className="block lg:hidden">Develop prototype solutions<br />and test in lab/field</span>
-                    <span className="hidden lg:block">Develop prototype solutions and test in lab/field</span>
+                    <span className="block lg:hidden">Develop prototype solutions<br />and test in lab-field</span>
+                    <span className="hidden lg:block">Develop prototype solutions and test in lab-field</span>
                   </p>
                 </div>
               </div>
@@ -238,84 +258,56 @@ export default function RDPage() {
             <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
-            <div className="text-center relative">
-              <img 
-                src="/logo/benefits.png" 
-                alt="Customer Benefits" 
-                className="w-full h-56 sm:h-56 md:h-64 lg:h-72 object-contain"
-              />
-              <div className="absolute inset-0 grid place-items-center p-2 sm:p-4 lg:p-6">
-                <div className="max-w-[70%] sm:max-w-[80%] px-2 text-center leading-tight break-words -mt-11 -ml-12 sm:-mt-8 sm:-ml-9 lg:-mt-10 lg:-ml-12">
-                  <p className="text-[clamp(9px,3vw,12px)] sm:text-sm lg:text-xs text-zul-grey-dark font-semibold">
-                    <span className="block lg:hidden">Faster response to<br />operational challenges</span>
-                    <span className="hidden lg:block">Faster response to<br />operational challenges</span>
-                  </p>
-                </div>
-              </div>
+          {/* Five Cards Layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {/* Card 1: Faster Response */}
+            <div className="bg-zul-green p-6 rounded-lg text-center flex flex-col justify-center items-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+              <h3 className="text-lg text-white font-bold mb-2">
+                Faster Response
+              </h3>
+              <p className="text-white text-sm">
+                Faster response to operational challenges
+              </p>
             </div>
             
-            <div className="text-center relative">
-              <img 
-                src="/logo/benefits.png" 
-                alt="Customer Benefits" 
-                className="w-full h-56 sm:h-56 md:h-64 lg:h-72 object-contain"
-              />
-              <div className="absolute inset-0 grid place-items-center p-2 sm:p-4 lg:p-6">
-                <div className="max-w-[70%] sm:max-w-[80%] px-2 text-center leading-tight break-words -mt-11 -ml-12 sm:-mt-8 sm:-ml-9 lg:-mt-10 lg:-ml-12">
-                  <p className="text-[clamp(9px,3vw,12px)] sm:text-sm lg:text-xs text-zul-grey-dark font-semibold">
-                    <span className="block lg:hidden">Reduced downtime<br />& NPT</span>
-                    <span className="hidden lg:block">Reduced downtime<br />& NPT</span>
-                  </p>
-                </div>
-              </div>
+            {/* Card 2: Reduced Downtime */}
+            <div className="bg-white border border-zul-grey-dark p-6 rounded-lg text-center flex flex-col justify-center items-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-zul-green cursor-pointer">
+              <h3 className="text-lg text-zul-green font-bold mb-2">
+                Reduced Downtime
+              </h3>
+              <p className="text-zul-grey-dark text-sm">
+                Reduced downtime & NPT
+              </p>
             </div>
             
-            <div className="text-center relative">
-              <img 
-                src="/logo/benefits.png" 
-                alt="Customer Benefits" 
-                className="w-full h-56 sm:h-56 md:h-64 lg:h-72 object-contain"
-              />
-              <div className="absolute inset-0 grid place-items-center p-2 sm:p-4 lg:p-6">
-                <div className="max-w-[70%] sm:max-w-[80%] px-2 text-center leading-tight break-words -mt-11 -ml-12 sm:-mt-8 sm:-ml-9 lg:-mt-10 lg:-ml-12">
-                  <p className="text-[clamp(9px,3vw,12px)] sm:text-sm lg:text-xs text-zul-grey-dark font-semibold">
-                    <span className="block lg:hidden">Increased well<br />performance and<br />productivity</span>
-                    <span className="hidden lg:block">Increased well<br />performance and<br />productivity</span>
-                  </p>
-                </div>
-              </div>
+            {/* Card 3: Increased Performance */}
+            <div className="bg-zul-grey-dark p-6 rounded-lg text-center flex flex-col justify-center items-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+              <h3 className="text-lg text-white font-bold mb-2">
+                Increased Performance
+              </h3>
+              <p className="text-white text-sm">
+                Increased well performance and productivity
+              </p>
             </div>
             
-            <div className="text-center relative">
-              <img 
-                src="/logo/benefits.png" 
-                alt="Customer Benefits" 
-                className="w-full h-56 sm:h-56 md:h-64 lg:h-72 object-contain"
-              />
-              <div className="absolute inset-0 grid place-items-center p-2 sm:p-4 lg:p-6">
-                <div className="max-w-[70%] sm:max-w-[80%] px-2 text-center leading-tight break-words -mt-11 -ml-12 sm:-mt-8 sm:-ml-9 lg:-mt-10 lg:-ml-12">
-                  <p className="text-[clamp(9px,3vw,12px)] sm:text-sm lg:text-xs text-zul-grey-dark font-semibold">
-                    <span className="block lg:hidden">Cost savings per<br />barrel produced</span>
-                    <span className="hidden lg:block">Cost savings per<br />barrel produced</span>
-                  </p>
-                </div>
-              </div>
+            {/* Card 4: Cost Savings */}
+            <div className="bg-zul-yellow p-6 rounded-lg text-center flex flex-col justify-center items-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+              <h3 className="text-lg text-zul-grey-dark font-bold mb-2">
+                Cost Savings
+              </h3>
+              <p className="text-zul-grey-dark text-sm">
+                Cost savings per barrel produced
+              </p>
             </div>
             
-            <div className="text-center relative">
-              <img 
-                src="/logo/benefits.png" 
-                alt="Customer Benefits" 
-                className="w-full h-56 sm:h-56 md:h-64 lg:h-72 object-contain"
-              />
-              <div className="absolute inset-0 grid place-items-center p-2 sm:p-4 lg:p-6">
-                <div className="max-w-[70%] sm:max-w-[80%] px-2 text-center leading-tight break-words -mt-11 -ml-12 sm:-mt-8 sm:-ml-9 lg:-mt-10 lg:-ml-12">
-                  <p className="text-[clamp(9px,3vw,12px)] sm:text-sm lg:text-xs text-zul-grey-dark font-semibold">
-                    Lower HSE risks
-                  </p>
-                </div>
-              </div>
+            {/* Card 5: Lower HSE Risks */}
+            <div className="bg-zul-green p-6 rounded-lg text-center flex flex-col justify-center items-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+              <h3 className="text-lg text-white font-bold mb-2">
+                Lower HSE Risks
+              </h3>
+              <p className="text-white text-sm">
+                Lower HSE risks
+              </p>
             </div>
           </div>
         </div>

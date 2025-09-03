@@ -29,7 +29,7 @@ const products: Product[] = [
   },
   {
     id: 'completion-fluids',
-    name: 'Completion Fluid Chemicals',
+    name: 'Completion Fluids Additives',
     category: 'Upstream Chemical',
     description: 'Specialized chemicals for well completion operations and production optimization.',
     pdfUrl: '/downloads/completion-fluids-datasheet.pdf'
@@ -56,11 +56,11 @@ const products: Product[] = [
     pdfUrl: '/downloads/production-chemicals-datasheet.pdf'
   },
   {
-    id: 'water-treatment',
+    id: 'water-treatment-upstream',
     name: 'Water Treatment Chemicals',
-    category: 'Upstream & Downstream Chemical',
-    description: 'Comprehensive water treatment solutions for both upstream and downstream operations.',
-    pdfUrl: '/downloads/water-treatment-datasheet.pdf'
+    category: 'Upstream Chemical',
+    description: 'Comprehensive water treatment solutions for upstream operations.',
+    pdfUrl: '/downloads/water-treatment-upstream-datasheet.pdf'
   },
   {
     id: 'refining-chemicals',
@@ -68,7 +68,15 @@ const products: Product[] = [
     category: 'Downstream Chemical',
     description: 'Specialized chemicals for petroleum refining and processing operations.',
     pdfUrl: '/downloads/refining-chemicals-datasheet.pdf'
+  },
+  {
+    id: 'water-treatment-downstream',
+    name: 'Water Treatment Chemicals',
+    category: 'Downstream Chemical',
+    description: 'Comprehensive water treatment solutions for downstream operations.',
+    pdfUrl: '/downloads/water-treatment-downstream-datasheet.pdf'
   }
+  
 ]
 
 interface DatasheetForm {
@@ -191,7 +199,7 @@ export default function DatasheetsPage() {
                         onClick={() => handleDownloadDatasheet(product)}
                         className="w-full md:w-auto bg-zul-yellow text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-yellow-400 transition-colors whitespace-nowrap"
                       >
-                        Download Datasheet
+                        Request Datasheet
                       </button>
                     </div>
                   </div>
@@ -209,7 +217,7 @@ export default function DatasheetsPage() {
              <div className="p-4 sm:p-6">
               <div className="flex justify-between items-center mb-6">
                 <h3 className="font-subhead text-zul-green">
-                  Download Datasheet
+                  Request Datasheet
                 </h3>
                 <button
                   onClick={() => setIsModalOpen(false)}
@@ -326,7 +334,7 @@ export default function DatasheetsPage() {
                      type="submit"
                      className="w-full sm:flex-1 bg-zul-yellow text-white px-4 py-3 sm:py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors"
                    >
-                     Download
+                     Request
                    </button>
                  </div>
               </form>
