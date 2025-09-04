@@ -3,20 +3,20 @@ import Image from 'next/image'
 
 const Certifications = () => {
 	return (
-		<section id="certifications" className="py-12 md:py-20 bg-white overflow-x-hidden">
+		<section id="certifications" className="py-8 sm:py-12 md:py-20 bg-white overflow-x-hidden">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* Standard section heading */}
-				<div className="text-center mb-16">
-					<h2 className="font-headline text-zul-grey-dark mb-4">
+				<div className="text-center mb-8 sm:mb-12 md:mb-16">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-headline text-zul-grey-dark mb-4 font-bold">
 						Certifications
 					</h2>
-					<div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+					<div className="w-16 sm:w-20 md:w-24 lg:w-28 h-1 bg-zul-yellow mx-auto"></div>
 				</div>
 				{/* Top row: green title bar + grey capsule */}
 				<div className="relative flex flex-col md:flex-row items-center">
 					{/* Left green title bar */}
 					<div className="bg-zul-green px-4 md:pl-8 md:pr-16 py-3 md:py-2 inline-flex items-center justify-center self-center w-full md:w-auto mb-4 md:mb-0" style={{ marginLeft: 'calc(50% - 50vw)', width: 'calc(50vw + 4px)' }}>
-						<h2 className="font-headline text-white text-lg md:text-2xl lg:text-4xl" style={{ marginLeft: '2rem' }}>Quality Certifications</h2>
+						<h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-bold" style={{ marginLeft: '2rem' }}>Quality Certifications</h2>
 					</div>
 					{/* Right grey capsule (overlaps green bar) */}
 					<div className="flex-1 relative w-full">

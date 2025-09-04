@@ -17,14 +17,14 @@ const OurClients = () => {
   const duplicatedLogos = [...logos, ...logos]
 
   return (
-    <section id="clients" className="py-20 bg-white overflow-hidden">
+    <section id="clients" className="py-12 sm:py-16 md:py-20 bg-white overflow-hidden">
       <div className="w-full">
         {/* Section Heading */}
-        <div className="text-center mb-16 px-4 sm:px-6 lg:px-8">
-          <h2 className="font-headline text-zul-grey-dark mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-headline text-zul-grey-dark mb-4 font-bold">
             Our Clients
           </h2>
-          <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+          <div className="w-16 sm:w-20 md:w-24 lg:w-28 h-1 bg-zul-yellow mx-auto"></div>
         </div>
         
         {/* Infinite Scrolling Logo Carousel */}

@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 const Solutions = () => {
   return (
-    <section id="solutions" className="py-20 bg-white">
+    <section id="solutions" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-headline text-zul-grey-dark mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-headline text-zul-grey-dark mb-4 font-bold">
             Solutions
           </h2>
           {/* Yellow underline */}
-          <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+          <div className="w-16 sm:w-20 md:w-24 lg:w-28 h-1 bg-zul-yellow mx-auto"></div>
         </div>
         
         <div className="space-y-16">
@@ -88,7 +88,7 @@ const Solutions = () => {
               <div className="relative px-2 sm:px-0">
                 <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_68a565133a1568.04754394_20250820_060259.webp"
+                    src="https://cdn.legendholding.com/images/cdn_68a55e5cd63997.17536611_20250820_053420.webp"
                     alt="Oil Based Mud Additives"
                     className="w-full h-full object-cover"
                   />
@@ -490,7 +490,7 @@ const Solutions = () => {
               <div className="relative px-2 sm:px-0">
                 <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
-                    src="https://cdn.legendholding.com/images/cdn_68a55c335d1b45.35797777_20250820_052507.webp"
+                    src="https://cdn.legendholding.com/images/cdn_68a55d78eab5e0.45150741_20250820_053032.webp"
                     alt="Refining Chemicals"
                     className="w-full h-full object-cover"
                   />

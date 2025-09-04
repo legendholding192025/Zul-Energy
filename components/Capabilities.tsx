@@ -65,66 +65,66 @@ const Capabilities = () => {
   }
 
   return (
-    <section id="capabilities" className="py-20 bg-white" ref={sectionRef}>
+    <section id="capabilities" className="py-12 sm:py-16 md:py-20 bg-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-headline text-zul-grey-dark mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-headline text-zul-grey-dark mb-4 font-bold">
             Capabilities
           </h2>
           {/* Yellow underline */}
-          <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
+          <div className="w-16 sm:w-20 md:w-24 lg:w-28 h-1 bg-zul-yellow mx-auto"></div>
         </div>
         
         {/* Stats section - matching the image design */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 text-center">
           {/* RAK Planet */}
           <div>
-            <div className="text-zul-grey-dark font-body font-semibold mb-2">
+            <div className="text-sm sm:text-base text-zul-grey-dark font-semibold mb-2">
               RAK Planet
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-zul-green mb-2">
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-zul-green mb-2">
               +{counts.rakPlanet}K
             </div>
-            <div className="text-zul-yellow font-body font-semibold">
+            <div className="text-sm sm:text-base text-zul-yellow font-semibold">
               SQFT. Facility
             </div>
           </div>
 
           {/* Production capacity */}
           <div>
-            <div className="text-zul-grey-dark font-body font-semibold mb-2">
+            <div className="text-sm sm:text-base text-zul-grey-dark font-semibold mb-2">
               Production capacity
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-zul-green mb-2">
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-zul-green mb-2">
               {counts.productionCapacity.toLocaleString()}
             </div>
-            <div className="text-zul-yellow font-body font-semibold">
+            <div className="text-sm sm:text-base text-zul-yellow font-semibold">
               55-Gal Drums/Month
             </div>
           </div>
 
           {/* Manpower */}
           <div>
-            <div className="text-zul-grey-dark font-body font-semibold mb-2">
+            <div className="text-sm sm:text-base text-zul-grey-dark font-semibold mb-2">
               Manpower
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-zul-green mb-2">
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-zul-green mb-2">
               +{counts.manpower}
             </div>
-            <div className="text-zul-yellow font-body font-semibold">
+            <div className="text-sm sm:text-base text-zul-yellow font-semibold">
               Employees
             </div>
           </div>
 
           {/* Clients */}
           <div>
-            <div className="text-zul-grey-dark font-body font-semibold mb-2">
+            <div className="text-sm sm:text-base text-zul-grey-dark font-semibold mb-2">
               Clients
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-zul-green mb-2">
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-zul-green mb-2">
               +{counts.clients}
             </div>
-            <div className="text-zul-yellow font-body font-semibold">
+            <div className="text-sm sm:text-base text-zul-yellow font-semibold">
               Employees
             </div>
           </div>
