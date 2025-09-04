@@ -87,7 +87,16 @@ export default function WaterTreatmentChemicalsPage() {
               </div>
             </div>
 
-                        {/* Product Categories Grid */}
+            {/* Product List Heading */}
+            <div className="text-center mb-16">
+              <h3 className="font-subhead text-zul-grey-dark mb-4">
+                Product List
+              </h3>
+              {/* Yellow underline */}
+              <div className="w-16 h-1 bg-zul-yellow mx-auto"></div>
+            </div>
+
+            {/* Product Categories Grid */}
             <div className="space-y-8">
               {/* First Row - 3 Cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

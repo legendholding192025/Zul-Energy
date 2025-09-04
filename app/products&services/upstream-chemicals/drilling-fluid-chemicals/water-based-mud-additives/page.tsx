@@ -116,8 +116,12 @@ export default function WaterBasedMudAdditivesPage() {
             </div>
 
             {/* Product List Heading */}
-            <div className="text-center mb-8">
-              <h4 className="font-body helvetica-bold text-zul-green text-2xl">Product List</h4>
+            <div className="text-center mb-16">
+              <h3 className="font-subhead text-zul-grey-dark mb-4">
+                Product List
+              </h3>
+              {/* Yellow underline */}
+              <div className="w-16 h-1 bg-zul-yellow mx-auto"></div>
             </div>
 
             {/* Product List Cards */}
