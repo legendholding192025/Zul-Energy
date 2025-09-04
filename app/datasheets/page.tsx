@@ -244,7 +244,7 @@ export default function DatasheetsPage() {
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                    <div>
                      <label htmlFor="name" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                       Full Name *
+                       Full Name <span className="text-red-500">*</span>
                      </label>
                                             <input
                          type="text"
@@ -260,7 +260,7 @@ export default function DatasheetsPage() {
 
                    <div>
                      <label htmlFor="email" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                       Email Address *
+                       Email Address <span className="text-red-500">*</span>
                      </label>
                                             <input
                          type="email"
@@ -276,7 +276,7 @@ export default function DatasheetsPage() {
 
                    <div>
                      <label htmlFor="phone" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                       Phone Number *
+                       Phone Number <span className="text-red-500">*</span>
                      </label>
                                             <input
                          type="tel"
@@ -292,7 +292,7 @@ export default function DatasheetsPage() {
 
                    <div>
                      <label htmlFor="company" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                       Company *
+                       Company <span className="text-red-500">*</span>
                      </label>
                                             <input
                          type="text"

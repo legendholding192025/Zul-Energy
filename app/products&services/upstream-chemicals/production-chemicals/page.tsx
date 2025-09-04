@@ -211,7 +211,7 @@ export default function ProductionChemicalsPage() {
      </section>
 
       <div id="contact">
-        <ContactUs />
+        <ContactUs preSelectedProduct="production-chemicals" />
       </div>
       <Footer />
     </main>

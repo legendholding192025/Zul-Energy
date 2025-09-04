@@ -248,7 +248,7 @@ export default function UpstreamWaterTreatmentChemicalsPage() {
       
       {/* Contact Section */}
       <section id="contact" className="bg-gray-50">
-        <ContactUs />
+        <ContactUs preSelectedProduct="water-treatment-chemicals-upstream" />
       </section>
       
       <Footer />

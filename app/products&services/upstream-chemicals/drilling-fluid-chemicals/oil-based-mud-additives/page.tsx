@@ -247,7 +247,7 @@ export default function OilBasedMudAdditivesPage() {
       </section>
 
       <div id="contact">
-        <ContactUs />
+        <ContactUs preSelectedProduct="oil-based-mud-additives" />
       </div>
       
       <Footer />

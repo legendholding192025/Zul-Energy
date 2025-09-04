@@ -215,7 +215,7 @@ export default function CompletionFluidsAdditivesPage() {
      </section>
 
       <div id="contact">
-        <ContactUs />
+        <ContactUs preSelectedProduct="completion-fluids-additives" />
       </div>
       <Footer />
     </main>

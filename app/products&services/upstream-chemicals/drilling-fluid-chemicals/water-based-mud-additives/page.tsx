@@ -259,7 +259,7 @@ export default function WaterBasedMudAdditivesPage() {
       </section>
 
       <div id="contact">
-        <ContactUs />
+        <ContactUs preSelectedProduct="water-based-mud-additives" />
       </div>
       
       <Footer />

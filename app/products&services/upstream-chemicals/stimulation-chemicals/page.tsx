@@ -226,7 +226,7 @@ export default function StimulationChemicalsPage() {
      </section>
 
       <div id="contact">
-        <ContactUs />
+        <ContactUs preSelectedProduct="stimulation-chemicals" />
       </div>
       <Footer />
     </main>

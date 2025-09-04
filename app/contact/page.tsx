@@ -43,7 +43,7 @@ export default function ContactPage() {
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Contact Form */}
-            <div className="bg-gray-200 rounded-xl p-8 shadow-sm">
+            <div className="bg-gray-200 rounded-xl p-6 shadow-sm">
               <div className="mb-6">
                 <h3 className="font-subhead text-zul-green mb-2">
                   Make an appointment
@@ -54,54 +54,74 @@ export default function ContactPage() {
               </div>
               
               {/* Contact Form */}
-              <form className="space-y-6">
+              <form className="space-y-4">
                 <div>
+                  <label htmlFor="fullName" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
                   <input
                     type="text"
+                    id="fullName"
                     placeholder="Your full name"
                     className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
                   />
                 </div>
                 
                 <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                    Email Address <span className="text-red-500">*</span>
+                  </label>
                   <input
                     type="email"
+                    id="email"
                     placeholder="Your email"
                     className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
                   />
                 </div>
                 
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <select className="px-3 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body bg-white text-zul-black">
-                      <option value="+971">+971</option>
-                      <option value="+1">+1</option>
-                      <option value="+44">+44</option>
-                      <option value="+91">+91</option>
-                      <option value="+966">+966</option>
-                      <option value="+974">+974</option>
-                      <option value="+965">+965</option>
-                    </select>
-                  </div>
-                  <div className="flex-1">
+                <div>
+                  <label htmlFor="phoneNumber" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                    Phone Number <span className="text-red-500">*</span>
+                  </label>
+                  <div className="flex w-full">
+                    <div className="flex items-center px-3 border-2 border-r-0 border-zul-green rounded-l-lg bg-white">
+                      <select className="bg-transparent focus:outline-none font-body text-zul-black">
+                        <option value={"+971"}>+971</option>
+                        <option value={"+1"}>+1</option>
+                        <option value={"+44"}>+44</option>
+                        <option value={"+91"}>+91</option>
+                        <option value={"+966"}>+966</option>
+                        <option value={"+974"}>+974</option>
+                        <option value={"+965"}>+965</option>
+                      </select>
+                    </div>
                     <input
                       type="tel"
+                      id="phoneNumber"
                       placeholder="Phone number"
-                      className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
+                      className="flex-1 px-4 py-3 border-2 border-zul-green rounded-r-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
                     />
                   </div>
                 </div>
                 
                 <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                    Subject <span className="text-red-500">*</span>
+                  </label>
                   <input
                     type="text"
+                    id="subject"
                     placeholder="Subject"
                     className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
                   />
                 </div>
                 
                 <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                    Message <span className="text-red-500">*</span>
+                  </label>
                   <textarea
+                    id="message"
                     placeholder="Message"
                     rows={4}
                     className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark resize-none"

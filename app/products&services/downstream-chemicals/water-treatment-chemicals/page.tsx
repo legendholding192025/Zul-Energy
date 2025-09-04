@@ -320,7 +320,7 @@ export default function WaterTreatmentChemicalsPage() {
       
       {/* Contact Section */}
       <section id="contact" className="bg-gray-50">
-        <ContactUs />
+        <ContactUs preSelectedProduct="water-treatment-chemicals-downstream" />
       </section>
       
       <Footer />

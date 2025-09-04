@@ -5,6 +5,12 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Script from 'next/script'
 
+interface BrochureForm {
+  name: string
+  email: string
+  phone: string
+}
+
 export default function BrochureFlipbookPage() {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const pageFlipRef = useRef<any>(null)
@@ -13,6 +19,12 @@ export default function BrochureFlipbookPage() {
   const [initialized, setInitialized] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [showIframeFallback, setShowIframeFallback] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [formData, setFormData] = useState<BrochureForm>({
+    name: '',
+    email: '',
+    phone: ''
+  })
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -99,6 +111,37 @@ export default function BrochureFlipbookPage() {
 
     run()
   }, [pdfJsReady, pageFlipReady, initialized])
+
+  const handleDownloadClick = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // Here you would typically send the form data to your backend
+    console.log('Brochure Download Request:', formData)
+    
+    // Simulate download after form submission
+    const link = document.createElement('a')
+    link.href = '/downloads/Zul-Energy-Digital-Brochure.pdf'
+    link.download = 'Zul-Energy-Digital-Brochure.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    
+    alert('Thank you! Your brochure download will begin shortly.')
+    setIsModalOpen(false)
+    setFormData({
+      name: '',
+      email: '',
+      phone: ''
+    })
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+  }
 
   return (
     <main className="overflow-x-hidden">
@@ -206,17 +249,117 @@ export default function BrochureFlipbookPage() {
              
              {/* Download Button */}
              <div>
-               <a
-                 href="/downloads/Zul-Energy-Digital-Brochure.pdf"
-                 download="Zul-Energy-Digital-Brochure.pdf"
+               <button
+                 onClick={handleDownloadClick}
                  className="inline-block bg-zul-green text-white px-6 py-3 rounded-lg font-body hover:bg-zul-green-light transition-colors"
                >
                  Download PDF
-               </a>
+               </button>
              </div>
            </div>
         </div>
       </section>
+
+      {/* Download Form Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
+          <div className="bg-white rounded-lg max-w-lg w-full mx-4 sm:mx-auto max-h-[90vh] overflow-y-auto">
+            <div className="p-4 sm:p-6">
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="font-subhead text-zul-green">
+                  Download Brochure
+                </h3>
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="text-gray-400 hover:text-gray-600"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h4 className="font-medium text-zul-green mb-2">
+                  Zul Energy Digital Brochure
+                </h4>
+                <p className="text-sm text-zul-grey-dark">
+                  Complete overview of our products and services in the energy sector.
+                </p>
+              </div>
+
+              <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                      Full Name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                      Email Address <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-zul-grey-dark mb-1">
+                                          Phone Number <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-3 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-yellow focus:border-transparent text-zul-grey-dark text-base"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+
+                <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 pt-4">
+                  <button
+                    type="button"
+                    onClick={() => setIsModalOpen(false)}
+                    className="w-full sm:flex-1 bg-gray-300 text-gray-700 px-4 py-3 sm:py-2 rounded-lg font-medium hover:bg-gray-400 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="w-full sm:flex-1 bg-zul-yellow text-white px-4 py-3 sm:py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors"
+                  >
+                    Download
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </main>
   )

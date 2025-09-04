@@ -268,7 +268,7 @@ export default function RefiningChemicalsPage() {
       
       {/* Contact Section */}
       <section id="contact" className="bg-gray-50">
-        <ContactUs />
+        <ContactUs preSelectedProduct="refining-chemicals" />
       </section>
       
       <Footer />
