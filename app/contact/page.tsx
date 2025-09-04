@@ -105,7 +105,7 @@ export default function ContactPage() {
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                    Message <span className="text-red-500">*</span>
+                    Message
                   </label>
                   <textarea
                     id="message"

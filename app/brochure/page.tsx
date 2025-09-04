@@ -166,8 +166,10 @@ export default function BrochureFlipbookPage() {
       <section className="pt-28 pb-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
-            <h1 className="font-headline text-zul-grey-dark">Brochure</h1>
-            <p className="font-body text-zul-grey-dark">Interactive flipbook</p>
+          <h2 className="font-headline text-zul-grey-dark mb-4">
+            Brochure
+          </h2>
+          <div className="w-24 h-1 bg-zul-yellow mx-auto"></div>
           </div>
 
           {!initialized && !showIframeFallback && (
