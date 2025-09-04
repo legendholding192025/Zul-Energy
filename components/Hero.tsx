@@ -15,7 +15,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 md:py-40 lg:py-56">
-        <div className="text-center sm:text-left">
+        <div className="text-center sm:text-left xl:mr-8 2xl:mr-16">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-headline mb-0 text-white font-bold">
             CRAFTSMANSHIP
           </h1>
