@@ -14,18 +14,18 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-40 md:py-56">
-        <div className="text-right">
-          <h1 className="font-headline mb-0 text-white">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 md:py-40 lg:py-56">
+        <div className="text-center sm:text-right">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-headline mb-0 text-white font-bold">
             CRAFTSMANSHIP
           </h1>
-          <h2 className="font-headline mb-0 text-zul-yellow">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-headline mb-0 text-zul-yellow font-bold">
             IN OIL&GAS
           </h2>
-          <p className="font-headline mb-0 text-zul-yellow">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-headline mb-0 text-zul-yellow font-bold">
             ENGINEERED
           </p>
-          <p className="font-headline text-white">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-headline text-white font-bold">
             IN THE UAE
           </p>
         </div>

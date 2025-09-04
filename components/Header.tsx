@@ -459,7 +459,6 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                                <a href="/products&services/upstream-chemicals/stimulation-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Stimulation Chemicals</a>
                                <a href="/products&services/upstream-chemicals/production-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Production Chemicals</a>
                                <a href="/products&services/upstream-chemicals/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
-                               <a href="/products&services/downstream-chemicals/water-treatment-chemicals" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Water Treatment Chemicals</a>
                        </div>
                            )}
                      </div>
@@ -483,8 +482,6 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                             )}
                          </div>
                          
-                         {/* Solid Control Equipment */}
-                         <a href="/products/cementing-additives" className="block text-sm text-zul-grey-dark hover:text-zul-green py-1">Solid Control Equipment</a>
                        </div>
                      </div>
                    </div>

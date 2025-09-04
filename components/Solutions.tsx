@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Solutions = () => {
   return (
     <section id="solutions" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-headline text-zul-grey-dark mb-4">
             Solutions
@@ -18,8 +18,8 @@ const Solutions = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                   {/* Image - Left Side */}
                   <div className="w-full lg:w-1/2">
-                    <div className="relative">
-                      <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                    <div className="relative px-2 sm:px-0">
+                      <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                         <img
                           src="https://cdn.legendholding.com/images/cdn_68a55d78eab5e0.45150741_20250820_053032.webp"
                           alt="Drilling Mud Chemicals"
@@ -85,8 +85,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a565133a1568.04754394_20250820_060259.webp"
                     alt="Oil Based Mud Additives"
@@ -152,8 +152,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
                     alt="Completion Fluids Additives"
@@ -219,8 +219,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a55e2bda07d8.54791929_20250820_053331.webp"
                     alt="Stimulation Chemicals"
@@ -286,8 +286,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a55dcf0f9b39.36102089_20250820_053159.webp"
                     alt="Cementing Additives"
@@ -353,8 +353,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a55e5cd63997.17536611_20250820_053420.webp"
                     alt="Production Chemicals"
@@ -420,8 +420,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
                     alt="Water Treatment Chemicals"
@@ -487,8 +487,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
             {/* Image - Right Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a55c335d1b45.35797777_20250820_052507.webp"
                     alt="Refining Chemicals"
@@ -554,8 +554,8 @@ const Solutions = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Image - Left Side */}
             <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="w-96 h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+              <div className="relative px-2 sm:px-0">
+                <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                   <img
                     src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
                     alt="Water Treatment Chemicals"
