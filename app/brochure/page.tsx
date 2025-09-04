@@ -325,7 +325,7 @@ export default function BrochureFlipbookPage() {
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                                          Phone Number <span className="text-red-500">*</span>
+                    Phone Number <span className="text-red-500">*</span> <span className="text-gray-500 text-xs">(e.g., +971 50 123 4567)</span>
                   </label>
                   <input
                     type="tel"

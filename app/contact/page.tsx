@@ -81,27 +81,14 @@ export default function ContactPage() {
                 
                 <div>
                   <label htmlFor="phoneNumber" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                    Phone Number <span className="text-red-500">*</span>
+                    Phone Number <span className="text-red-500">*</span> <span className="text-gray-500 text-xs">(e.g., +971 50 123 4567)</span>
                   </label>
-                  <div className="flex w-full">
-                    <div className="flex items-center px-3 border-2 border-r-0 border-zul-green rounded-l-lg bg-white">
-                      <select className="bg-transparent focus:outline-none font-body text-zul-black">
-                        <option value={"+971"}>+971</option>
-                        <option value={"+1"}>+1</option>
-                        <option value={"+44"}>+44</option>
-                        <option value={"+91"}>+91</option>
-                        <option value={"+966"}>+966</option>
-                        <option value={"+974"}>+974</option>
-                        <option value={"+965"}>+965</option>
-                      </select>
-                    </div>
-                    <input
-                      type="tel"
-                      id="phoneNumber"
-                      placeholder="Phone number"
-                      className="flex-1 px-4 py-3 border-2 border-zul-green rounded-r-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
-                    />
-                  </div>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    placeholder="Phone number"
+                    className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
+                  />
                 </div>
                 
                 <div>
@@ -213,7 +200,16 @@ export default function ContactPage() {
           <div>
             <h3 className="text-lg font-semibold text-emerald-600 mb-4">Call Us</h3>
             <div className="space-y-2">
-              <p className="text-gray-700 font-medium">+971 4 272 7603</p>
+              <p className="text-gray-700 font-medium">
+                <a href="tel:+97142727603" className="hover:text-emerald-600 transition-colors">
+                  Dubai - 04 272 7603
+                </a>
+              </p>
+              <p className="text-gray-700 font-medium">
+                <a href="tel:+97172362065" className="hover:text-emerald-600 transition-colors">
+                  Ras Al Khaimah - 07 236 2065
+                </a>
+              </p>
             </div>
           </div>
 
@@ -246,14 +242,17 @@ export default function ContactPage() {
 
           {/* Office Address */}
           <div>
-            <h3 className="text-lg font-semibold text-emerald-600 mb-4">Office Address</h3>
+            <h3 className="text-lg font-semibold text-emerald-600 mb-4">Address</h3>
             <p className="text-gray-700 leading-relaxed">
-              JBC 4 - Office No. 1903
+              <strong>Office: </strong>
+              Dubai
               <br />
-              19th Floor, Cluster N<br />
-              Jumeirah Lake Towers
-              <br />
-              Dubai, UAE
+              JLT, Cluster N, 19th Floor<br />
+              Office No. 1903 - JBC 4
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>Plant: </strong>
+              Ras Al Khaimah - Al Ghayl
             </p>
           </div>
 

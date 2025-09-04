@@ -11,7 +11,6 @@ const ContactUs = ({ preSelectedProduct }: ContactUsProps) => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    countryCode: '+971',
     phoneNumber: '',
     productOfInterest: preSelectedProduct || ''
   })
@@ -36,18 +35,6 @@ const ContactUs = ({ preSelectedProduct }: ContactUsProps) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     
-    // Phone number validation - only allow 9 digits
-    if (name === 'phoneNumber') {
-      const numbersOnly = value.replace(/\D/g, '')
-      if (numbersOnly.length <= 9) {
-        setFormData(prev => ({
-          ...prev,
-          [name]: numbersOnly
-        }))
-      }
-      return
-    }
-    
     setFormData(prev => ({
       ...prev,
       [name]: value
@@ -63,8 +50,8 @@ const ContactUs = ({ preSelectedProduct }: ContactUsProps) => {
       return
     }
     
-    if (formData.phoneNumber.length !== 9) {
-      alert('Phone number must be exactly 9 digits')
+    if (formData.phoneNumber.length < 10) {
+      alert('Please enter a valid phone number')
       return
     }
     
@@ -76,7 +63,6 @@ const ContactUs = ({ preSelectedProduct }: ContactUsProps) => {
     setFormData({
       fullName: '',
       email: '',
-      countryCode: '+971',
       phoneNumber: '',
       productOfInterest: ''
     })
@@ -159,37 +145,18 @@ const ContactUs = ({ preSelectedProduct }: ContactUsProps) => {
                
                <div>
                  <label htmlFor="phoneNumber" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                   Phone Number <span className="text-red-500">*</span>
+                   Phone Number <span className="text-red-500">*</span> <span className="text-gray-500 text-xs">(e.g., +971 50 123 4567)</span>
                  </label>
-                 <div className="flex w-full">
-                   <div className="flex items-center px-3 border-2 border-r-0 border-zul-green rounded-l-lg bg-white">
-                     <select
-                       name="countryCode"
-                       value={formData.countryCode}
-                       onChange={handleInputChange}
-                       className="bg-transparent focus:outline-none font-body text-zul-black"
-                     >
-                       <option value="+971">+971</option>
-                       <option value="+1">+1</option>
-                       <option value="+44">+44</option>
-                       <option value="+91">+91</option>
-                       <option value="+966">+966</option>
-                       <option value="+974">+974</option>
-                       <option value="+965">+965</option>
-                     </select>
-                   </div>
-                   <input
-                     type="tel"
-                     id="phoneNumber"
-                     name="phoneNumber"
-                     value={formData.phoneNumber}
-                     onChange={handleInputChange}
-                     placeholder="Phone number"
-                     maxLength={9}
-                     required
-                     className="flex-1 px-4 py-3 border-2 border-zul-green rounded-r-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
-                   />
-                 </div>
+                 <input
+                   type="tel"
+                   id="phoneNumber"
+                   name="phoneNumber"
+                   value={formData.phoneNumber}
+                   onChange={handleInputChange}
+                   placeholder="Phone number"
+                   required
+                   className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
+                 />
                </div>
                
                <div>
@@ -298,37 +265,18 @@ const ContactUs = ({ preSelectedProduct }: ContactUsProps) => {
                
                <div>
                  <label htmlFor="phoneNumber" className="block text-sm font-medium text-zul-grey-dark mb-1">
-                   Phone Number <span className="text-red-500">*</span>
+                   Phone Number <span className="text-red-500">*</span> <span className="text-gray-500 text-xs">(e.g., +971 50 123 4567)</span>
                  </label>
-                 <div className="flex w-full">
-                   <div className="flex items-center px-3 border-2 border-r-0 border-zul-green rounded-l-lg bg-white">
-                     <select
-                       name="countryCode"
-                       value={formData.countryCode}
-                       onChange={handleInputChange}
-                       className="bg-transparent focus:outline-none font-body text-zul-black"
-                     >
-                       <option value="+971">+971</option>
-                       <option value="+1">+1</option>
-                       <option value="+44">+44</option>
-                       <option value="+91">+91</option>
-                       <option value="+966">+966</option>
-                       <option value="+974">+974</option>
-                       <option value="+965">+965</option>
-                     </select>
-                   </div>
-                   <input
-                     type="tel"
-                     id="phoneNumber"
-                     name="phoneNumber"
-                     value={formData.phoneNumber}
-                     onChange={handleInputChange}
-                     placeholder="Phone number"
-                     maxLength={9}
-                     required
-                     className="flex-1 px-4 py-3 border-2 border-zul-green rounded-r-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
-                   />
-                 </div>
+                 <input
+                   type="tel"
+                   id="phoneNumber"
+                   name="phoneNumber"
+                   value={formData.phoneNumber}
+                   onChange={handleInputChange}
+                   placeholder="Phone number"
+                   required
+                   className="w-full px-4 py-3 border-2 border-zul-green rounded-lg focus:outline-none focus:ring-2 focus:ring-zul-green focus:border-transparent font-body text-zul-black bg-white placeholder-zul-grey-dark"
+                 />
                </div>
                
                <div>
