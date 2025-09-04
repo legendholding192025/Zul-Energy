@@ -16,7 +16,7 @@ export default function StimulationChemicalsPage() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68a5649f0a16b2.35673987_20250820_060103.webp")'
+            backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68b93a13778537.85412656_20250904_070451.webp")'
           }}
         >
         </div>

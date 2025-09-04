@@ -16,7 +16,7 @@ export default function CementingAdditivesPage() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68a5649f0a16b2.35673987_20250820_060103.webp")'
+            backgroundImage: 'url("https://cdn.legendholding.com/images/cdn_68b93a83a462b5.54921138_20250904_070643.webp")'
           }}
         >
         </div>
