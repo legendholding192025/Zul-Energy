@@ -146,16 +146,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Location & Contact Information Section */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Google Maps */}
-            <div className="space-y-6">
-              
-              {/* Google Maps Embed */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Maps Section - Full Width */}
+        <div className="mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Left Map - Our Location */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-emerald-600 mb-4">Office Location</h3>
               <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.8474567890123!2d55.136225!3d25.0626488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69587889e31d%3A0xe99198d629887eb4!2sZul%20Energy!5e0!3m2!1sen!2sae!4v1234567890"
@@ -169,63 +167,88 @@ export default function ContactPage() {
                 ></iframe>
               </div>
             </div>
-            
-            {/* Right Column - Contact Information */}
-            <div className="space-y-8">
-              {/* Call Us */}
-              <div>
-                <h3 className="text-lg font-subhead text-zul-green mb-4">
-                  Call Us
-                </h3>
-                <div className="space-y-2">
-                  <p className="text-zul-grey-dark font-medium">
-                    +971 4 272 7603
-                  </p>
-                </div>
-              </div>
-              
-              {/* Mail Us */}
-              <div>
-                <h3 className="text-lg font-subhead text-zul-green mb-4">
-                  Email Us
-                </h3>
-                <div className="space-y-2">
-                  <p className="text-zul-grey-dark">
-                    <a href="mailto:info@zulenergy.com" className="hover:text-zul-green transition-colors">
-                      info@zulenergy.com
-                    </a>
-                  </p>
-                  <p className="text-zul-grey-dark">
-                    <a href="mailto:marketing@zulenergy.com" className="hover:text-zul-green transition-colors">
-                      marketing@zulenergy.com
-                    </a>
-                  </p>
-                  <p className="text-zul-grey-dark">
-                    <a href="mailto:procurement@zulenergy.com" className="hover:text-zul-green transition-colors">
-                      procurement@zulenergy.com
-                    </a>
-                  </p>
-                  <p className="text-zul-grey-dark">
-                    <a href="mailto:careers@zulenergy.com" className="hover:text-zul-green transition-colors">
-                      careers@zulenergy.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-              
-              {/* Office Address */}
-              <div>
-                <h3 className="text-lg font-subhead text-zul-green mb-4">
-                  Office Address
-                </h3>
-                <p className="text-zul-grey-dark">
-                  JBC 4 - Office No. 1903 - 19 Floor, Cluster N - Jumeirah Lake Towers, <br />Dubai, UAE
-                </p>
+
+            {/* Right Map - Area Overview */}
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-emerald-600 mb-4">Plant Location</h3>
+              <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.8474567890123!2d55.9766868!3d25.4131601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5c708833273ff%3A0x347483e5eb4c7510!2sAl%20Ghayl%20-%20Ras%20Al%20Khaimah!5e0!3m2!1sen!2sae!4v1234567891"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Al Ghayl - Ras Al Khaimah Plant Location"
+                ></iframe>
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        {/* Contact Details Section - Below Maps */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Call Us */}
+          <div>
+            <h3 className="text-lg font-semibold text-emerald-600 mb-4">Call Us</h3>
+            <div className="space-y-2">
+              <p className="text-gray-700 font-medium">+971 4 272 7603</p>
+            </div>
+          </div>
+
+          {/* Mail Us */}
+          <div>
+            <h3 className="text-lg font-semibold text-emerald-600 mb-4">Email Us</h3>
+            <div className="space-y-2">
+              <p className="text-gray-700">
+                <a href="mailto:info@zulenergy.com" className="hover:text-emerald-600 transition-colors">
+                  info@zulenergy.com
+                </a>
+              </p>
+              <p className="text-gray-700">
+                <a href="mailto:marketing@zulenergy.com" className="hover:text-emerald-600 transition-colors">
+                  marketing@zulenergy.com
+                </a>
+              </p>
+              <p className="text-gray-700">
+                <a href="mailto:procurement@zulenergy.com" className="hover:text-emerald-600 transition-colors">
+                  procurement@zulenergy.com
+                </a>
+              </p>
+              <p className="text-gray-700">
+                <a href="mailto:careers@zulenergy.com" className="hover:text-emerald-600 transition-colors">
+                  careers@zulenergy.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Office Address */}
+          <div>
+            <h3 className="text-lg font-semibold text-emerald-600 mb-4">Office Address</h3>
+            <p className="text-gray-700 leading-relaxed">
+              JBC 4 - Office No. 1903
+              <br />
+              19th Floor, Cluster N<br />
+              Jumeirah Lake Towers
+              <br />
+              Dubai, UAE
+            </p>
+          </div>
+
+          {/* Office Hours */}
+          <div>
+            <h3 className="text-lg font-semibold text-emerald-600 mb-4">Office Hours</h3>
+            <div className="space-y-1 text-gray-700">
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday: 9:00 AM - 2:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
       <Footer />
     </main>
