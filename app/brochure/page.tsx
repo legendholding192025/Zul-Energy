@@ -19,7 +19,7 @@ export default function BrochureFlipbookPage() {
       if (!initialized) {
         setShowIframeFallback(true)
       }
-    }, 12000)
+    }, 8000) // Reduced timeout for faster fallback
     return () => clearTimeout(timeout)
   }, [initialized])
 
@@ -38,45 +38,55 @@ export default function BrochureFlipbookPage() {
 
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'
 
-        const tryRender = async (pdfUrl: string) => {
-          const loadingTask = pdfjsLib.getDocument(pdfUrl)
-          const pdf = await loadingTask.promise
+                 const tryRender = async (pdfUrl: string) => {
+           const loadingTask = pdfjsLib.getDocument(pdfUrl)
+           const pdf = await loadingTask.promise
 
-          const images: string[] = []
-          for (let i = 1; i <= pdf.numPages; i++) {
-            const page = await pdf.getPage(i)
-            const viewport = page.getViewport({ scale: 1.8 })
-            const canvas = document.createElement('canvas')
-            const context = canvas.getContext('2d')!
-            canvas.width = viewport.width
-            canvas.height = viewport.height
-            await page.render({ canvasContext: context, viewport }).promise
-            images.push(canvas.toDataURL('image/png'))
-          }
+           const images: string[] = []
+           // Use lower scale for faster loading
+           const scale = 1.2
+           
+           for (let i = 1; i <= pdf.numPages; i++) {
+             const page = await pdf.getPage(i)
+             const viewport = page.getViewport({ scale })
+             const canvas = document.createElement('canvas')
+             const context = canvas.getContext('2d')!
+             canvas.width = viewport.width
+             canvas.height = viewport.height
+             await page.render({ canvasContext: context, viewport }).promise
+             images.push(canvas.toDataURL('image/jpeg', 0.8)) // Use JPEG with compression for smaller file size
+           }
 
-                     const viewer = new PageFlipClass(containerRef.current, {
-             width: 1024,
-             height: 720,
+           const viewer = new PageFlipClass(containerRef.current, {
+             width: 900,
+             height: 640,
              size: 'stretch',
-             minWidth: 540,
-             maxWidth: 1800,
-             minHeight: 360,
-             maxHeight: 1300,
+             minWidth: 400,
+             maxWidth: 1400,
+             minHeight: 300,
+             maxHeight: 1000,
              showCover: true,
              mobileScrollSupport: true,
+             flippingTime: 600, // Faster page flip animation
+             usePortrait: true,
            })
 
            // Store the PageFlip instance in ref for button access
            pageFlipRef.current = viewer
            viewer.loadFromImages(images)
-        }
+         }
 
         try {
-          await tryRender('/api/brochure')
-          setError(null)
-        } catch (e) {
+          // Try local PDF first for faster loading
           await tryRender('/downloads/Zul-Energy-Digital-Brochure.pdf')
           setError(null)
+        } catch (e) {
+          try {
+            await tryRender('/api/brochure')
+            setError(null)
+          } catch (e2) {
+            throw e2
+          }
         }
 
         setInitialized(true)
