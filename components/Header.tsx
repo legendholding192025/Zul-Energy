@@ -334,15 +334,13 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                        </li>
                        <li>
                          <a 
-                           href="/downloads/Zul-Energy-Digital-Brochure.pdf" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
+                           href="/brochure"
                            className="text-sm text-gray-600 hover:text-zul-yellow block py-1"
                          >
                            Brochures
                          </a>
                        </li>
-                                                
+                                               
                           <li>
                             <a href="/datasheets" className={`text-sm block py-1 transition-colors ${
                               isActive('/datasheets') 
@@ -517,9 +515,7 @@ const [subNestedDropdowns, setSubNestedDropdowns] = useState({
                        News
                      </a>
                      <a 
-                       href="/downloads/Zul-Energy-Digital-Brochure.pdf" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
+                       href="/brochure" 
                        className="block text-sm text-zul-grey-dark hover:text-zul-green py-1"
                      >
                        Brochures
