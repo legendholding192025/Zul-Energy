@@ -65,8 +65,8 @@ export default function CompletionFluidsAdditivesPage() {
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                   {/* Image - Left Side */}
                   <div className="w-full lg:w-1/2">
-                    <div className="relative">
-                      <div className="w-96 h-80 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
+                    <div className="relative px-2 sm:px-0">
+                      <div className="w-full max-w-[384px] h-72 sm:h-80 md:h-96 mx-auto bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg overflow-hidden">
                         <img
                           src="https://cdn.legendholding.com/images/cdn_68a55e06bcaa45.21764780_20250820_053254.webp"
                           alt="Completion Fluids Additives Product"
