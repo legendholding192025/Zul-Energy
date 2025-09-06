@@ -4,6 +4,15 @@ import { DatasheetRequest } from '@/lib/supabase'
 
 export async function POST(request: NextRequest) {
   try {
+    // Check if environment variables are set
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      console.error('Missing Supabase environment variables')
+      return NextResponse.json(
+        { error: 'Server configuration error: Missing database credentials' },
+        { status: 500 }
+      )
+    }
+
     const body: Omit<DatasheetRequest, 'id' | 'created_at' | 'updated_at'> = await request.json()
     
     // Validate required fields
