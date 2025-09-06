@@ -13,10 +13,9 @@ export async function GET() {
 
     // Test basic connection
     console.log('Testing Supabase connection...')
-    const { data: connectionTest, error: connectionError } = await supabase
+    const { count, error: connectionError } = await supabase
       .from('datasheet_requests')
-      .select('count(*)', { count: 'exact' })
-      .limit(0)
+      .select('*', { count: 'exact', head: true })
 
     if (connectionError) {
       console.error('Connection test failed:', connectionError)
@@ -58,7 +57,7 @@ export async function GET() {
       success: true,
       message: 'Supabase connection successful',
       tableExists: true,
-      recordCount: connectionTest?.length || 0
+      recordCount: count || 0
     })
 
   } catch (error) {
