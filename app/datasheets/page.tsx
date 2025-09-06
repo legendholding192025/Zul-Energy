@@ -106,31 +106,49 @@ export default function DatasheetsPage() {
     setIsModalOpen(true)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Datasheet Download Request:', formData)
     
-    // Simulate download after form submission
-    if (selectedProduct) {
-      const link = document.createElement('a')
-      link.href = selectedProduct.pdfUrl
-      link.download = `${selectedProduct.name.replace(/\s+/g, '-').toLowerCase()}-datasheet.pdf`
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
+    try {
+      // Submit form data to backend
+      const response = await fetch('/api/datasheet-request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to submit request')
+      }
+
+      // Success - trigger download
+      if (selectedProduct) {
+        const link = document.createElement('a')
+        link.href = selectedProduct.pdfUrl
+        link.download = `${selectedProduct.name.replace(/\s+/g, '-').toLowerCase()}-datasheet.pdf`
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+      }
+      
+      alert('Thank you! Your request has been submitted and your datasheet download will begin shortly.')
+      setIsModalOpen(false)
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: '',
+        product: ''
+      })
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('There was an error submitting your request. Please try again.')
     }
-    
-    alert('Thank you! Your datasheet download will begin shortly.')
-    setIsModalOpen(false)
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      message: '',
-      product: ''
-    })
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
