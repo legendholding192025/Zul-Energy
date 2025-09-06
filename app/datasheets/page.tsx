@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import SuccessPopup from '@/components/SuccessPopup'
 
 interface Product {
   id: string
@@ -90,6 +91,7 @@ interface DatasheetForm {
 
 export default function DatasheetsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isSuccessPopupOpen, setIsSuccessPopupOpen] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
   const [formData, setFormData] = useState<DatasheetForm>({
     name: '',
@@ -125,18 +127,9 @@ export default function DatasheetsPage() {
         throw new Error(result.error || 'Failed to submit request')
       }
 
-      // Success - trigger download
-      if (selectedProduct) {
-        const link = document.createElement('a')
-        link.href = selectedProduct.pdfUrl
-        link.download = `${selectedProduct.name.replace(/\s+/g, '-').toLowerCase()}-datasheet.pdf`
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-      }
-      
-      alert('Thank you! Your request has been submitted and your datasheet download will begin shortly.')
+      // Success - show success popup (no download)
       setIsModalOpen(false)
+      setIsSuccessPopupOpen(true)
       setFormData({
         name: '',
         email: '',
@@ -360,6 +353,14 @@ export default function DatasheetsPage() {
           </div>
         </div>
       )}
+
+      {/* Success Popup */}
+      <SuccessPopup
+        isOpen={isSuccessPopupOpen}
+        onClose={() => setIsSuccessPopupOpen(false)}
+        title="Request Submitted Successfully!"
+        message={`Thank you for your interest in ${selectedProduct?.name}. Our team will contact you shortly with the requested datasheet and additional information.`}
+      />
       
       <Footer />
     </main>
